@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="healthtech.sandbox.IProtocol">
+    <classNode dependClassName="healthtech.sandbox.Measurement" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="healthtech.sandbox.InputSpec">
+    <classNode dependClassName="healthtech.sandbox.MType" />
+    <classNode dependClassName="java.lang.Integer" />
+  </dependency>
+  <dependency className="healthtech.sandbox.MType" />
+  <dependency className="healthtech.sandbox.MUnit">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="healthtech.sandbox.Measurement">
+    <classNode dependClassName="healthtech.sandbox.MType" />
+    <classNode dependClassName="healthtech.sandbox.MUnit" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.time.LocalDateTime" />
+  </dependency>
+  <dependency className="healthtech.sandbox.diabetes">
+    <classNode dependClassName="healthtech.sandbox.InputSpec" />
+    <classNode dependClassName="healthtech.sandbox.MType" />
+    <classNode dependClassName="healthtech.sandbox.Measurement" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="healthtech.sandbox.IProtocol" />
+  </dependency>
+  <dependency className="healthtech.sandbox.hypertension">
+    <classNode dependClassName="healthtech.sandbox.InputSpec" />
+    <classNode dependClassName="healthtech.sandbox.MType" />
+    <classNode dependClassName="healthtech.sandbox.Measurement" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="healthtech.sandbox.IProtocol" />
+  </dependency>
+</dependenciesRoot>
+

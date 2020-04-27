@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,25,0" name="healthtech.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5213bd4f-a990-46c9-8602-95b15eab02a1(healthtech.typesystem)/2249746781629357520">
+    <file name="EvalMeasurement_NonTypesystemRule.java">
+      <node id="2249746781629497747" at="29,41,30,180" concept="6" />
+      <node id="2249746781629498557" at="33,9,34,68" concept="5" />
+      <node id="2249746781629498557" at="34,68,35,220" concept="5" />
+      <node id="2249746781629357520" at="40,50,41,35" concept="6" />
+      <node id="2249746781629357520" at="43,68,44,102" concept="6" />
+      <node id="2249746781629357520" at="46,30,47,17" concept="6" />
+      <node id="2249746781629357520" at="51,0,52,0" concept="8" trace="MeasurementRange$It" />
+      <node id="2249746781629357520" at="52,0,53,0" concept="8" trace="Protocol$AP" />
+      <node id="2249746781629357520" at="53,0,54,0" concept="8" trace="Measurement$Hi" />
+      <node id="2249746781629357520" at="57,0,58,0" concept="8" trace="inputSpecs$6ijH" />
+      <node id="2249746781629357520" at="58,0,59,0" concept="8" trace="measure$duPR" />
+      <node id="2249746781629357520" at="24,0,26,0" concept="1" trace="EvalMeasurement_NonTypesystemRule#()V" />
+      <node id="2249746781629497745" at="29,0,32,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2249746781629357520" at="40,0,43,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2249746781629357520" at="43,0,46,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2249746781629357520" at="46,0,49,0" concept="4" trace="overrides#()Z" />
+      <node id="2249746781629498557" at="32,12,36,9" concept="0" />
+      <node id="2249746781629496473" at="27,109,37,7" concept="3" />
+      <node id="2249746781629421466" at="26,124,38,5" concept="3" />
+      <node id="2249746781629357520" at="26,0,40,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2249746781629357520" at="24,46,24,46" />
+      <scope id="2249746781629497746" at="29,41,30,180" />
+      <scope id="2249746781629357520" at="40,50,41,35" />
+      <scope id="2249746781629357520" at="43,68,44,102" />
+      <scope id="2249746781629357520" at="46,30,47,17" />
+      <scope id="2249746781629357520" at="24,0,26,0" />
+      <scope id="2249746781629498557" at="33,9,35,220">
+        <var name="_reporter_2309309498" id="2249746781629498557" />
+        <var name="errorTarget" id="2249746781629498557" />
+      </scope>
+      <scope id="2249746781629497745" at="29,0,32,0">
+        <var name="it" id="2249746781629497745" />
+      </scope>
+      <scope id="2249746781629357520" at="40,0,43,0" />
+      <scope id="2249746781629357520" at="43,0,46,0">
+        <var name="argument" id="2249746781629357520" />
+      </scope>
+      <scope id="2249746781629357520" at="46,0,49,0" />
+      <scope id="2249746781629496475" at="32,12,36,9" />
+      <scope id="2249746781629421468" at="27,109,37,7" />
+      <scope id="2249746781629357521" at="26,124,38,5" />
+      <scope id="2249746781629357520" at="26,0,40,0">
+        <var name="measurement" id="2249746781629357520" />
+        <var name="status" id="2249746781629357520" />
+        <var name="typeCheckingContext" id="2249746781629357520" />
+      </scope>
+      <unit id="2249746781629497745" at="28,215,32,7" name="healthtech.typesystem.EvalMeasurement_NonTypesystemRule$1" />
+      <unit id="2249746781629357520" at="56,0,60,0" name="healthtech.typesystem.EvalMeasurement_NonTypesystemRule$LINKS" />
+      <unit id="2249746781629357520" at="50,0,55,0" name="healthtech.typesystem.EvalMeasurement_NonTypesystemRule$CONCEPTS" />
+      <unit id="2249746781629357520" at="23,0,61,0" name="healthtech.typesystem.EvalMeasurement_NonTypesystemRule" />
+    </file>
+    <file name="TypesystemDescriptor.java">
+      <node id="2249746781629357520" at="15,5,16,92" concept="5" />
+      <node id="2249746781629357520" at="16,92,17,55" concept="2" />
+      <node id="2249746781629357520" at="14,5,18,5" concept="0" />
+      <scope id="2249746781629357520" at="15,5,17,55">
+        <var name="nonTypesystemRule" id="2249746781629357520" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:5213bd4f-a990-46c9-8602-95b15eab02a1(healthtech.typesystem)/2249746781629786163">
+    <file name="TypesystemDescriptor.java">
+      <node id="2249746781629786163" at="19,5,20,108" concept="5" />
+      <node id="2249746781629786163" at="20,108,21,55" concept="2" />
+      <node id="2249746781629786163" at="18,5,22,5" concept="0" />
+      <scope id="2249746781629786163" at="19,5,21,55">
+        <var name="nonTypesystemRule" id="2249746781629786163" />
+      </scope>
+    </file>
+    <file name="check_MeasurementBinaryOperator_NonTypesystemRule.java">
+      <node id="2249746781629901505" at="26,303,27,842" concept="5" />
+      <node id="2249746781629991962" at="27,842,28,861" concept="5" />
+      <node id="2249746781629991712" at="28,861,29,0" concept="7" />
+      <node id="2249746781629803491" at="31,9,32,68" concept="5" />
+      <node id="2249746781629803491" at="32,68,33,296" concept="5" />
+      <node id="52719422305747556" at="35,7,36,0" concept="7" />
+      <node id="2249746781629786163" at="39,50,40,49" concept="6" />
+      <node id="2249746781629786163" at="42,68,43,102" concept="6" />
+      <node id="2249746781629786163" at="45,30,46,17" concept="6" />
+      <node id="2249746781629786163" at="50,0,51,0" concept="8" trace="operand$rm1x" />
+      <node id="2249746781629786163" at="51,0,52,0" concept="8" trace="operand$_fE0" />
+      <node id="2249746781629786163" at="52,0,53,0" concept="8" trace="secondOperand$Q$Uk" />
+      <node id="2249746781629786163" at="56,0,57,0" concept="8" trace="MeasurementOperandAdapter$GE" />
+      <node id="2249746781629786163" at="57,0,58,0" concept="8" trace="IntegerConstant$Mh" />
+      <node id="2249746781629786163" at="58,0,59,0" concept="8" trace="FloatConstant$wb" />
+      <node id="2249746781629786163" at="59,0,60,0" concept="8" trace="MeasurementBinaryOperator$kO" />
+      <node id="2249746781629786163" at="63,0,64,0" concept="8" trace="value$VaKW" />
+      <node id="2249746781629786163" at="64,0,65,0" concept="8" trace="value$7rXu" />
+      <node id="2249746781629786163" at="23,0,25,0" concept="1" trace="check_MeasurementBinaryOperator_NonTypesystemRule#()V" />
+      <node id="2249746781629786163" at="39,0,42,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2249746781629786163" at="42,0,45,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2249746781629786163" at="45,0,48,0" concept="4" trace="overrides#()Z" />
+      <node id="2249746781629803491" at="30,21,34,9" concept="0" />
+      <node id="2249746781629787636" at="29,0,35,7" concept="3" />
+      <node id="52719422305747555" at="25,138,37,5" concept="3" />
+      <node id="2249746781629786163" at="25,0,39,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2249746781629786163" at="23,62,23,62" />
+      <scope id="2249746781629786163" at="39,50,40,49" />
+      <scope id="2249746781629786163" at="42,68,43,102" />
+      <scope id="2249746781629786163" at="45,30,46,17" />
+      <scope id="2249746781629786163" at="23,0,25,0" />
+      <scope id="2249746781629803491" at="31,9,33,296">
+        <var name="_reporter_2309309498" id="2249746781629803491" />
+        <var name="errorTarget" id="2249746781629803491" />
+      </scope>
+      <scope id="2249746781629786163" at="39,0,42,0" />
+      <scope id="2249746781629786163" at="42,0,45,0">
+        <var name="argument" id="2249746781629786163" />
+      </scope>
+      <scope id="2249746781629786163" at="45,0,48,0" />
+      <scope id="2249746781629787638" at="30,21,34,9" />
+      <scope id="52719422305747557" at="26,303,36,0">
+        <var name="fl" id="2249746781629901508" />
+        <var name="fl2" id="2249746781629991963" />
+      </scope>
+      <scope id="2249746781629786164" at="25,138,37,5" />
+      <scope id="2249746781629786163" at="25,0,39,0">
+        <var name="measurementBinaryOperator" id="2249746781629786163" />
+        <var name="status" id="2249746781629786163" />
+        <var name="typeCheckingContext" id="2249746781629786163" />
+      </scope>
+      <unit id="2249746781629786163" at="62,0,66,0" name="healthtech.typesystem.check_MeasurementBinaryOperator_NonTypesystemRule$PROPS" />
+      <unit id="2249746781629786163" at="49,0,54,0" name="healthtech.typesystem.check_MeasurementBinaryOperator_NonTypesystemRule$LINKS" />
+      <unit id="2249746781629786163" at="55,0,61,0" name="healthtech.typesystem.check_MeasurementBinaryOperator_NonTypesystemRule$CONCEPTS" />
+      <unit id="2249746781629786163" at="22,0,67,0" name="healthtech.typesystem.check_MeasurementBinaryOperator_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5213bd4f-a990-46c9-8602-95b15eab02a1(healthtech.typesystem)/4414035954634443326">
+    <file name="TypesystemDescriptor.java">
+      <node id="4414035954634443326" at="11,5,12,87" concept="5" />
+      <node id="4414035954634443326" at="12,87,13,47" concept="2" />
+      <node id="4414035954634443326" at="10,33,14,5" concept="0" />
+      <scope id="4414035954634443326" at="11,5,13,47">
+        <var name="inferenceRule" id="4414035954634443326" />
+      </scope>
+    </file>
+    <file name="typeof_IntegerConstant_InferenceRule.java">
+      <node id="4414035954634444079" at="21,5,22,57" concept="5" />
+      <node id="4414035954634444079" at="22,57,23,187" concept="5" />
+      <node id="4414035954634444079" at="23,187,24,268" concept="2" />
+      <node id="4414035954634443326" at="27,50,28,39" concept="6" />
+      <node id="4414035954634443326" at="30,68,31,102" concept="6" />
+      <node id="4414035954634443326" at="33,30,34,17" concept="6" />
+      <node id="4414035954634444789" at="36,65,37,63" concept="5" />
+      <node id="4414035954634444789" at="37,63,38,30" concept="5" />
+      <node id="4414035954634444789" at="38,30,39,230" concept="2" />
+      <node id="4414035954634444789" at="39,230,40,24" concept="6" />
+      <node id="4414035954634443326" at="44,0,45,0" concept="8" trace="IntegerConstant$Mh" />
+      <node id="4414035954634443326" at="18,0,20,0" concept="1" trace="typeof_IntegerConstant_InferenceRule#()V" />
+      <node id="4414035954634443326" at="27,0,30,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4414035954634443326" at="30,0,33,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4414035954634443326" at="33,0,36,0" concept="4" trace="overrides#()Z" />
+      <node id="4414035954634444079" at="20,128,25,5" concept="0" />
+      <node id="4414035954634444789" at="36,0,42,0" concept="9" trace="_quotation_createNode_1e09r9_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4414035954634443326" at="20,0,27,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4414035954634443326" at="18,49,18,49" />
+      <scope id="4414035954634443326" at="27,50,28,39" />
+      <scope id="4414035954634443326" at="30,68,31,102" />
+      <scope id="4414035954634443326" at="33,30,34,17" />
+      <scope id="4414035954634443326" at="18,0,20,0" />
+      <scope id="4414035954634444079" at="21,5,24,268">
+        <var name="_info_12389875345" id="4414035954634444079" />
+        <var name="_nodeToCheck_1029348928467" id="4414035954634444079" />
+      </scope>
+      <scope id="4414035954634443326" at="27,0,30,0" />
+      <scope id="4414035954634443326" at="30,0,33,0">
+        <var name="argument" id="4414035954634443326" />
+      </scope>
+      <scope id="4414035954634443326" at="33,0,36,0" />
+      <scope id="4414035954634444789" at="36,65,40,24">
+        <var name="facade" id="4414035954634444789" />
+        <var name="quotedNode_1" id="4414035954634444789" />
+      </scope>
+      <scope id="4414035954634443327" at="20,128,25,5" />
+      <scope id="4414035954634444789" at="36,0,42,0" />
+      <scope id="4414035954634443326" at="20,0,27,0">
+        <var name="integerConstant" id="4414035954634443326" />
+        <var name="status" id="4414035954634443326" />
+        <var name="typeCheckingContext" id="4414035954634443326" />
+      </scope>
+      <unit id="4414035954634443326" at="43,0,46,0" name="healthtech.typesystem.typeof_IntegerConstant_InferenceRule$CONCEPTS" />
+      <unit id="4414035954634443326" at="17,0,47,0" name="healthtech.typesystem.typeof_IntegerConstant_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

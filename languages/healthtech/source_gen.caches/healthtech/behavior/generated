@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-clostst0gwkb1ye175stqjfryz4gh4k">
+  <files names="BehaviorAspectDescriptor.java:BloodPressureMeasurement__BehaviorDescriptor.java:DiastolicPressueMeasurement__BehaviorDescriptor.java:GlucoseMeasurement__BehaviorDescriptor.java:Measurement__BehaviorDescriptor.java:Protocol__BehaviorDescriptor.java:PulseMeasurement__BehaviorDescriptor.java:SystolicPressureMeasurement__BehaviorDescriptor.java:TemperatureMeasurement__BehaviorDescriptor.java:WeightMeasurement__BehaviorDescriptor.java" />
+</product>
+

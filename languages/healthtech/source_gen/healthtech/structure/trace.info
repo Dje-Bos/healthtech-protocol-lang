@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,225,0" name="healthtech.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,78,0" name="healthtech.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="20,0,377,0" name="healthtech.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781628734567">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781628734567" at="16,0,17,0" concept="2" trace="props_GlucoseMeasurement" />
+      <node id="2249746781628734567" at="73,47,74,76" concept="5" />
+      <node id="2249746781628734567" at="74,76,75,35" concept="1" />
+      <node id="2249746781628734567" at="75,35,76,50" concept="1" />
+      <node id="2249746781628734567" at="77,9,78,40" concept="6" />
+      <node id="2249746781628734567" at="72,52,77,9" concept="3" />
+      <scope id="2249746781628734567" at="73,47,76,50">
+        <var name="cpb" id="2249746781628734567" />
+      </scope>
+      <scope id="2249746781628734567" at="72,52,78,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781628734567" at="16,0,17,0" concept="7" trace="GlucoseMeasurement" />
+      <node id="2249746781628734567" at="44,52,45,57" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781628734567" at="25,0,26,0" concept="2" trace="myConceptGlucoseMeasurement" />
+      <node id="2249746781628734567" at="79,52,80,43" concept="6" />
+      <node id="2249746781628734567" at="174,76,175,163" concept="5" />
+      <node id="2249746781628734567" at="175,163,176,34" concept="1" />
+      <node id="2249746781628734567" at="176,34,177,112" concept="1" />
+      <node id="2249746781628734567" at="177,112,178,97" concept="1" />
+      <node id="2249746781628734567" at="178,97,179,17" concept="1" />
+      <node id="2249746781628734567" at="179,17,180,23" concept="1" />
+      <node id="2249746781628734567" at="180,23,181,22" concept="6" />
+      <node id="2249746781628734567" at="174,0,183,0" concept="8" trace="createDescriptorForGlucoseMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781628734567" at="79,52,80,43" />
+      <scope id="2249746781628734567" at="174,76,181,22">
+        <var name="b" id="2249746781628734567" />
+      </scope>
+      <scope id="2249746781628734567" at="174,0,183,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630680043">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781630680043" at="32,0,33,0" concept="2" trace="props_OutputResult" />
+      <node id="2249746781630680043" at="179,41,180,76" concept="5" />
+      <node id="2249746781630680043" at="180,76,181,46" concept="1" />
+      <node id="2249746781630680043" at="181,46,182,44" concept="1" />
+      <node id="2249746781630680043" at="183,9,184,34" concept="6" />
+      <node id="2249746781630680043" at="178,46,183,9" concept="3" />
+      <scope id="2249746781630680043" at="179,41,182,44">
+        <var name="cpb" id="2249746781630680043" />
+      </scope>
+      <scope id="2249746781630680043" at="178,46,184,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781630680043" at="32,0,33,0" concept="7" trace="OutputResult" />
+      <node id="2249746781630680043" at="60,47,61,51" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781630680043" at="41,0,42,0" concept="2" trace="myConceptOutputResult" />
+      <node id="2249746781630680043" at="111,46,112,37" concept="6" />
+      <node id="2249746781630680043" at="318,70,319,157" concept="5" />
+      <node id="2249746781630680043" at="319,157,320,34" concept="1" />
+      <node id="2249746781630680043" at="320,34,321,97" concept="1" />
+      <node id="2249746781630680043" at="321,97,322,17" concept="1" />
+      <node id="2249746781630680044" at="322,17,323,112" concept="1" />
+      <node id="2249746781630680043" at="323,112,324,22" concept="6" />
+      <node id="2249746781630680043" at="318,0,326,0" concept="8" trace="createDescriptorForOutputResult#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781630680043" at="111,46,112,37" />
+      <scope id="2249746781630680043" at="318,70,324,22">
+        <var name="b" id="2249746781630680043" />
+      </scope>
+      <scope id="2249746781630680043" at="318,0,326,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630975052">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781630975052" at="27,0,28,0" concept="2" trace="props_MeasurementUnaryOperator" />
+      <node id="2249746781630975052" at="147,53,148,76" concept="5" />
+      <node id="2249746781630975052" at="148,76,149,56" concept="1" />
+      <node id="2249746781630975052" at="150,9,151,46" concept="6" />
+      <node id="2249746781630975052" at="146,58,150,9" concept="3" />
+      <scope id="2249746781630975052" at="147,53,149,56">
+        <var name="cpb" id="2249746781630975052" />
+      </scope>
+      <scope id="2249746781630975052" at="146,58,151,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781630975052" at="27,0,28,0" concept="7" trace="MeasurementUnaryOperator" />
+      <node id="2249746781630975052" at="55,64,56,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781630975052" at="36,0,37,0" concept="2" trace="myConceptMeasurementUnaryOperator" />
+      <node id="2249746781630975052" at="101,58,102,49" concept="6" />
+      <node id="2249746781630975052" at="276,82,277,169" concept="5" />
+      <node id="2249746781630975052" at="277,169,278,33" concept="1" />
+      <node id="2249746781630975052" at="278,33,279,109" concept="1" />
+      <node id="2249746781630975052" at="279,109,280,97" concept="1" />
+      <node id="2249746781630975052" at="280,97,281,17" concept="1" />
+      <node id="2249746781630977566" at="281,17,282,199" concept="1" />
+      <node id="2249746781630975052" at="282,199,283,22" concept="6" />
+      <node id="2249746781630975052" at="276,0,285,0" concept="8" trace="createDescriptorForMeasurementUnaryOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781630975052" at="101,58,102,49" />
+      <scope id="2249746781630975052" at="276,82,283,22">
+        <var name="b" id="2249746781630975052" />
+      </scope>
+      <scope id="2249746781630975052" at="276,0,285,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977534">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781630977534" at="31,0,32,0" concept="2" trace="props_Operator" />
+      <node id="2249746781630977534" at="173,37,174,76" concept="5" />
+      <node id="2249746781630977534" at="174,76,175,40" concept="1" />
+      <node id="2249746781630977534" at="176,9,177,30" concept="6" />
+      <node id="2249746781630977534" at="172,42,176,9" concept="3" />
+      <scope id="2249746781630977534" at="173,37,175,40">
+        <var name="cpb" id="2249746781630977534" />
+      </scope>
+      <scope id="2249746781630977534" at="172,42,177,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781630977534" at="31,0,32,0" concept="7" trace="Operator" />
+      <node id="2249746781630977534" at="59,46,60,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781630977534" at="40,0,41,0" concept="2" trace="myConceptOperator" />
+      <node id="2249746781630977534" at="109,42,110,33" concept="6" />
+      <node id="2249746781630977534" at="311,66,312,153" concept="5" />
+      <node id="2249746781630977534" at="312,153,313,33" concept="1" />
+      <node id="2249746781630977534" at="313,33,314,97" concept="1" />
+      <node id="2249746781630977534" at="314,97,315,17" concept="1" />
+      <node id="2249746781630977534" at="315,17,316,22" concept="6" />
+      <node id="2249746781630977534" at="311,0,318,0" concept="8" trace="createDescriptorForOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781630977534" at="109,42,110,33" />
+      <scope id="2249746781630977534" at="311,66,316,22">
+        <var name="b" id="2249746781630977534" />
+      </scope>
+      <scope id="2249746781630977534" at="311,0,318,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977683">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781630977683" at="29,0,30,0" concept="2" trace="props_MoreOrEqualUnaryOperator" />
+      <node id="2249746781630977683" at="160,53,161,76" concept="5" />
+      <node id="2249746781630977683" at="161,76,162,36" concept="1" />
+      <node id="2249746781630977683" at="162,36,163,56" concept="1" />
+      <node id="2249746781630977683" at="164,9,165,46" concept="6" />
+      <node id="2249746781630977683" at="159,58,164,9" concept="3" />
+      <scope id="2249746781630977683" at="160,53,163,56">
+        <var name="cpb" id="2249746781630977683" />
+      </scope>
+      <scope id="2249746781630977683" at="159,58,165,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781630977683" at="29,0,30,0" concept="7" trace="MoreOrEqualUnaryOperator" />
+      <node id="2249746781630977683" at="57,58,58,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781630977683" at="38,0,39,0" concept="2" trace="myConceptMoreOrEqualUnaryOperator" />
+      <node id="2249746781630977683" at="105,58,106,49" concept="6" />
+      <node id="2249746781630977683" at="295,82,296,169" concept="5" />
+      <node id="2249746781630977683" at="296,169,297,34" concept="1" />
+      <node id="2249746781630977683" at="297,34,298,125" concept="1" />
+      <node id="2249746781630977683" at="298,125,299,97" concept="1" />
+      <node id="2249746781630977683" at="299,97,300,17" concept="1" />
+      <node id="2249746781630977683" at="300,17,301,18" concept="1" />
+      <node id="2249746781630977683" at="301,18,302,22" concept="6" />
+      <node id="2249746781630977683" at="295,0,304,0" concept="8" trace="createDescriptorForMoreOrEqualUnaryOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781630977683" at="105,58,106,49" />
+      <scope id="2249746781630977683" at="295,82,302,22">
+        <var name="b" id="2249746781630977683" />
+      </scope>
+      <scope id="2249746781630977683" at="295,0,304,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977703">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2249746781630977703" at="19,0,20,0" concept="2" trace="props_LessOrEqualUnaryOperator" />
+      <node id="2249746781630977703" at="94,53,95,76" concept="5" />
+      <node id="2249746781630977703" at="95,76,96,36" concept="1" />
+      <node id="2249746781630977703" at="96,36,97,56" concept="1" />
+      <node id="2249746781630977703" at="98,9,99,46" concept="6" />
+      <node id="2249746781630977703" at="93,58,98,9" concept="3" />
+      <scope id="2249746781630977703" at="94,53,97,56">
+        <var name="cpb" id="2249746781630977703" />
+      </scope>
+      <scope id="2249746781630977703" at="93,58,99,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2249746781630977703" at="19,0,20,0" concept="7" trace="LessOrEqualUnaryOperator" />
+      <node id="2249746781630977703" at="47,54,48,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2249746781630977703" at="28,0,29,0" concept="2" trace="myConceptLessOrEqualUnaryOperator" />
+      <node id="2249746781630977703" at="85,58,86,49" concept="6" />
+      <node id="2249746781630977703" at="203,82,204,169" concept="5" />
+      <node id="2249746781630977703" at="204,169,205,34" concept="1" />
+      <node id="2249746781630977703" at="205,34,206,125" concept="1" />
+      <node id="2249746781630977703" at="206,125,207,97" concept="1" />
+      <node id="2249746781630977703" at="207,97,208,17" concept="1" />
+      <node id="2249746781630977703" at="208,17,209,18" concept="1" />
+      <node id="2249746781630977703" at="209,18,210,22" concept="6" />
+      <node id="2249746781630977703" at="203,0,212,0" concept="8" trace="createDescriptorForLessOrEqualUnaryOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2249746781630977703" at="85,58,86,49" />
+      <scope id="2249746781630977703" at="203,82,210,22">
+        <var name="b" id="2249746781630977703" />
+      </scope>
+      <scope id="2249746781630977703" at="203,0,212,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/3423319196905167580">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3423319196905167580" at="24,0,25,0" concept="2" trace="props_MeasurementRange" />
+      <node id="3423319196905167580" at="126,45,127,76" concept="5" />
+      <node id="3423319196905167580" at="127,76,128,50" concept="1" />
+      <node id="3423319196905167580" at="128,50,129,48" concept="1" />
+      <node id="3423319196905167580" at="130,9,131,38" concept="6" />
+      <node id="3423319196905167580" at="125,50,130,9" concept="3" />
+      <scope id="3423319196905167580" at="126,45,129,48">
+        <var name="cpb" id="3423319196905167580" />
+      </scope>
+      <scope id="3423319196905167580" at="125,50,131,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3423319196905167580" at="24,0,25,0" concept="7" trace="MeasurementRange" />
+      <node id="3423319196905167580" at="52,62,53,55" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3423319196905167580" at="33,0,34,0" concept="2" trace="myConceptMeasurementRange" />
+      <node id="3423319196905167580" at="95,50,96,41" concept="6" />
+      <node id="3423319196905167580" at="249,74,250,161" concept="5" />
+      <node id="3423319196905167580" at="250,161,251,34" concept="1" />
+      <node id="3423319196905167580" at="251,34,252,97" concept="1" />
+      <node id="3423319196905167580" at="252,97,253,17" concept="1" />
+      <node id="4414035954634025316" at="253,17,254,207" concept="1" />
+      <node id="2249746781630977555" at="254,207,255,205" concept="1" />
+      <node id="3423319196905167580" at="255,205,256,22" concept="6" />
+      <node id="3423319196905167580" at="249,0,258,0" concept="8" trace="createDescriptorForMeasurementRange#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3423319196905167580" at="95,50,96,41" />
+      <scope id="3423319196905167580" at="249,74,256,22">
+        <var name="b" id="3423319196905167580" />
+      </scope>
+      <scope id="3423319196905167580" at="249,0,258,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/3423319196905791784">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3423319196905791784" at="21,0,22,0" concept="2" trace="props_MeasurementBinaryOperator" />
+      <node id="3423319196905791784" at="107,54,108,76" concept="5" />
+      <node id="3423319196905791784" at="108,76,109,57" concept="1" />
+      <node id="3423319196905791784" at="110,9,111,47" concept="6" />
+      <node id="3423319196905791784" at="106,59,110,9" concept="3" />
+      <scope id="3423319196905791784" at="107,54,109,57">
+        <var name="cpb" id="3423319196905791784" />
+      </scope>
+      <scope id="3423319196905791784" at="106,59,111,47" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3423319196905791784" at="21,0,22,0" concept="7" trace="MeasurementBinaryOperator" />
+      <node id="3423319196905791784" at="49,50,50,64" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3423319196905791784" at="30,0,31,0" concept="2" trace="myConceptMeasurementBinaryOperator" />
+      <node id="3423319196905791784" at="89,59,90,50" concept="6" />
+      <node id="3423319196905791784" at="220,83,221,170" concept="5" />
+      <node id="3423319196905791784" at="221,170,222,33" concept="1" />
+      <node id="3423319196905791784" at="222,33,223,109" concept="1" />
+      <node id="3423319196905791784" at="223,109,224,97" concept="1" />
+      <node id="3423319196905791784" at="224,97,225,17" concept="1" />
+      <node id="4414035954634025321" at="225,17,226,199" concept="1" />
+      <node id="2249746781628469892" at="226,199,227,205" concept="1" />
+      <node id="3423319196905791784" at="227,205,228,22" concept="6" />
+      <node id="3423319196905791784" at="220,0,230,0" concept="8" trace="createDescriptorForMeasurementBinaryOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3423319196905791784" at="89,59,90,50" />
+      <scope id="3423319196905791784" at="220,83,228,22">
+        <var name="b" id="3423319196905791784" />
+      </scope>
+      <scope id="3423319196905791784" at="220,0,230,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954634025311">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954634025311" at="25,0,26,0" concept="2" trace="props_MeasurementRangeOperator" />
+      <node id="4414035954634025311" at="133,53,134,76" concept="5" />
+      <node id="4414035954634025311" at="134,76,135,35" concept="1" />
+      <node id="4414035954634025311" at="135,35,136,56" concept="1" />
+      <node id="4414035954634025311" at="137,9,138,46" concept="6" />
+      <node id="4414035954634025311" at="132,58,137,9" concept="3" />
+      <scope id="4414035954634025311" at="133,53,136,56">
+        <var name="cpb" id="4414035954634025311" />
+      </scope>
+      <scope id="4414035954634025311" at="132,58,138,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954634025311" at="25,0,26,0" concept="7" trace="MeasurementRangeOperator" />
+      <node id="4414035954634025311" at="53,55,54,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954634025311" at="34,0,35,0" concept="2" trace="myConceptMeasurementRangeOperator" />
+      <node id="4414035954634025311" at="97,58,98,49" concept="6" />
+      <node id="4414035954634025311" at="258,82,259,169" concept="5" />
+      <node id="4414035954634025311" at="259,169,260,34" concept="1" />
+      <node id="4414035954634025311" at="260,34,261,126" concept="1" />
+      <node id="4414035954634025311" at="261,126,262,97" concept="1" />
+      <node id="4414035954634025311" at="262,97,263,17" concept="1" />
+      <node id="4414035954634025311" at="263,17,264,17" concept="1" />
+      <node id="4414035954634025311" at="264,17,265,22" concept="6" />
+      <node id="4414035954634025311" at="258,0,267,0" concept="8" trace="createDescriptorForMeasurementRangeOperator#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954634025311" at="97,58,98,49" />
+      <scope id="4414035954634025311" at="258,82,265,22">
+        <var name="b" id="4414035954634025311" />
+      </scope>
+      <scope id="4414035954634025311" at="258,0,267,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954634025324">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954634025324" at="18,0,19,0" concept="2" trace="props_IntegerConstant" />
+      <node id="4414035954634025324" at="87,44,88,76" concept="5" />
+      <node id="4414035954634025324" at="88,76,89,37" concept="1" />
+      <node id="4414035954634025324" at="89,37,90,47" concept="1" />
+      <node id="4414035954634025324" at="91,9,92,37" concept="6" />
+      <node id="4414035954634025324" at="86,49,91,9" concept="3" />
+      <scope id="4414035954634025324" at="87,44,90,47">
+        <var name="cpb" id="4414035954634025324" />
+      </scope>
+      <scope id="4414035954634025324" at="86,49,92,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954634025324" at="18,0,19,0" concept="7" trace="IntegerConstant" />
+      <node id="4414035954634025324" at="46,48,47,54" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954634025324" at="27,0,28,0" concept="2" trace="myConceptIntegerConstant" />
+      <node id="4414035954634025324" at="83,49,84,40" concept="6" />
+      <node id="4414035954634025324" at="193,73,194,160" concept="5" />
+      <node id="4414035954634025324" at="194,160,195,34" concept="1" />
+      <node id="4414035954634025324" at="195,34,196,108" concept="1" />
+      <node id="4414035954634025324" at="196,108,197,97" concept="1" />
+      <node id="4414035954634025324" at="197,97,198,17" concept="1" />
+      <node id="4414035954634151004" at="198,17,199,112" concept="1" />
+      <node id="4414035954634025324" at="199,112,200,19" concept="1" />
+      <node id="4414035954634025324" at="200,19,201,22" concept="6" />
+      <node id="4414035954634025324" at="193,0,203,0" concept="8" trace="createDescriptorForIntegerConstant#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954634025324" at="83,49,84,40" />
+      <scope id="4414035954634025324" at="193,73,201,22">
+        <var name="b" id="4414035954634025324" />
+      </scope>
+      <scope id="4414035954634025324" at="193,0,203,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954634025325">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954634025325" at="30,0,31,0" concept="2" trace="props_Operand" />
+      <node id="4414035954634025325" at="167,36,168,76" concept="5" />
+      <node id="4414035954634025325" at="168,76,169,39" concept="1" />
+      <node id="4414035954634025325" at="170,9,171,29" concept="6" />
+      <node id="4414035954634025325" at="166,41,170,9" concept="3" />
+      <scope id="4414035954634025325" at="167,36,169,39">
+        <var name="cpb" id="4414035954634025325" />
+      </scope>
+      <scope id="4414035954634025325" at="166,41,171,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954634025325" at="30,0,31,0" concept="7" trace="Operand" />
+      <node id="4414035954634025325" at="58,63,59,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954634025325" at="39,0,40,0" concept="2" trace="myConceptOperand" />
+      <node id="4414035954634025325" at="107,41,108,32" concept="6" />
+      <node id="4414035954634025325" at="304,65,305,152" concept="5" />
+      <node id="4414035954634025325" at="305,152,306,33" concept="1" />
+      <node id="4414035954634025325" at="306,33,307,97" concept="1" />
+      <node id="4414035954634025325" at="307,97,308,17" concept="1" />
+      <node id="4414035954634025325" at="308,17,309,22" concept="6" />
+      <node id="4414035954634025325" at="304,0,311,0" concept="8" trace="createDescriptorForOperand#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954634025325" at="107,41,108,32" />
+      <scope id="4414035954634025325" at="304,65,309,22">
+        <var name="b" id="4414035954634025325" />
+      </scope>
+      <scope id="4414035954634025325" at="304,0,311,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635132722">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635132722" at="15,0,16,0" concept="2" trace="props_FloatConstant" />
+      <node id="4414035954635132722" at="66,42,67,76" concept="5" />
+      <node id="4414035954635132722" at="67,76,68,39" concept="1" />
+      <node id="4414035954635132722" at="68,39,69,45" concept="1" />
+      <node id="4414035954635132722" at="70,9,71,35" concept="6" />
+      <node id="4414035954635132722" at="65,47,70,9" concept="3" />
+      <scope id="4414035954635132722" at="66,42,69,45">
+        <var name="cpb" id="4414035954635132722" />
+      </scope>
+      <scope id="4414035954635132722" at="65,47,71,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635132722" at="15,0,16,0" concept="7" trace="FloatConstant" />
+      <node id="4414035954635132722" at="43,54,44,52" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635132722" at="24,0,25,0" concept="2" trace="myConceptFloatConstant" />
+      <node id="4414035954635132722" at="77,47,78,38" concept="6" />
+      <node id="4414035954635132722" at="164,71,165,158" concept="5" />
+      <node id="4414035954635132722" at="165,158,166,34" concept="1" />
+      <node id="4414035954635132722" at="166,34,167,108" concept="1" />
+      <node id="4414035954635132722" at="167,108,168,97" concept="1" />
+      <node id="4414035954635132722" at="168,97,169,17" concept="1" />
+      <node id="4414035954635132802" at="169,17,170,176" concept="1" />
+      <node id="4414035954635132722" at="170,176,171,21" concept="1" />
+      <node id="4414035954635132722" at="171,21,172,22" concept="6" />
+      <node id="4414035954635132722" at="164,0,174,0" concept="8" trace="createDescriptorForFloatConstant#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635132722" at="77,47,78,38" />
+      <scope id="4414035954635132722" at="164,71,172,22">
+        <var name="b" id="4414035954635132722" />
+      </scope>
+      <scope id="4414035954635132722" at="164,0,174,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635133735">
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635133735" at="49,0,50,0" concept="2" trace="myCSDatatypeFPNumber" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635544456">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635544456" at="20,0,21,0" concept="2" trace="props_Measurement" />
+      <node id="4414035954635544456" at="101,40,102,76" concept="5" />
+      <node id="4414035954635544456" at="102,76,103,43" concept="1" />
+      <node id="4414035954635544456" at="104,9,105,33" concept="6" />
+      <node id="4414035954635544456" at="100,45,104,9" concept="3" />
+      <scope id="4414035954635544456" at="101,40,103,43">
+        <var name="cpb" id="4414035954635544456" />
+      </scope>
+      <scope id="4414035954635544456" at="100,45,105,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635544456" at="20,0,21,0" concept="7" trace="Measurement" />
+      <node id="4414035954635544456" at="48,63,49,50" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635544456" at="29,0,30,0" concept="2" trace="myConceptMeasurement" />
+      <node id="4414035954635544456" at="87,45,88,36" concept="6" />
+      <node id="4414035954635544456" at="212,69,213,156" concept="5" />
+      <node id="4414035954635544456" at="213,156,214,33" concept="1" />
+      <node id="4414035954635544456" at="214,33,215,71" concept="1" />
+      <node id="4414035954635544456" at="215,71,216,97" concept="1" />
+      <node id="4414035954635544456" at="216,97,217,17" concept="1" />
+      <node id="4414035954635544456" at="217,17,218,22" concept="6" />
+      <node id="4414035954635544456" at="212,0,220,0" concept="8" trace="createDescriptorForMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635544456" at="87,45,88,36" />
+      <scope id="4414035954635544456" at="212,69,218,22">
+        <var name="b" id="4414035954635544456" />
+      </scope>
+      <scope id="4414035954635544456" at="212,0,220,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635544457">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635544457" at="37,0,38,0" concept="2" trace="props_WeightMeasurement" />
+      <node id="4414035954635544457" at="215,46,216,76" concept="5" />
+      <node id="4414035954635544457" at="216,76,217,35" concept="1" />
+      <node id="4414035954635544457" at="217,35,218,49" concept="1" />
+      <node id="4414035954635544457" at="219,9,220,39" concept="6" />
+      <node id="4414035954635544457" at="214,51,219,9" concept="3" />
+      <scope id="4414035954635544457" at="215,46,218,49">
+        <var name="cpb" id="4414035954635544457" />
+      </scope>
+      <scope id="4414035954635544457" at="214,51,220,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635544457" at="37,0,38,0" concept="7" trace="WeightMeasurement" />
+      <node id="4414035954635544457" at="65,59,66,56" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635544457" at="46,0,47,0" concept="2" trace="myConceptWeightMeasurement" />
+      <node id="4414035954635544457" at="121,51,122,42" concept="6" />
+      <node id="4414035954635544457" at="367,75,368,162" concept="5" />
+      <node id="4414035954635544457" at="368,162,369,34" concept="1" />
+      <node id="4414035954635544457" at="369,34,370,112" concept="1" />
+      <node id="4414035954635544457" at="370,112,371,97" concept="1" />
+      <node id="4414035954635544457" at="371,97,372,17" concept="1" />
+      <node id="4414035954635544457" at="372,17,373,22" concept="1" />
+      <node id="4414035954635544457" at="373,22,374,22" concept="6" />
+      <node id="4414035954635544457" at="367,0,376,0" concept="8" trace="createDescriptorForWeightMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635544457" at="121,51,122,42" />
+      <scope id="4414035954635544457" at="367,75,374,22">
+        <var name="b" id="4414035954635544457" />
+      </scope>
+      <scope id="4414035954635544457" at="367,0,376,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635544461">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635544461" at="12,0,13,0" concept="2" trace="props_BloodPressureMeasurement" />
+      <node id="4414035954635544461" at="45,53,46,76" concept="5" />
+      <node id="4414035954635544461" at="46,76,47,35" concept="1" />
+      <node id="4414035954635544461" at="47,35,48,56" concept="1" />
+      <node id="4414035954635544461" at="49,9,50,46" concept="6" />
+      <node id="4414035954635544461" at="44,58,49,9" concept="3" />
+      <scope id="4414035954635544461" at="45,53,48,56">
+        <var name="cpb" id="4414035954635544461" />
+      </scope>
+      <scope id="4414035954635544461" at="44,58,50,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635544461" at="12,0,13,0" concept="7" trace="BloodPressureMeasurement" />
+      <node id="4414035954635544461" at="40,116,41,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635544461" at="21,0,22,0" concept="2" trace="myConceptBloodPressureMeasurement" />
+      <node id="4414035954635544461" at="71,58,72,49" concept="6" />
+      <node id="4414035954635544461" at="137,82,138,169" concept="5" />
+      <node id="4414035954635544461" at="138,169,139,34" concept="1" />
+      <node id="4414035954635544461" at="139,34,140,112" concept="1" />
+      <node id="4414035954635544461" at="140,112,141,97" concept="1" />
+      <node id="4414035954635544461" at="141,97,142,17" concept="1" />
+      <node id="4414035954635544461" at="142,17,143,30" concept="1" />
+      <node id="4414035954635544461" at="143,30,144,22" concept="6" />
+      <node id="4414035954635544461" at="137,0,146,0" concept="8" trace="createDescriptorForBloodPressureMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635544461" at="71,58,72,49" />
+      <scope id="4414035954635544461" at="137,82,144,22">
+        <var name="b" id="4414035954635544461" />
+      </scope>
+      <scope id="4414035954635544461" at="137,0,146,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635544468">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635544468" at="13,0,14,0" concept="2" trace="props_DiastolicPressueMeasurement" />
+      <node id="4414035954635544468" at="52,56,53,76" concept="5" />
+      <node id="4414035954635544468" at="53,76,54,35" concept="1" />
+      <node id="4414035954635544468" at="54,35,55,59" concept="1" />
+      <node id="4414035954635544468" at="56,9,57,49" concept="6" />
+      <node id="4414035954635544468" at="51,61,56,9" concept="3" />
+      <scope id="4414035954635544468" at="52,56,55,59">
+        <var name="cpb" id="4414035954635544468" />
+      </scope>
+      <scope id="4414035954635544468" at="51,61,57,49" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635544468" at="13,0,14,0" concept="7" trace="DiastolicPressueMeasurement" />
+      <node id="4414035954635544468" at="41,63,42,66" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635544468" at="22,0,23,0" concept="2" trace="myConceptDiastolicPressueMeasurement" />
+      <node id="4414035954635544468" at="73,61,74,52" concept="6" />
+      <node id="4414035954635544468" at="146,85,147,172" concept="5" />
+      <node id="4414035954635544468" at="147,172,148,34" concept="1" />
+      <node id="4414035954635544468" at="148,34,149,125" concept="1" />
+      <node id="4414035954635544468" at="149,125,150,97" concept="1" />
+      <node id="4414035954635544468" at="150,97,151,17" concept="1" />
+      <node id="4414035954635544468" at="151,17,152,34" concept="1" />
+      <node id="4414035954635544468" at="152,34,153,22" concept="6" />
+      <node id="4414035954635544468" at="146,0,155,0" concept="8" trace="createDescriptorForDiastolicPressueMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635544468" at="73,61,74,52" />
+      <scope id="4414035954635544468" at="146,85,153,22">
+        <var name="b" id="4414035954635544468" />
+      </scope>
+      <scope id="4414035954635544468" at="146,0,155,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635544469">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4414035954635544469" at="35,0,36,0" concept="2" trace="props_SystolicPressureMeasurement" />
+      <node id="4414035954635544469" at="201,56,202,76" concept="5" />
+      <node id="4414035954635544469" at="202,76,203,35" concept="1" />
+      <node id="4414035954635544469" at="203,35,204,59" concept="1" />
+      <node id="4414035954635544469" at="205,9,206,49" concept="6" />
+      <node id="4414035954635544469" at="200,61,205,9" concept="3" />
+      <scope id="4414035954635544469" at="201,56,204,59">
+        <var name="cpb" id="4414035954635544469" />
+      </scope>
+      <scope id="4414035954635544469" at="200,61,206,49" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4414035954635544469" at="35,0,36,0" concept="7" trace="SystolicPressureMeasurement" />
+      <node id="4414035954635544469" at="63,53,64,66" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4414035954635544469" at="44,0,45,0" concept="2" trace="myConceptSystolicPressureMeasurement" />
+      <node id="4414035954635544469" at="117,61,118,52" concept="6" />
+      <node id="4414035954635544469" at="349,85,350,172" concept="5" />
+      <node id="4414035954635544469" at="350,172,351,34" concept="1" />
+      <node id="4414035954635544469" at="351,34,352,125" concept="1" />
+      <node id="4414035954635544469" at="352,125,353,97" concept="1" />
+      <node id="4414035954635544469" at="353,97,354,17" concept="1" />
+      <node id="4414035954635544469" at="354,17,355,33" concept="1" />
+      <node id="4414035954635544469" at="355,33,356,22" concept="6" />
+      <node id="4414035954635544469" at="349,0,358,0" concept="8" trace="createDescriptorForSystolicPressureMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4414035954635544469" at="117,61,118,52" />
+      <scope id="4414035954635544469" at="349,85,356,22">
+        <var name="b" id="4414035954635544469" />
+      </scope>
+      <scope id="4414035954635544469" at="349,0,358,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4732312587025367010">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4732312587025367010" at="33,0,34,0" concept="2" trace="props_Protocol" />
+      <node id="4732312587025367010" at="186,37,187,76" concept="5" />
+      <node id="4732312587025367010" at="187,76,188,59" concept="1" />
+      <node id="4732312587025367010" at="188,59,189,35" concept="1" />
+      <node id="4732312587025367010" at="189,35,190,40" concept="1" />
+      <node id="4732312587025367010" at="191,9,192,30" concept="6" />
+      <node id="4732312587025367010" at="185,42,191,9" concept="3" />
+      <scope id="4732312587025367010" at="186,37,190,40">
+        <var name="cpb" id="4732312587025367010" />
+      </scope>
+      <scope id="4732312587025367010" at="185,42,192,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4732312587025367010" at="33,0,34,0" concept="7" trace="Protocol" />
+      <node id="4732312587025367010" at="61,51,62,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4732312587025367010" at="42,0,43,0" concept="2" trace="myConceptProtocol" />
+      <node id="4732312587025367010" at="113,42,114,33" concept="6" />
+      <node id="4732312587025367010" at="326,66,327,153" concept="5" />
+      <node id="4732312587025367010" at="327,153,328,33" concept="1" />
+      <node id="4732312587025367010" at="328,33,329,71" concept="1" />
+      <node id="4732312587025367010" at="329,71,330,76" concept="1" />
+      <node id="4732312587025367010" at="330,76,331,97" concept="1" />
+      <node id="4732312587025367010" at="331,97,332,17" concept="1" />
+      <node id="4732312587025391816" at="332,17,333,117" concept="1" />
+      <node id="4732312587025391818" at="333,117,334,115" concept="1" />
+      <node id="4732312587025391857" at="334,115,335,203" concept="1" />
+      <node id="4732312587025522452" at="335,203,336,196" concept="1" />
+      <node id="4732312587025367010" at="336,196,337,31" concept="1" />
+      <node id="4732312587025367010" at="337,31,338,22" concept="6" />
+      <node id="4732312587025367010" at="326,0,340,0" concept="8" trace="createDescriptorForProtocol#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4732312587025367010" at="113,42,114,33" />
+      <scope id="4732312587025367010" at="326,66,338,22">
+        <var name="b" id="4732312587025367010" />
+      </scope>
+      <scope id="4732312587025367010" at="326,0,340,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4732312587025391821">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4732312587025391821" at="17,0,18,0" concept="2" trace="props_InputSpec" />
+      <node id="4732312587025391821" at="80,38,81,76" concept="5" />
+      <node id="4732312587025391821" at="81,76,82,43" concept="1" />
+      <node id="4732312587025391821" at="82,43,83,41" concept="1" />
+      <node id="4732312587025391821" at="84,9,85,31" concept="6" />
+      <node id="4732312587025391821" at="79,43,84,9" concept="3" />
+      <scope id="4732312587025391821" at="80,38,83,41">
+        <var name="cpb" id="4732312587025391821" />
+      </scope>
+      <scope id="4732312587025391821" at="79,43,85,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4732312587025391821" at="17,0,18,0" concept="7" trace="InputSpec" />
+      <node id="4732312587025391821" at="45,57,46,48" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4732312587025391821" at="26,0,27,0" concept="2" trace="myConceptInputSpec" />
+      <node id="4732312587025391821" at="81,43,82,34" concept="6" />
+      <node id="4732312587025391821" at="183,67,184,154" concept="5" />
+      <node id="4732312587025391821" at="184,154,185,34" concept="1" />
+      <node id="4732312587025391821" at="185,34,186,97" concept="1" />
+      <node id="4732312587025391821" at="186,97,187,17" concept="1" />
+      <node id="4732312587025391859" at="187,17,188,116" concept="1" />
+      <node id="4732312587025391862" at="188,116,189,111" concept="1" />
+      <node id="4414035954635639202" at="189,111,190,201" concept="1" />
+      <node id="4732312587025391821" at="190,201,191,22" concept="6" />
+      <node id="4732312587025391821" at="183,0,193,0" concept="8" trace="createDescriptorForInputSpec#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4732312587025391821" at="81,43,82,34" />
+      <scope id="4732312587025391821" at="183,67,191,22">
+        <var name="b" id="4732312587025391821" />
+      </scope>
+      <scope id="4732312587025391821" at="183,0,193,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4732312587025391822">
+    <file name="EnumerationDescriptor_MeasurementType.java">
+      <node id="4732312587025391822" at="14,50,15,176" concept="9" />
+      <node id="4732312587025391823" at="18,0,19,0" concept="2" trace="myMember_PULSE_0" />
+      <node id="4732312587025391824" at="19,0,20,0" concept="2" trace="myMember_TEMP_0" />
+      <node id="4732312587025391827" at="20,0,21,0" concept="2" trace="myMember_PRESSURE_0" />
+      <node id="4732312587025391831" at="21,0,22,0" concept="2" trace="myMember_WEIGHT_0" />
+      <node id="4732312587025391836" at="22,0,23,0" concept="2" trace="myMember_GLUCOSE_0" />
+      <node id="4732312587025391822" at="24,0,25,0" concept="2" trace="myIndex" />
+      <node id="4732312587025391822" at="25,0,26,0" concept="2" trace="myMembers" />
+      <node id="4732312587025391822" at="29,62,30,16" concept="6" />
+      <node id="4732312587025391822" at="35,68,36,21" concept="6" />
+      <node id="4732312587025391822" at="42,29,43,18" concept="6" />
+      <node id="4732312587025391823" at="46,19,47,32" concept="6" />
+      <node id="4732312587025391824" at="48,18,49,31" concept="6" />
+      <node id="4732312587025391827" at="50,22,51,35" concept="6" />
+      <node id="4732312587025391831" at="52,20,53,33" concept="6" />
+      <node id="4732312587025391836" at="54,21,55,34" concept="6" />
+      <node id="4732312587025391822" at="56,5,57,16" concept="6" />
+      <node id="4732312587025391822" at="62,73,63,39" concept="5" />
+      <node id="4732312587025391822" at="64,22,65,18" concept="6" />
+      <node id="4732312587025391822" at="66,5,67,32" concept="6" />
+      <node id="4732312587025391822" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_MeasurementType#()V" />
+      <node id="4732312587025391822" at="41,88,44,5" concept="3" />
+      <node id="4732312587025391822" at="63,39,66,5" concept="3" />
+      <node id="4732312587025391822" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="4732312587025391822" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="4732312587025391822" at="60,0,69,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="4732312587025391822" at="44,5,56,5" concept="10" />
+      <node id="4732312587025391822" at="39,0,59,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="4732312587025391822" at="14,50,15,176" />
+      <scope id="4732312587025391822" at="29,62,30,16" />
+      <scope id="4732312587025391822" at="35,68,36,21" />
+      <scope id="4732312587025391822" at="42,29,43,18" />
+      <scope id="4732312587025391823" at="46,19,47,32" />
+      <scope id="4732312587025391824" at="48,18,49,31" />
+      <scope id="4732312587025391827" at="50,22,51,35" />
+      <scope id="4732312587025391831" at="52,20,53,33" />
+      <scope id="4732312587025391836" at="54,21,55,34" />
+      <scope id="4732312587025391822" at="64,22,65,18" />
+      <scope id="4732312587025391822" at="14,0,17,0" />
+      <scope id="4732312587025391822" at="27,0,32,0" />
+      <scope id="4732312587025391822" at="33,0,38,0" />
+      <scope id="4732312587025391822" at="62,73,67,32">
+        <var name="index" id="4732312587025391822" />
+      </scope>
+      <scope id="4732312587025391822" at="60,0,69,0">
+        <var name="idValue" id="4732312587025391822" />
+      </scope>
+      <scope id="4732312587025391822" at="41,88,57,16" />
+      <scope id="4732312587025391822" at="39,0,59,0">
+        <var name="memberName" id="4732312587025391822" />
+      </scope>
+      <unit id="4732312587025391822" at="12,0,70,0" name="healthtech.structure.EnumerationDescriptor_MeasurementType" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4732312587025391822" at="47,0,48,0" concept="2" trace="myEnumerationMeasurementType" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4732312587025522455">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4732312587025522455" at="14,0,15,0" concept="2" trace="props_EvaluationEntry" />
+      <node id="4732312587025522455" at="59,44,60,76" concept="5" />
+      <node id="4732312587025522455" at="60,76,61,49" concept="1" />
+      <node id="4732312587025522455" at="61,49,62,47" concept="1" />
+      <node id="4732312587025522455" at="63,9,64,37" concept="6" />
+      <node id="4732312587025522455" at="58,49,63,9" concept="3" />
+      <scope id="4732312587025522455" at="59,44,62,47">
+        <var name="cpb" id="4732312587025522455" />
+      </scope>
+      <scope id="4732312587025522455" at="58,49,64,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4732312587025522455" at="14,0,15,0" concept="7" trace="EvaluationEntry" />
+      <node id="4732312587025522455" at="42,66,43,54" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4732312587025522455" at="23,0,24,0" concept="2" trace="myConceptEvaluationEntry" />
+      <node id="4732312587025522455" at="75,49,76,40" concept="6" />
+      <node id="4732312587025522455" at="155,73,156,160" concept="5" />
+      <node id="4732312587025522455" at="156,160,157,34" concept="1" />
+      <node id="4732312587025522455" at="157,34,158,97" concept="1" />
+      <node id="4732312587025522455" at="158,97,159,17" concept="1" />
+      <node id="3423319196905167625" at="159,17,160,198" concept="1" />
+      <node id="2249746781630680066" at="160,198,161,200" concept="1" />
+      <node id="4732312587025522455" at="161,200,162,22" concept="6" />
+      <node id="4732312587025522455" at="155,0,164,0" concept="8" trace="createDescriptorForEvaluationEntry#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4732312587025522455" at="75,49,76,40" />
+      <scope id="4732312587025522455" at="155,73,162,22">
+        <var name="b" id="4732312587025522455" />
+      </scope>
+      <scope id="4732312587025522455" at="155,0,164,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422298503103">
+    <file name="EnumerationDescriptor_MeasurementUnit.java">
+      <node id="52719422298503103" at="14,50,15,172" concept="9" />
+      <node id="52719422298503104" at="18,0,19,0" concept="2" trace="myMember_KILOGRAM_0" />
+      <node id="52719422298509089" at="19,0,20,0" concept="2" trace="myMember_CELSIUS_DEGREE_0" />
+      <node id="52719422298509092" at="20,0,21,0" concept="2" trace="myMember_BEATS_PER_MINUTE_0" />
+      <node id="52719422298509096" at="21,0,22,0" concept="2" trace="myMember_MERCURY_MM_0" />
+      <node id="52719422298509757" at="22,0,23,0" concept="2" trace="myMember_MOL_PER_LITRE_0" />
+      <node id="52719422298503103" at="24,0,25,0" concept="2" trace="myIndex" />
+      <node id="52719422298503103" at="25,0,26,0" concept="2" trace="myMembers" />
+      <node id="52719422298503103" at="29,62,30,16" concept="6" />
+      <node id="52719422298503103" at="35,68,36,21" concept="6" />
+      <node id="52719422298503103" at="42,29,43,18" concept="6" />
+      <node id="52719422298503104" at="46,22,47,35" concept="6" />
+      <node id="52719422298509089" at="48,28,49,41" concept="6" />
+      <node id="52719422298509092" at="50,30,51,43" concept="6" />
+      <node id="52719422298509096" at="52,24,53,37" concept="6" />
+      <node id="52719422298509757" at="54,27,55,40" concept="6" />
+      <node id="52719422298503103" at="56,5,57,16" concept="6" />
+      <node id="52719422298503103" at="62,73,63,39" concept="5" />
+      <node id="52719422298503103" at="64,22,65,18" concept="6" />
+      <node id="52719422298503103" at="66,5,67,32" concept="6" />
+      <node id="52719422298503103" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_MeasurementUnit#()V" />
+      <node id="52719422298503103" at="41,88,44,5" concept="3" />
+      <node id="52719422298503103" at="63,39,66,5" concept="3" />
+      <node id="52719422298503103" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="52719422298503103" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="52719422298503103" at="60,0,69,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="52719422298503103" at="44,5,56,5" concept="10" />
+      <node id="52719422298503103" at="39,0,59,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="52719422298503103" at="14,50,15,172" />
+      <scope id="52719422298503103" at="29,62,30,16" />
+      <scope id="52719422298503103" at="35,68,36,21" />
+      <scope id="52719422298503103" at="42,29,43,18" />
+      <scope id="52719422298503104" at="46,22,47,35" />
+      <scope id="52719422298509089" at="48,28,49,41" />
+      <scope id="52719422298509092" at="50,30,51,43" />
+      <scope id="52719422298509096" at="52,24,53,37" />
+      <scope id="52719422298509757" at="54,27,55,40" />
+      <scope id="52719422298503103" at="64,22,65,18" />
+      <scope id="52719422298503103" at="14,0,17,0" />
+      <scope id="52719422298503103" at="27,0,32,0" />
+      <scope id="52719422298503103" at="33,0,38,0" />
+      <scope id="52719422298503103" at="62,73,67,32">
+        <var name="index" id="52719422298503103" />
+      </scope>
+      <scope id="52719422298503103" at="60,0,69,0">
+        <var name="idValue" id="52719422298503103" />
+      </scope>
+      <scope id="52719422298503103" at="41,88,57,16" />
+      <scope id="52719422298503103" at="39,0,59,0">
+        <var name="memberName" id="52719422298503103" />
+      </scope>
+      <unit id="52719422298503103" at="12,0,70,0" name="healthtech.structure.EnumerationDescriptor_MeasurementUnit" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422298503103" at="48,0,49,0" concept="2" trace="myEnumerationMeasurementUnit" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422298509763">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422298509763" at="28,0,29,0" concept="2" trace="props_MeasurementUnitConfig" />
+      <node id="52719422298509763" at="153,50,154,76" concept="5" />
+      <node id="52719422298509763" at="154,76,155,35" concept="1" />
+      <node id="52719422298509763" at="155,35,156,53" concept="1" />
+      <node id="52719422298509763" at="157,9,158,43" concept="6" />
+      <node id="52719422298509763" at="152,55,157,9" concept="3" />
+      <scope id="52719422298509763" at="153,50,156,53">
+        <var name="cpb" id="52719422298509763" />
+      </scope>
+      <scope id="52719422298509763" at="152,55,158,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422298509763" at="28,0,29,0" concept="7" trace="MeasurementUnitConfig" />
+      <node id="52719422298509763" at="56,63,57,58" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422298509763" at="37,0,38,0" concept="2" trace="myConceptMeasurementUnitConfig" />
+      <node id="52719422298509763" at="103,55,104,46" concept="6" />
+      <node id="52719422298509763" at="285,79,286,164" concept="5" />
+      <node id="52719422298509763" at="286,164,287,33" concept="1" />
+      <node id="52719422298509763" at="287,33,288,71" concept="1" />
+      <node id="52719422298509763" at="288,71,289,95" concept="1" />
+      <node id="52719422298509763" at="289,95,290,17" concept="1" />
+      <node id="52719422298789755" at="290,17,291,195" concept="1" />
+      <node id="52719422298509763" at="291,195,292,33" concept="1" />
+      <node id="52719422298509763" at="292,33,293,22" concept="6" />
+      <node id="52719422298509763" at="285,0,295,0" concept="8" trace="createDescriptorForMeasurementUnitConfig#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422298509763" at="103,55,104,46" />
+      <scope id="52719422298509763" at="285,79,293,22">
+        <var name="b" id="52719422298509763" />
+      </scope>
+      <scope id="52719422298509763" at="285,0,295,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422298690148">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422298690148" at="26,0,27,0" concept="2" trace="props_MeasurementType2UnitMapping" />
+      <node id="52719422298690148" at="140,56,141,76" concept="5" />
+      <node id="52719422298690148" at="141,76,142,61" concept="1" />
+      <node id="52719422298690148" at="142,61,143,59" concept="1" />
+      <node id="52719422298690148" at="144,9,145,49" concept="6" />
+      <node id="52719422298690148" at="139,61,144,9" concept="3" />
+      <scope id="52719422298690148" at="140,56,143,59">
+        <var name="cpb" id="52719422298690148" />
+      </scope>
+      <scope id="52719422298690148" at="139,61,145,49" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422298690148" at="26,0,27,0" concept="7" trace="MeasurementType2UnitMapping" />
+      <node id="52719422298690148" at="54,63,55,64" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422298690148" at="35,0,36,0" concept="2" trace="myConceptMeasurementType2UnitMapping" />
+      <node id="52719422298690148" at="99,61,100,52" concept="6" />
+      <node id="52719422298690148" at="267,85,268,170" concept="5" />
+      <node id="52719422298690148" at="268,170,269,34" concept="1" />
+      <node id="52719422298690148" at="269,34,270,95" concept="1" />
+      <node id="52719422298690148" at="270,95,271,17" concept="1" />
+      <node id="52719422298690155" at="271,17,272,169" concept="1" />
+      <node id="52719422298690149" at="272,169,273,194" concept="1" />
+      <node id="52719422298690148" at="273,194,274,22" concept="6" />
+      <node id="52719422298690148" at="267,0,276,0" concept="8" trace="createDescriptorForMeasurementType2UnitMapping#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422298690148" at="99,61,100,52" />
+      <scope id="52719422298690148" at="267,85,274,22">
+        <var name="b" id="52719422298690148" />
+      </scope>
+      <scope id="52719422298690148" at="267,0,276,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422298890065">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422298890065" at="36,0,37,0" concept="2" trace="props_TemperatureMeasurement" />
+      <node id="52719422298890065" at="208,51,209,76" concept="5" />
+      <node id="52719422298890065" at="209,76,210,35" concept="1" />
+      <node id="52719422298890065" at="210,35,211,54" concept="1" />
+      <node id="52719422298890065" at="212,9,213,44" concept="6" />
+      <node id="52719422298890065" at="207,56,212,9" concept="3" />
+      <scope id="52719422298890065" at="208,51,211,54">
+        <var name="cpb" id="52719422298890065" />
+      </scope>
+      <scope id="52719422298890065" at="207,56,213,44" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422298890065" at="36,0,37,0" concept="7" trace="TemperatureMeasurement" />
+      <node id="52719422298890065" at="64,66,65,59" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422298890065" at="45,0,46,0" concept="2" trace="myConceptTemperatureMeasurement" />
+      <node id="52719422298890065" at="119,56,120,47" concept="6" />
+      <node id="52719422298890065" at="358,80,359,165" concept="5" />
+      <node id="52719422298890065" at="359,165,360,34" concept="1" />
+      <node id="52719422298890065" at="360,34,361,112" concept="1" />
+      <node id="52719422298890065" at="361,112,362,95" concept="1" />
+      <node id="52719422298890065" at="362,95,363,17" concept="1" />
+      <node id="52719422298890065" at="363,17,364,20" concept="1" />
+      <node id="52719422298890065" at="364,20,365,22" concept="6" />
+      <node id="52719422298890065" at="358,0,367,0" concept="8" trace="createDescriptorForTemperatureMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422298890065" at="119,56,120,47" />
+      <scope id="52719422298890065" at="358,80,365,22">
+        <var name="b" id="52719422298890065" />
+      </scope>
+      <scope id="52719422298890065" at="358,0,367,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422298945255">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422298945255" at="34,0,35,0" concept="2" trace="props_PulseMeasurement" />
+      <node id="52719422298945255" at="194,45,195,76" concept="5" />
+      <node id="52719422298945255" at="195,76,196,35" concept="1" />
+      <node id="52719422298945255" at="196,35,197,48" concept="1" />
+      <node id="52719422298945255" at="198,9,199,38" concept="6" />
+      <node id="52719422298945255" at="193,50,198,9" concept="3" />
+      <scope id="52719422298945255" at="194,45,197,48">
+        <var name="cpb" id="52719422298945255" />
+      </scope>
+      <scope id="52719422298945255" at="193,50,199,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422298945255" at="34,0,35,0" concept="7" trace="PulseMeasurement" />
+      <node id="52719422298945255" at="62,47,63,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422298945255" at="43,0,44,0" concept="2" trace="myConceptPulseMeasurement" />
+      <node id="52719422298945255" at="115,50,116,41" concept="6" />
+      <node id="52719422298945255" at="340,74,341,159" concept="5" />
+      <node id="52719422298945255" at="341,159,342,34" concept="1" />
+      <node id="52719422298945255" at="342,34,343,112" concept="1" />
+      <node id="52719422298945255" at="343,112,344,95" concept="1" />
+      <node id="52719422298945255" at="344,95,345,17" concept="1" />
+      <node id="52719422298945255" at="345,17,346,21" concept="1" />
+      <node id="52719422298945255" at="346,21,347,22" concept="6" />
+      <node id="52719422298945255" at="340,0,349,0" concept="8" trace="createDescriptorForPulseMeasurement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422298945255" at="115,50,116,41" />
+      <scope id="52719422298945255" at="340,74,347,22">
+        <var name="b" id="52719422298945255" />
+      </scope>
+      <scope id="52719422298945255" at="340,0,349,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422303626052">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422303626052" at="23,0,24,0" concept="2" trace="props_MeasurementOperandAdapter" />
+      <node id="52719422303626052" at="119,54,120,76" concept="5" />
+      <node id="52719422303626052" at="120,76,121,46" concept="1" />
+      <node id="52719422303626052" at="121,46,122,57" concept="1" />
+      <node id="52719422303626052" at="123,9,124,47" concept="6" />
+      <node id="52719422303626052" at="118,59,123,9" concept="3" />
+      <scope id="52719422303626052" at="119,54,122,57">
+        <var name="cpb" id="52719422303626052" />
+      </scope>
+      <scope id="52719422303626052" at="118,59,124,47" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422303626052" at="23,0,24,0" concept="7" trace="MeasurementOperandAdapter" />
+      <node id="52719422303626052" at="51,55,52,62" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422303626052" at="32,0,33,0" concept="2" trace="myConceptMeasurementOperandAdapter" />
+      <node id="52719422303626052" at="93,59,94,50" concept="6" />
+      <node id="52719422303626052" at="239,83,240,168" concept="5" />
+      <node id="52719422303626052" at="240,168,241,34" concept="1" />
+      <node id="52719422303626052" at="241,34,242,117" concept="1" />
+      <node id="52719422303626052" at="242,117,243,95" concept="1" />
+      <node id="52719422303626052" at="243,95,244,17" concept="1" />
+      <node id="52719422303626075" at="244,17,245,197" concept="1" />
+      <node id="52719422303626052" at="245,197,246,28" concept="1" />
+      <node id="52719422303626052" at="246,28,247,22" concept="6" />
+      <node id="52719422303626052" at="239,0,249,0" concept="8" trace="createDescriptorForMeasurementOperandAdapter#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422303626052" at="93,59,94,50" />
+      <scope id="52719422303626052" at="239,83,247,22">
+        <var name="b" id="52719422303626052" />
+      </scope>
+      <scope id="52719422303626052" at="239,0,249,0" />
+    </file>
+  </root>
+  <root nodeRef="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/52719422309725767">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="52719422309725767" at="22,0,23,0" concept="2" trace="props_MeasurementOperand" />
+      <node id="52719422309725767" at="113,47,114,76" concept="5" />
+      <node id="52719422309725767" at="114,76,115,50" concept="1" />
+      <node id="52719422309725767" at="116,9,117,40" concept="6" />
+      <node id="52719422309725767" at="112,52,116,9" concept="3" />
+      <scope id="52719422309725767" at="113,47,115,50">
+        <var name="cpb" id="52719422309725767" />
+      </scope>
+      <scope id="52719422309725767" at="112,52,117,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="52719422309725767" at="22,0,23,0" concept="7" trace="MeasurementOperand" />
+      <node id="52719422309725767" at="50,64,51,55" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="52719422309725767" at="31,0,32,0" concept="2" trace="myConceptMeasurementOperand" />
+      <node id="52719422309725767" at="91,52,92,43" concept="6" />
+      <node id="52719422309725767" at="230,76,231,161" concept="5" />
+      <node id="52719422309725767" at="231,161,232,33" concept="1" />
+      <node id="52719422309725767" at="232,33,233,108" concept="1" />
+      <node id="52719422309725767" at="233,108,234,95" concept="1" />
+      <node id="52719422309725767" at="234,95,235,17" concept="1" />
+      <node id="52719422309725768" at="235,17,236,169" concept="1" />
+      <node id="52719422309725767" at="236,169,237,22" concept="6" />
+      <node id="52719422309725767" at="230,0,239,0" concept="8" trace="createDescriptorForMeasurementOperand#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="52719422309725767" at="91,52,92,43" />
+      <scope id="52719422309725767" at="230,76,237,22">
+        <var name="b" id="52719422309725767" />
+      </scope>
+      <scope id="52719422309725767" at="230,0,239,0" />
+    </file>
+  </root>
+</debug-info>
+

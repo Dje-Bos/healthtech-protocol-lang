@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="13,0,32,0" name="healthtech.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:ef3dab00-b2a1-4d5a-9246-553361ad8fca(healthtech.actions)/52719422299715691">
+    <file name="measurementUnitConfig.java">
+      <node id="52719422299827481" at="21,91,22,80" concept="0" />
+      <node id="52719422299752928" at="22,80,23,104" concept="3" />
+      <node id="52719422299753162" at="23,104,24,223" concept="0" />
+      <node id="52719422299771907" at="24,223,25,263" concept="0" />
+      <node id="52719422299775854" at="25,263,26,0" concept="4" />
+      <node id="52719422299775919" at="26,0,27,107" concept="3" />
+      <node id="52719422299775925" at="27,107,28,236" concept="0" />
+      <node id="52719422299775933" at="28,236,29,260" concept="0" />
+      <node id="52719422299776109" at="29,260,30,0" concept="4" />
+      <node id="52719422299776214" at="30,0,31,106" concept="3" />
+      <node id="52719422299776220" at="31,106,32,229" concept="0" />
+      <node id="52719422299776228" at="32,229,33,262" concept="0" />
+      <node id="52719422299776364" at="33,262,34,0" concept="4" />
+      <node id="52719422299776517" at="34,0,35,105" concept="3" />
+      <node id="52719422299776523" at="35,105,36,227" concept="0" />
+      <node id="52719422299776531" at="36,227,37,256" concept="0" />
+      <node id="52719422299776633" at="37,256,38,0" concept="4" />
+      <node id="52719422299776884" at="38,0,39,103" concept="3" />
+      <node id="52719422299776890" at="39,103,40,228" concept="0" />
+      <node id="52719422299776898" at="40,228,41,260" concept="0" />
+      <node id="52719422299776729" at="41,260,42,0" concept="4" />
+      <node id="52719422299780075" at="42,0,43,105" concept="0" />
+      <node id="52719422299810883" at="43,105,44,108" concept="0" />
+      <node id="52719422299811021" at="44,108,45,107" concept="0" />
+      <node id="52719422299811166" at="45,107,46,106" concept="0" />
+      <node id="52719422299811318" at="46,106,47,104" concept="0" />
+      <node id="52719422299822940" at="47,104,48,0" concept="4" />
+      <node id="52719422299715691" at="53,0,54,0" concept="5" trace="name$tAp1" />
+      <node id="52719422299715691" at="54,0,55,0" concept="5" trace="unit$f5w5" />
+      <node id="52719422299715691" at="58,0,59,0" concept="5" trace="MeasurementType2UnitMapping$8q" />
+      <node id="52719422299715691" at="62,0,63,0" concept="5" trace="type$f5j0" />
+      <node id="52719422299715691" at="63,0,64,0" concept="5" trace="mappings$JWDo" />
+      <node id="52719422299715692" at="21,0,50,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="52719422299715692" at="21,91,48,0">
+        <var name="glucose" id="52719422299776215" />
+        <var name="pressure" id="52719422299775920" />
+        <var name="pulse" id="52719422299752931" />
+        <var name="temp" id="52719422299776885" />
+        <var name="weight" id="52719422299776518" />
+      </scope>
+      <scope id="52719422299715692" at="21,0,50,0">
+        <var name="enclosingNode" id="52719422299715692" />
+        <var name="model" id="52719422299715692" />
+        <var name="newNode" id="52719422299715692" />
+        <var name="sampleNode" id="52719422299715692" />
+      </scope>
+      <unit id="52719422299715691" at="57,0,60,0" name="healthtech.actions.measurementUnitConfig$CONCEPTS" />
+      <unit id="52719422299715691" at="52,0,56,0" name="healthtech.actions.measurementUnitConfig$PROPS" />
+      <unit id="52719422299715691" at="61,0,65,0" name="healthtech.actions.measurementUnitConfig$LINKS" />
+      <unit id="52719422299715692" at="20,0,51,0" name="healthtech.actions.measurementUnitConfig$NodeFactory_52719422299715692" />
+      <unit id="52719422299715691" at="19,0,66,0" name="healthtech.actions.measurementUnitConfig" />
+    </file>
+  </root>
+  <root nodeRef="r:ef3dab00-b2a1-4d5a-9246-553361ad8fca(healthtech.actions)/52719422299948137">
+    <file name="createDefaultUnitConfigBeforeProtocol.java">
+      <node id="52719422300418949" at="17,110,18,97" concept="0" />
+      <node id="52719422300651291" at="19,7,20,0" concept="4" />
+      <node id="52719422299948137" at="25,0,26,0" concept="5" trace="MeasurementUnitConfig$RG" />
+      <node id="52719422300651445" at="16,91,19,7" concept="1" />
+      <node id="52719422299948138" at="16,0,22,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="52719422300651447" at="17,110,18,97" />
+      <scope id="52719422299948138" at="16,91,20,0" />
+      <scope id="52719422299948138" at="16,0,22,0">
+        <var name="enclosingNode" id="52719422299948138" />
+        <var name="model" id="52719422299948138" />
+        <var name="newNode" id="52719422299948138" />
+        <var name="sampleNode" id="52719422299948138" />
+      </scope>
+      <unit id="52719422299948137" at="24,0,27,0" name="healthtech.actions.createDefaultUnitConfigBeforeProtocol$CONCEPTS" />
+      <unit id="52719422299948138" at="15,0,23,0" name="healthtech.actions.createDefaultUnitConfigBeforeProtocol$NodeFactory_52719422299948138" />
+      <unit id="52719422299948137" at="14,0,28,0" name="healthtech.actions.createDefaultUnitConfigBeforeProtocol" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="IProtocol.java">
+      <unit at="7,0,10,0" name="healthtech.sandbox.IProtocol" />
+    </file>
+    <file name="InputSpec.java">
+      <unit at="6,0,37,0" name="healthtech.sandbox.InputSpec" />
+    </file>
+    <file name="MType.java">
+      <unit at="6,0,13,0" name="healthtech.sandbox.MType" />
+    </file>
+    <file name="MUnit.java">
+      <unit at="6,0,23,0" name="healthtech.sandbox.MUnit" />
+    </file>
+    <file name="Measurement.java">
+      <unit at="7,0,45,0" name="healthtech.sandbox.Measurement" />
+    </file>
+  </root>
+  <root nodeRef="r:8f073bb7-20a3-46da-a632-ccf2b66ec6e7(healthtech.sandbox)/4732312587025484527">
+    <file name="hypertension.java">
+      <node id="4732312587025484527" at="9,0,10,0" concept="2" trace="name" />
+      <node id="4732312587025484527" at="10,0,11,0" concept="2" trace="description" />
+      <node id="4732312587025484527" at="11,0,12,0" concept="2" trace="reference" />
+      <node id="4732312587025484527" at="12,0,13,0" concept="2" trace="inputSpecs" />
+      <node id="52719422300177348" at="14,25,15,68" concept="4" />
+      <node id="52719422300177348" at="15,68,16,39" concept="1" />
+      <node id="4732312587025484527" at="20,56,21,0" concept="6" />
+      <node id="4732312587025484527" at="25,27,26,21" concept="5" />
+      <node id="4732312587025484527" at="28,36,29,21" concept="1" />
+      <node id="4732312587025484527" at="31,34,32,28" concept="5" />
+      <node id="4732312587025484527" at="34,50,35,35" concept="1" />
+      <node id="4732312587025484527" at="37,32,38,26" concept="5" />
+      <node id="4732312587025484527" at="40,46,41,31" concept="1" />
+      <node id="4732312587025484527" at="43,42,44,27" concept="5" />
+      <node id="4732312587025484527" at="46,57,47,33" concept="1" />
+      <node id="4732312587025484527" at="25,0,28,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="28,0,31,0" concept="3" trace="setName#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="31,0,34,0" concept="3" trace="getDescription#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="34,0,37,0" concept="3" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="37,0,40,0" concept="3" trace="getReference#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="40,0,43,0" concept="3" trace="setReference#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="43,0,46,0" concept="3" trace="getInputSpecs#()Ljava/util/List;" />
+      <node id="4732312587025484527" at="46,0,49,0" concept="3" trace="setInputSpecs#(Ljava/util/List;)V" />
+      <node id="4732312587025484527" at="14,0,18,0" concept="0" trace="hypertension#()V" />
+      <node id="4732312587025484527" at="19,0,23,0" concept="3" trace="evaluate#(Ljava/util/List;)V" />
+      <scope id="4732312587025484527" at="20,56,21,0" />
+      <scope id="4732312587025484527" at="25,27,26,21" />
+      <scope id="4732312587025484527" at="28,36,29,21" />
+      <scope id="4732312587025484527" at="31,34,32,28" />
+      <scope id="4732312587025484527" at="34,50,35,35" />
+      <scope id="4732312587025484527" at="37,32,38,26" />
+      <scope id="4732312587025484527" at="40,46,41,31" />
+      <scope id="4732312587025484527" at="43,42,44,27" />
+      <scope id="4732312587025484527" at="46,57,47,33" />
+      <scope id="4732312587025484527" at="14,25,16,39">
+        <var name="inputSpec_sdvlmb_a" id="52719422300177348" />
+      </scope>
+      <scope id="4732312587025484527" at="25,0,28,0" />
+      <scope id="4732312587025484527" at="28,0,31,0">
+        <var name="name" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="31,0,34,0" />
+      <scope id="4732312587025484527" at="34,0,37,0">
+        <var name="description" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="37,0,40,0" />
+      <scope id="4732312587025484527" at="40,0,43,0">
+        <var name="reference" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="43,0,46,0" />
+      <scope id="4732312587025484527" at="46,0,49,0">
+        <var name="inputSpecs" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="14,0,18,0" />
+      <scope id="4732312587025484527" at="19,0,23,0">
+        <var name="measurements" id="4732312587025484527" />
+      </scope>
+      <unit id="4732312587025484527" at="8,0,50,0" name="healthtech.sandbox.hypertension" />
+    </file>
+  </root>
+  <root nodeRef="r:8f073bb7-20a3-46da-a632-ccf2b66ec6e7(healthtech.sandbox)/4732312587025727792">
+    <file name="diabetes.java">
+      <node id="4732312587025727792" at="9,0,10,0" concept="2" trace="name" />
+      <node id="4732312587025727792" at="10,0,11,0" concept="2" trace="description" />
+      <node id="4732312587025727792" at="11,0,12,0" concept="2" trace="reference" />
+      <node id="4732312587025727792" at="12,0,13,0" concept="2" trace="inputSpecs" />
+      <node id="52719422300177355" at="14,21,15,69" concept="4" />
+      <node id="52719422300177355" at="15,69,16,39" concept="1" />
+      <node id="4732312587025727792" at="20,56,21,0" concept="6" />
+      <node id="4732312587025727792" at="25,27,26,21" concept="5" />
+      <node id="4732312587025727792" at="28,36,29,21" concept="1" />
+      <node id="4732312587025727792" at="31,34,32,28" concept="5" />
+      <node id="4732312587025727792" at="34,50,35,35" concept="1" />
+      <node id="4732312587025727792" at="37,32,38,26" concept="5" />
+      <node id="4732312587025727792" at="40,46,41,31" concept="1" />
+      <node id="4732312587025727792" at="43,42,44,27" concept="5" />
+      <node id="4732312587025727792" at="46,57,47,33" concept="1" />
+      <node id="4732312587025727792" at="25,0,28,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="4732312587025727792" at="28,0,31,0" concept="3" trace="setName#(Ljava/lang/String;)V" />
+      <node id="4732312587025727792" at="31,0,34,0" concept="3" trace="getDescription#()Ljava/lang/String;" />
+      <node id="4732312587025727792" at="34,0,37,0" concept="3" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="4732312587025727792" at="37,0,40,0" concept="3" trace="getReference#()Ljava/lang/String;" />
+      <node id="4732312587025727792" at="40,0,43,0" concept="3" trace="setReference#(Ljava/lang/String;)V" />
+      <node id="4732312587025727792" at="43,0,46,0" concept="3" trace="getInputSpecs#()Ljava/util/List;" />
+      <node id="4732312587025727792" at="46,0,49,0" concept="3" trace="setInputSpecs#(Ljava/util/List;)V" />
+      <node id="4732312587025727792" at="14,0,18,0" concept="0" trace="diabetes#()V" />
+      <node id="4732312587025727792" at="19,0,23,0" concept="3" trace="evaluate#(Ljava/util/List;)V" />
+      <scope id="4732312587025727792" at="20,56,21,0" />
+      <scope id="4732312587025727792" at="25,27,26,21" />
+      <scope id="4732312587025727792" at="28,36,29,21" />
+      <scope id="4732312587025727792" at="31,34,32,28" />
+      <scope id="4732312587025727792" at="34,50,35,35" />
+      <scope id="4732312587025727792" at="37,32,38,26" />
+      <scope id="4732312587025727792" at="40,46,41,31" />
+      <scope id="4732312587025727792" at="43,42,44,27" />
+      <scope id="4732312587025727792" at="46,57,47,33" />
+      <scope id="4732312587025727792" at="14,21,16,39">
+        <var name="inputSpec_xi3ytd_a" id="52719422300177355" />
+      </scope>
+      <scope id="4732312587025727792" at="25,0,28,0" />
+      <scope id="4732312587025727792" at="28,0,31,0">
+        <var name="name" id="4732312587025727792" />
+      </scope>
+      <scope id="4732312587025727792" at="31,0,34,0" />
+      <scope id="4732312587025727792" at="34,0,37,0">
+        <var name="description" id="4732312587025727792" />
+      </scope>
+      <scope id="4732312587025727792" at="37,0,40,0" />
+      <scope id="4732312587025727792" at="40,0,43,0">
+        <var name="reference" id="4732312587025727792" />
+      </scope>
+      <scope id="4732312587025727792" at="43,0,46,0" />
+      <scope id="4732312587025727792" at="46,0,49,0">
+        <var name="inputSpecs" id="4732312587025727792" />
+      </scope>
+      <scope id="4732312587025727792" at="14,0,18,0" />
+      <scope id="4732312587025727792" at="19,0,23,0">
+        <var name="measurements" id="4732312587025727792" />
+      </scope>
+      <unit id="4732312587025727792" at="8,0,50,0" name="healthtech.sandbox.diabetes" />
+    </file>
+  </root>
+</debug-info>
+
