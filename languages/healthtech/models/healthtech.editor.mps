@@ -642,7 +642,7 @@
         <ref role="1NtTu8" to="6854:1WSHcsTGloj" resolve="measurement" />
         <ref role="1k5W1q" node="2Vj0$7370Z" resolve="measurement" />
         <node concept="A1WHu" id="1WSHcsTGLqZ" role="3vIgyS">
-          <ref role="A1WHt" node="3P1N_1I1qT1" resolve="evalMeasuremntMenu" />
+          <ref role="A1WHt" node="3P1N_1I1qT1" resolve="evalMeasurement_TransformationMenu" />
         </node>
       </node>
       <node concept="1QoScp" id="2Vj0$7iBaZ" role="3EZMnx">
@@ -1109,7 +1109,7 @@
     </node>
   </node>
   <node concept="Q6S24" id="3P1N_1I1qK2">
-    <property role="TrG5h" value="evalMeasurementMenu" />
+    <property role="TrG5h" value="evalMeasurement_SubstituteMenu" />
     <property role="3GE5qa" value="measurement" />
     <ref role="aqKnT" to="6854:3P1N_1HQDu8" resolve="Measurement" />
     <node concept="1rTJD9" id="3P1N_1I1qK5" role="3ft7WO">
@@ -1289,14 +1289,14 @@
     </node>
   </node>
   <node concept="3ICXOK" id="3P1N_1I1qT1">
-    <property role="TrG5h" value="evalMeasuremntMenu" />
+    <property role="TrG5h" value="evalMeasurement_TransformationMenu" />
     <property role="3GE5qa" value="measurement" />
     <ref role="aqKnT" to="6854:3P1N_1HQDu8" resolve="Measurement" />
     <node concept="1Qtc8_" id="3P1N_1I1qT2" role="IW6Ez">
       <node concept="3eGOoe" id="3P1N_1I1qT6" role="1Qtc8$" />
       <node concept="ulPW2" id="3P1N_1I1qT9" role="1Qtc8A">
         <node concept="2kknPI" id="3P1N_1I1qTb" role="2ks2uz">
-          <ref role="2kkw0f" node="3P1N_1I1qK2" resolve="evalMeasurementMenu" />
+          <ref role="2kkw0f" node="3P1N_1I1qK2" resolve="evalMeasurement_SubstituteMenu" />
         </node>
       </node>
     </node>
