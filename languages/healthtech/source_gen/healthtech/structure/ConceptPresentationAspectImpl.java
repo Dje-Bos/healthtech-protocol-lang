@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AddReminderAction;
   private ConceptPresentation props_BloodPressureMeasurement;
   private ConceptPresentation props_DiastolicPressueMeasurement;
   private ConceptPresentation props_EvaluationEntry;
@@ -41,6 +42,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AddReminderAction:
+        if (props_AddReminderAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AddReminderAction");
+          props_AddReminderAction = cpb.create();
+        }
+        return props_AddReminderAction;
       case LanguageConceptSwitch.BloodPressureMeasurement:
         if (props_BloodPressureMeasurement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

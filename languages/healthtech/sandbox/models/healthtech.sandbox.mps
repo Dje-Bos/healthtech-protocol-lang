@@ -32,6 +32,8 @@
       </concept>
       <concept id="2249746781630680043" name="healthtech.structure.OutputResult" flags="ng" index="A_7WG">
         <property id="2249746781630680044" name="result" index="A_7WF" />
+        <property id="7786684554256747831" name="status" index="3usl5J" />
+        <child id="7786684554256747840" name="action" index="3usl4o" />
       </concept>
       <concept id="2249746781628734567" name="healthtech.structure.GlucoseMeasurement" flags="ng" index="AHUyw" />
       <concept id="4414035954634025311" name="healthtech.structure.MeasurementRangeOperator" flags="ng" index="1gwEsf" />
@@ -55,6 +57,9 @@
         <property id="4732312587025391859" name="timeRange" index="3qrERa" />
         <property id="4732312587025391862" name="size" index="3qrERf" />
         <child id="4414035954635639202" name="measure" index="1gBsvM" />
+      </concept>
+      <concept id="7786684554256747814" name="healthtech.structure.AddReminderAction" flags="ng" index="3usl5Y">
+        <property id="7786684554256747829" name="type" index="3usl5H" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -89,6 +94,10 @@
       </node>
       <node concept="A_7WG" id="6KfR5yMp6eG" role="A_7z5">
         <property role="A_7WF" value="123" />
+        <property role="3usl5J" value="6KfR5yMvCOf/OK" />
+        <node concept="3usl5Y" id="5$2rF$3f1Nz" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOG/DAILY" />
+        </node>
       </node>
     </node>
     <node concept="3qrERO" id="2Vj0$6XOf4" role="3qrER8">
@@ -125,6 +134,94 @@
       </node>
       <node concept="A_7WG" id="6KfR5yMtEiL" role="A_7z5">
         <property role="A_7WF" value="123" />
+        <property role="3usl5J" value="6KfR5yMvCOg/NORMAL" />
+        <node concept="3usl5Y" id="6KfR5yM$YJs" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOD/YEARLY" />
+        </node>
+      </node>
+    </node>
+    <node concept="3qq98I" id="6KfR5yM$YJv" role="3qq98H">
+      <node concept="zNcxK" id="6KfR5yM$YJw" role="zNcA_">
+        <node concept="1gwEsf" id="6KfR5yM$YJQ" role="1gwEsO">
+          <node concept="7$aXd" id="6KfR5yM$YJZ" role="1gwEsT">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="6KfR5yM$YK3" role="7$aXi">
+              <property role="1gx9Cc" value="1" />
+            </node>
+          </node>
+          <node concept="7$aXd" id="6KfR5yM$YK8" role="AGUp3">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="6KfR5yM$YKc" role="7$aXi">
+              <property role="1gx9Cc" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="AHUyw" id="6KfR5yM$YJN" role="Ayubk">
+          <property role="TrG5h" value="glucose" />
+        </node>
+      </node>
+      <node concept="A_7WG" id="6KfR5yM$YJz" role="A_7z5">
+        <property role="3usl5J" value="6KfR5yMvCOn/ASK_MEDICAL_HELP" />
+        <property role="A_7WF" value="You are OK" />
+        <node concept="3usl5Y" id="6KfR5yM$YKp" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOC/WEEKLY" />
+        </node>
+      </node>
+    </node>
+    <node concept="3qq98I" id="5$2rF$3joJn" role="3qq98H">
+      <node concept="zNcxK" id="5$2rF$3joJo" role="zNcA_">
+        <node concept="1gwEsf" id="5$2rF$3joJS" role="1gwEsO">
+          <node concept="7$aXd" id="5$2rF$3joK1" role="1gwEsT">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="5$2rF$3joK5" role="7$aXi">
+              <property role="1gx9Cc" value="2" />
+            </node>
+          </node>
+          <node concept="7$aXd" id="5$2rF$3joKa" role="AGUp3">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="5$2rF$3joKe" role="7$aXi">
+              <property role="1gx9Cc" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="AHUyw" id="5$2rF$3joJP" role="Ayubk">
+          <property role="TrG5h" value="glucose" />
+        </node>
+      </node>
+      <node concept="A_7WG" id="5$2rF$3joJr" role="A_7z5">
+        <property role="3usl5J" value="6KfR5yMvCOj/CHECK_RISK_FACTORS" />
+        <property role="A_7WF" value="Some say" />
+        <node concept="3usl5Y" id="5$2rF$3joKj" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOG/DAILY" />
+        </node>
+      </node>
+    </node>
+    <node concept="3qq98I" id="5$2rF$3jUaZ" role="3qq98H">
+      <node concept="zNcxK" id="5$2rF$3jUb0" role="zNcA_">
+        <node concept="1gwEsf" id="5$2rF$3jUbE" role="1gwEsO">
+          <node concept="7$aXd" id="5$2rF$3jUbN" role="1gwEsT">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="5$2rF$3jUbR" role="7$aXi">
+              <property role="1gx9Cc" value="1" />
+            </node>
+          </node>
+          <node concept="7$aXd" id="5$2rF$3jUbW" role="AGUp3">
+            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
+            <node concept="1gwEsW" id="5$2rF$3jUc0" role="7$aXi">
+              <property role="1gx9Cc" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="AHUyw" id="5$2rF$3jUbB" role="Ayubk">
+          <property role="TrG5h" value="glucose" />
+        </node>
+      </node>
+      <node concept="A_7WG" id="5$2rF$3jUb3" role="A_7z5">
+        <property role="3usl5J" value="6KfR5yMvCOn/ASK_MEDICAL_HELP" />
+        <property role="A_7WF" value="Yeah!" />
+        <node concept="3usl5Y" id="5$2rF$3jUc5" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOC/WEEKLY" />
+        </node>
       </node>
     </node>
     <node concept="3qrERO" id="2Vj0$6XOfb" role="3qrER8">

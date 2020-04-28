@@ -18,6 +18,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAddReminderAction = createDescriptorForAddReminderAction();
   /*package*/ final ConceptDescriptor myConceptBloodPressureMeasurement = createDescriptorForBloodPressureMeasurement();
   /*package*/ final ConceptDescriptor myConceptDiastolicPressueMeasurement = createDescriptorForDiastolicPressueMeasurement();
   /*package*/ final ConceptDescriptor myConceptEvaluationEntry = createDescriptorForEvaluationEntry();
@@ -46,6 +47,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptWeightMeasurement = createDescriptorForWeightMeasurement();
   /*package*/ final EnumerationDescriptor myEnumerationMeasurementType = new EnumerationDescriptor_MeasurementType();
   /*package*/ final EnumerationDescriptor myEnumerationMeasurementUnit = new EnumerationDescriptor_MeasurementUnit();
+  /*package*/ final EnumerationDescriptor myEnumerationOutputStatusEnum = new EnumerationDescriptor_OutputStatusEnum();
+  /*package*/ final EnumerationDescriptor myEnumerationReminderTypeEnum = new EnumerationDescriptor_ReminderTypeEnum();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeFPNumber = new ConstrainedStringDatatypeDescriptorImpl(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dd45327L, "FPNumber", "r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/4414035954635133735", "-?[0-9]+\\.[0-9]*");
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -61,13 +64,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBloodPressureMeasurement, myConceptDiastolicPressueMeasurement, myConceptEvaluationEntry, myConceptFloatConstant, myConceptGlucoseMeasurement, myConceptInputSpec, myConceptIntegerConstant, myConceptLessOrEqualUnaryOperator, myConceptMeasurement, myConceptMeasurementBinaryOperator, myConceptMeasurementOperand, myConceptMeasurementOperandAdapter, myConceptMeasurementRange, myConceptMeasurementRangeOperator, myConceptMeasurementType2UnitMapping, myConceptMeasurementUnaryOperator, myConceptMeasurementUnitConfig, myConceptMoreOrEqualUnaryOperator, myConceptOperand, myConceptOperator, myConceptOutputResult, myConceptProtocol, myConceptPulseMeasurement, myConceptSystolicPressureMeasurement, myConceptTemperatureMeasurement, myConceptWeightMeasurement);
+    return Arrays.asList(myConceptAddReminderAction, myConceptBloodPressureMeasurement, myConceptDiastolicPressueMeasurement, myConceptEvaluationEntry, myConceptFloatConstant, myConceptGlucoseMeasurement, myConceptInputSpec, myConceptIntegerConstant, myConceptLessOrEqualUnaryOperator, myConceptMeasurement, myConceptMeasurementBinaryOperator, myConceptMeasurementOperand, myConceptMeasurementOperandAdapter, myConceptMeasurementRange, myConceptMeasurementRangeOperator, myConceptMeasurementType2UnitMapping, myConceptMeasurementUnaryOperator, myConceptMeasurementUnitConfig, myConceptMoreOrEqualUnaryOperator, myConceptOperand, myConceptOperator, myConceptOutputResult, myConceptProtocol, myConceptPulseMeasurement, myConceptSystolicPressureMeasurement, myConceptTemperatureMeasurement, myConceptWeightMeasurement);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.AddReminderAction:
+        return myConceptAddReminderAction;
       case LanguageConceptSwitch.BloodPressureMeasurement:
         return myConceptBloodPressureMeasurement;
       case LanguageConceptSwitch.DiastolicPressueMeasurement:
@@ -127,13 +132,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationMeasurementType, myEnumerationMeasurementUnit, myCSDatatypeFPNumber);
+    return Arrays.asList(myEnumerationMeasurementType, myEnumerationMeasurementUnit, myEnumerationOutputStatusEnum, myEnumerationReminderTypeEnum, myCSDatatypeFPNumber);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAddReminderAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("healthtech", "AddReminderAction", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L);
+    b.class_(false, false, false);
+    b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/7786684554256747814");
+    b.version(2);
+    b.property("type", 0x6c0fdc58b27e8d35L).type(MetaIdFactory.dataTypeId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d27L)).origin("7786684554256747829").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForBloodPressureMeasurement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("healthtech", "BloodPressureMeasurement", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda978dL);
     b.class_(false, false, false);
@@ -321,6 +334,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630680043");
     b.version(2);
     b.property("result", 0x1f38b4c739accbecL).type(PrimitiveTypeId.STRING).origin("2249746781630680044").done();
+    b.property("status", 0x6c0fdc58b27e8d37L).type(MetaIdFactory.dataTypeId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d0eL)).origin("7786684554256747831").done();
+    b.aggregate("action", 0x6c0fdc58b27e8d40L).target(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L).optional(true).ordered(true).multiple(false).origin("7786684554256747840").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForProtocol() {

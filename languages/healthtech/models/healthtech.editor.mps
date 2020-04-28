@@ -26,6 +26,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="6089045305654894367" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Named" flags="ng" index="2kknPI">
         <reference id="6089045305654944382" name="menu" index="2kkw0f" />
       </concept>
@@ -80,6 +81,8 @@
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="6481697812325410509" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_Strictly" flags="ng" index="34TFGs" />
       <concept id="8998492695583109601" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_CanSubstitute" flags="ig" index="16Na2f" />
@@ -253,6 +256,12 @@
       <concept id="5480835971642155304" name="jetbrains.mps.lang.actions.structure.NF_Model_CreateNewNodeOperation" flags="nn" index="15TzpJ" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -1310,12 +1319,44 @@
     </node>
   </node>
   <node concept="24kQdi" id="1WSHcsTFcJQ">
+    <property role="3GE5qa" value="evaluation.output" />
     <ref role="1XX52x" to="6854:1WSHcsTFcJF" resolve="OutputResult" />
     <node concept="3EZMnI" id="1WSHcsTFcJS" role="2wV5jI">
-      <node concept="3F0A7n" id="1WSHcsTFcJZ" role="3EZMnx">
-        <ref role="1NtTu8" to="6854:1WSHcsTFcJG" resolve="result" />
+      <node concept="3F0A7n" id="6KfR5yMvCP5" role="3EZMnx">
+        <ref role="1NtTu8" to="6854:6KfR5yMvCOR" resolve="status" />
+      </node>
+      <node concept="3F1sOY" id="6KfR5yMvCPr" role="3EZMnx">
+        <ref role="1NtTu8" to="6854:6KfR5yMvCP0" resolve="action" />
+        <node concept="pkWqt" id="5$2rF$3hg6R" role="pqm2j">
+          <node concept="3clFbS" id="5$2rF$3hg6S" role="2VODD2">
+            <node concept="3clFbF" id="5$2rF$3hgaO" role="3cqZAp">
+              <node concept="3fqX7Q" id="5$2rF$3hl6b" role="3clFbG">
+                <node concept="2OqwBi" id="5$2rF$3hl6d" role="3fr31v">
+                  <node concept="2OqwBi" id="5$2rF$3hl6e" role="2Oq$k0">
+                    <node concept="pncrf" id="5$2rF$3hl6f" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="5$2rF$3hl6g" role="2OqNvi">
+                      <ref role="3TsBF5" to="6854:6KfR5yMvCOR" resolve="status" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="5$2rF$3hl6h" role="2OqNvi">
+                    <node concept="21nZrQ" id="5$2rF$3hl6i" role="21noJM">
+                      <ref role="21nZrZ" to="6854:6KfR5yMvCOf" resolve="GOOD" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="1WSHcsTFcJV" role="2iSdaV" />
+      <node concept="3F0ifn" id="6KfR5yMyQL0" role="3EZMnx">
+        <property role="3F0ifm" value="—" />
+      </node>
+      <node concept="3F0A7n" id="6KfR5yMyQN4" role="3EZMnx">
+        <ref role="1NtTu8" to="6854:1WSHcsTFcJG" resolve="result" />
+        <ref role="1k5W1q" node="2Vj0$783CE" resolve="string" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1WSHcsTGlqs">
@@ -1680,6 +1721,33 @@
           <ref role="2ZyFGn" to="6854:2Vj0$7aYd4" resolve="MeasurementOperandAdapter" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KfR5yMw9Pw">
+    <property role="3GE5qa" value="evaluation.output" />
+    <ref role="1XX52x" to="6854:6KfR5yMvCOA" resolve="AddReminderAction" />
+    <node concept="3EZMnI" id="6KfR5yMw9Py" role="2wV5jI">
+      <node concept="3F0ifn" id="5$2rF$3f1ND" role="3EZMnx">
+        <property role="3F0ifm" value="add reminder" />
+      </node>
+      <node concept="3F0ifn" id="5$2rF$3gILs" role="3EZMnx">
+        <property role="3F0ifm" value="'" />
+        <node concept="11LMrY" id="5$2rF$3iSm$" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="6KfR5yMw9PD" role="3EZMnx">
+        <ref role="1NtTu8" to="6854:6KfR5yMvCOP" resolve="type" />
+        <node concept="11L4FC" id="5$2rF$3imY5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5$2rF$3imYa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5$2rF$3gILA" role="3EZMnx">
+        <property role="3F0ifm" value="'" />
+        <node concept="11L4FC" id="5$2rF$3iSmC" role="3F10Kt" />
+      </node>
+      <node concept="2iRfu4" id="5$2rF$3gewE" role="2iSdaV" />
     </node>
   </node>
 </model>

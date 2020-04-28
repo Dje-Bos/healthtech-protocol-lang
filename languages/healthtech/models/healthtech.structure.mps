@@ -299,11 +299,23 @@
   <node concept="1TIwiD" id="1WSHcsTFcJF">
     <property role="EcuMT" value="2249746781630680043" />
     <property role="TrG5h" value="OutputResult" />
+    <property role="3GE5qa" value="evaluation.output" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1WSHcsTFcJG" role="1TKVEl">
       <property role="IQ2nx" value="2249746781630680044" />
       <property role="TrG5h" value="result" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6KfR5yMvCOR" role="1TKVEl">
+      <property role="IQ2nx" value="7786684554256747831" />
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="6KfR5yMvCOe" resolve="OutputStatusEnum" />
+    </node>
+    <node concept="1TJgyj" id="6KfR5yMvCP0" role="1TKVEi">
+      <property role="IQ2ns" value="7786684554256747840" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="6KfR5yMvCOA" resolve="AddReminderAction" />
     </node>
   </node>
   <node concept="1TIwiD" id="1WSHcsTGkLc">
@@ -445,6 +457,67 @@
       <property role="IQ2nx" value="52719422309725768" />
       <property role="TrG5h" value="unit" />
       <ref role="AX2Wp" node="2Vj0$6RruZ" resolve="MeasurementUnit" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6KfR5yMvCOe">
+    <property role="3F6X1D" value="7786684554256747790" />
+    <property role="3GE5qa" value="evaluation.output" />
+    <property role="TrG5h" value="OutputStatusEnum" />
+    <node concept="25R33" id="6KfR5yMvCOf" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747791" />
+      <property role="TrG5h" value="GOOD" />
+      <property role="1L1pqM" value="Good" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOg" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747792" />
+      <property role="TrG5h" value="NORMAL" />
+      <property role="1L1pqM" value="Normal" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOj" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747795" />
+      <property role="TrG5h" value="CHECK_RISK_FACTORS" />
+      <property role="1L1pqM" value="Check risk factors" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOn" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747799" />
+      <property role="TrG5h" value="ASK_MEDICAL_HELP" />
+      <property role="1L1pqM" value="Ask for Medical Help" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6KfR5yMvCOA">
+    <property role="EcuMT" value="7786684554256747814" />
+    <property role="3GE5qa" value="evaluation.output" />
+    <property role="TrG5h" value="AddReminderAction" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6KfR5yMvCOP" role="1TKVEl">
+      <property role="IQ2nx" value="7786684554256747829" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="6KfR5yMvCOB" resolve="ReminderTypeEnum" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6KfR5yMvCOB">
+    <property role="3F6X1D" value="7786684554256747815" />
+    <property role="3GE5qa" value="evaluation.output" />
+    <property role="TrG5h" value="ReminderTypeEnum" />
+    <node concept="25R33" id="6KfR5yMvCOC" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747816" />
+      <property role="TrG5h" value="WEEKLY" />
+      <property role="1L1pqM" value="every week" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOD" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747817" />
+      <property role="TrG5h" value="YEARLY" />
+      <property role="1L1pqM" value="every year" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOG" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747820" />
+      <property role="TrG5h" value="DAILY" />
+      <property role="1L1pqM" value="every day" />
+    </node>
+    <node concept="25R33" id="6KfR5yMvCOK" role="25R1y">
+      <property role="3tVfz5" value="7786684554256747824" />
+      <property role="TrG5h" value="MONTHLY" />
+      <property role="1L1pqM" value="every month" />
     </node>
   </node>
 </model>
