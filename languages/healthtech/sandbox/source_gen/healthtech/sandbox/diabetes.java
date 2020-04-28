@@ -4,23 +4,137 @@ package healthtech.sandbox;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class diabetes implements IProtocol {
   private String name = "diabetes";
   private String description = "Diabetes clinic protocol adaptation";
   private String reference = "https://guidelines.moz.gov.ua/documents/3322";
   private List<InputSpec> inputSpecs = new ArrayList<InputSpec>();
+  private List<EvaluationEntry> evaluationEntries = new ArrayList<EvaluationEntry>();
 
   public diabetes() {
-    InputSpec inputSpec_xi3ytd_a = new InputSpec(10, 2, MType.PULSE);
+    InputSpec inputSpec_xi3ytd_a = new InputSpec(10, 2, MType.GLUCOSE);
     inputSpecs.add(inputSpec_xi3ytd_a);
+    
+    EvaluationEntry eval_a_0 = new EvaluationEntry();
+    
+    OutputResult res_a0_0 = new OutputResult();
+    res_a0_0.setDescription("123");;
+    eval_a_0.setResult(res_a0_0);
+    List<Range> ranges_a_0 = new ArrayList<Range>();
+    
+    BinaryRange binaryRange_a0_0 = new BinaryRange();
+    binaryRange_a0_0.setType(MType.GLUCOSE);
+    binaryRange_a0_0.setOperator("-");
+    binaryRange_a0_0.setOperand(Float.valueOf(123));
+    binaryRange_a0_0.setSecondOperand(Float.valueOf(432));;
+    eval_a_0.setRanges(ranges_a_0);;
+    
+    EvaluationEntry eval_b = new EvaluationEntry();
+    
+    OutputResult res_a1 = new OutputResult();
+    res_a1.setDescription("You are OK");;
+    eval_b.setResult(res_a1);
+    List<Range> ranges_b = new ArrayList<Range>();
+    
+    BinaryRange binaryRange_a1 = new BinaryRange();
+    binaryRange_a1.setType(MType.GLUCOSE);
+    binaryRange_a1.setOperator("-");
+    binaryRange_a1.setOperand(Float.valueOf(1));
+    binaryRange_a1.setSecondOperand(Float.valueOf(2));;
+    eval_b.setRanges(ranges_b);;
+    
+    EvaluationEntry eval_c = new EvaluationEntry();
+    
+    OutputResult res_a2 = new OutputResult();
+    res_a2.setDescription("Some say");;
+    eval_c.setResult(res_a2);
+    List<Range> ranges_c = new ArrayList<Range>();
+    
+    BinaryRange binaryRange_a2 = new BinaryRange();
+    binaryRange_a2.setType(MType.GLUCOSE);
+    binaryRange_a2.setOperator("-");
+    binaryRange_a2.setOperand(Float.valueOf(2));
+    binaryRange_a2.setSecondOperand(Float.valueOf(3));;
+    eval_c.setRanges(ranges_c);;
+    
+    EvaluationEntry eval_d = new EvaluationEntry();
+    
+    OutputResult res_a3 = new OutputResult();
+    res_a3.setDescription("Yeah!");;
+    eval_d.setResult(res_a3);
+    List<Range> ranges_d = new ArrayList<Range>();
+    
+    BinaryRange binaryRange_a3 = new BinaryRange();
+    binaryRange_a3.setType(MType.GLUCOSE);
+    binaryRange_a3.setOperator("-");
+    binaryRange_a3.setOperand(Float.valueOf(1));
+    binaryRange_a3.setSecondOperand(Float.valueOf(2));;
+    eval_d.setRanges(ranges_d);;
+    evaluationEntries.add(eval_a_0);
+    evaluationEntries.add(eval_b);
+    evaluationEntries.add(eval_c);
+    evaluationEntries.add(eval_d);
+
   }
 
   @Override
   public void evaluate(List<Measurement> measurements) {
+    List<Measurement> filteredMeasurements = filterByType(measurements);
+    Map<MType, List<Measurement>> groupedByType = filteredMeasurements.stream().collect(Collectors.groupingBy(new Function<Measurement, MType>() {
+      public MType apply(Measurement measurement) {
+        return measurement.getType();
+      }
+    }));
+    Map<MType, List<Measurement>> filterBySize = groupedByType.entrySet().stream().filter(new Predicate<Map.Entry<MType, List<Measurement>>>() {
+      public boolean test(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue().size() >= getSpecByType(entry.getKey()).getSize();
+      }
+    }).collect(Collectors.toMap(new Function<Map.Entry<MType, List<Measurement>>, MType>() {
+      public MType apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getKey();
+      }
+    }, new Function<Map.Entry<MType, List<Measurement>>, List<Measurement>>() {
+      public List<Measurement> apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue();
+      }
+    }));
 
   }
 
+  /*package*/ List<Measurement> filterByType(List<Measurement> measurements) {
+    final List<MType> types = inputSpecs.stream().map(new Function<InputSpec, MType>() {
+      public MType apply(InputSpec spec) {
+        return spec.getType();
+      }
+    }).collect(Collectors.toList());
+
+    return measurements.stream().filter(new Predicate<Measurement>() {
+      public boolean test(Measurement measurement) {
+        return types.contains(measurement.getType());
+      }
+    }).collect(Collectors.toList());
+  }
+
+  private InputSpec getSpecByType(final MType type) {
+    return inputSpecs.stream().filter(new Predicate<InputSpec>() {
+      public boolean test(InputSpec spec) {
+        return spec.getType().equals(type);
+      }
+    }).findFirst().orElseThrow(new Supplier<IllegalStateException>() {
+      public IllegalStateException get() {
+        return new IllegalStateException("Cannot find spec for type: " + type);
+      }
+    });
+  }
+
+  private void evaluateInternal(Map<MType, List<Measurement>> measurements) {
+  }
 
   public String getName() {
     return this.name;

@@ -4,23 +4,92 @@ package healthtech.sandbox;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class hypertension implements IProtocol {
   private String name = "hypertension";
   private String description = "Hypertension is a desease with blood pressure more than 140/90";
   private String reference = "https://guidelines.moz.gov.ua/documents/2988";
   private List<InputSpec> inputSpecs = new ArrayList<InputSpec>();
+  private List<EvaluationEntry> evaluationEntries = new ArrayList<EvaluationEntry>();
 
   public hypertension() {
-    InputSpec inputSpec_sdvlmb_a = new InputSpec(2, 1, MType.PULSE);
+    InputSpec inputSpec_sdvlmb_a = new InputSpec(2, 1, MType.PRESSURE);
     inputSpecs.add(inputSpec_sdvlmb_a);
+    
+    EvaluationEntry eval_a = new EvaluationEntry();
+    
+    OutputResult res_a0 = new OutputResult();
+    res_a0.setDescription("123");;
+    eval_a.setResult(res_a0);
+    List<Range> ranges_a = new ArrayList<Range>();
+    
+    BinaryRange binaryRange_a0 = new BinaryRange();
+    binaryRange_a0.setType(MType.PRESSURE);
+    binaryRange_a0.setOperator("-");
+    binaryRange_a0.setOperand(Float.valueOf(123));
+    binaryRange_a0.setSecondOperand(Float.valueOf(123));;
+    eval_a.setRanges(ranges_a);;
+    evaluationEntries.add(eval_a);
+
   }
 
   @Override
   public void evaluate(List<Measurement> measurements) {
+    List<Measurement> filteredMeasurements = filterByType(measurements);
+    Map<MType, List<Measurement>> groupedByType = filteredMeasurements.stream().collect(Collectors.groupingBy(new Function<Measurement, MType>() {
+      public MType apply(Measurement measurement) {
+        return measurement.getType();
+      }
+    }));
+    Map<MType, List<Measurement>> filterBySize = groupedByType.entrySet().stream().filter(new Predicate<Map.Entry<MType, List<Measurement>>>() {
+      public boolean test(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue().size() >= getSpecByType(entry.getKey()).getSize();
+      }
+    }).collect(Collectors.toMap(new Function<Map.Entry<MType, List<Measurement>>, MType>() {
+      public MType apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getKey();
+      }
+    }, new Function<Map.Entry<MType, List<Measurement>>, List<Measurement>>() {
+      public List<Measurement> apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue();
+      }
+    }));
 
   }
 
+  /*package*/ List<Measurement> filterByType(List<Measurement> measurements) {
+    final List<MType> types = inputSpecs.stream().map(new Function<InputSpec, MType>() {
+      public MType apply(InputSpec spec) {
+        return spec.getType();
+      }
+    }).collect(Collectors.toList());
+
+    return measurements.stream().filter(new Predicate<Measurement>() {
+      public boolean test(Measurement measurement) {
+        return types.contains(measurement.getType());
+      }
+    }).collect(Collectors.toList());
+  }
+
+  private InputSpec getSpecByType(final MType type) {
+    return inputSpecs.stream().filter(new Predicate<InputSpec>() {
+      public boolean test(InputSpec spec) {
+        return spec.getType().equals(type);
+      }
+    }).findFirst().orElseThrow(new Supplier<IllegalStateException>() {
+      public IllegalStateException get() {
+        return new IllegalStateException("Cannot find spec for type: " + type);
+      }
+    });
+  }
+
+  private void evaluateInternal(Map<MType, List<Measurement>> measurements) {
+  }
 
   public String getName() {
     return this.name;
