@@ -28,8 +28,10 @@
     <classNode dependClassName="java.time.LocalDateTime" />
   </dependency>
   <dependency className="healthtech.sandbox.OutputResult">
+    <classNode dependClassName="healthtech.sandbox.OutputStatus" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="healthtech.sandbox.OutputStatus" />
   <dependency className="healthtech.sandbox.Range">
     <classNode dependClassName="healthtech.sandbox.MType" />
     <classNode dependClassName="java.lang.String" />
@@ -45,6 +47,7 @@
     <classNode dependClassName="healthtech.sandbox.MType" />
     <classNode dependClassName="healthtech.sandbox.Measurement" />
     <classNode dependClassName="healthtech.sandbox.OutputResult" />
+    <classNode dependClassName="healthtech.sandbox.OutputStatus" />
     <classNode dependClassName="healthtech.sandbox.Range" />
     <classNode dependClassName="java.lang.Float" />
     <classNode dependClassName="java.lang.IllegalStateException" />
@@ -66,7 +69,9 @@
     <classNode dependClassName="healthtech.sandbox.MType" />
     <classNode dependClassName="healthtech.sandbox.Measurement" />
     <classNode dependClassName="healthtech.sandbox.OutputResult" />
+    <classNode dependClassName="healthtech.sandbox.OutputStatus" />
     <classNode dependClassName="healthtech.sandbox.Range" />
+    <classNode dependClassName="healthtech.sandbox.UnaryRange" />
     <classNode dependClassName="java.lang.Float" />
     <classNode dependClassName="java.lang.IllegalStateException" />
     <classNode dependClassName="java.lang.Override" />

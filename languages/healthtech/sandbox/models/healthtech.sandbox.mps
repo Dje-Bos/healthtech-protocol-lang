@@ -30,6 +30,10 @@
         <child id="2249746781628469892" name="secondOperand" index="AGUp3" />
         <child id="4414035954634025321" name="operand" index="1gwEsT" />
       </concept>
+      <concept id="2249746781630977683" name="healthtech.structure.MoreOrEqualUnaryOperator" flags="ng" index="Ayu9k" />
+      <concept id="2249746781630975052" name="healthtech.structure.MeasurementUnaryOperator" flags="ng" index="Ayvyb">
+        <child id="2249746781630977566" name="operand" index="Ayubp" />
+      </concept>
       <concept id="2249746781630680043" name="healthtech.structure.OutputResult" flags="ng" index="A_7WG">
         <property id="2249746781630680044" name="result" index="A_7WF" />
         <property id="7786684554256747831" name="status" index="3usl5J" />
@@ -40,6 +44,7 @@
       <concept id="4414035954634025324" name="healthtech.structure.IntegerConstant" flags="ng" index="1gwEsW">
         <property id="4414035954634151004" name="value" index="1gx9Cc" />
       </concept>
+      <concept id="4414035954635544468" name="healthtech.structure.DiastolicPressueMeasurement" flags="ng" index="1gAPB4" />
       <concept id="4414035954635544469" name="healthtech.structure.SystolicPressureMeasurement" flags="ng" index="1gAPB5" />
       <concept id="4414035954635544457" name="healthtech.structure.WeightMeasurement" flags="ng" index="1gAPBp" />
       <concept id="4414035954635544461" name="healthtech.structure.BloodPressureMeasurement" flags="ng" index="1gAPBt" />
@@ -97,6 +102,28 @@
         <property role="3usl5J" value="6KfR5yMvCOf/OK" />
         <node concept="3usl5Y" id="5$2rF$3f1Nz" role="3usl4o">
           <property role="3usl5H" value="6KfR5yMvCOG/DAILY" />
+        </node>
+      </node>
+    </node>
+    <node concept="3qq98I" id="3DcH5zBd0au" role="3qq98H">
+      <node concept="zNcxK" id="3DcH5zBd0av" role="zNcA_">
+        <node concept="Ayu9k" id="3DcH5zBd0aR" role="1gwEsO">
+          <node concept="7$aXd" id="3DcH5zBd0aX" role="Ayubp">
+            <property role="7cVD1" value="2Vj0$6RsWC/MERCURY_MM" />
+            <node concept="1gwEsW" id="3DcH5zBd0b1" role="7$aXi">
+              <property role="1gx9Cc" value="23" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gAPB4" id="3DcH5zBd0aO" role="Ayubk">
+          <property role="TrG5h" value="diastolic pressure" />
+        </node>
+      </node>
+      <node concept="A_7WG" id="3DcH5zBd0ay" role="A_7z5">
+        <property role="3usl5J" value="6KfR5yMvCOn/ASK_MEDICAL_HELP" />
+        <property role="A_7WF" value="Ask for help" />
+        <node concept="3usl5Y" id="3DcH5zBd0b9" role="3usl4o">
+          <property role="3usl5H" value="6KfR5yMvCOD/YEARLY" />
         </node>
       </node>
     </node>

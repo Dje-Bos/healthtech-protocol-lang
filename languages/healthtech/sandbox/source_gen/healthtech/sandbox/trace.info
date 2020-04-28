@@ -30,7 +30,10 @@
       <unit at="7,0,45,0" name="healthtech.sandbox.Measurement" />
     </file>
     <file name="OutputResult.java">
-      <unit at="6,0,16,0" name="healthtech.sandbox.OutputResult" />
+      <unit at="6,0,33,0" name="healthtech.sandbox.OutputResult" />
+    </file>
+    <file name="OutputStatus.java">
+      <unit at="6,0,12,0" name="healthtech.sandbox.OutputStatus" />
     </file>
     <file name="Range.java">
       <unit at="6,0,23,0" name="healthtech.sandbox.Range" />
@@ -48,166 +51,190 @@
       <node id="4732312587025484527" at="18,0,19,0" concept="2" trace="evaluationEntries" />
       <node id="52719422300177348" at="20,25,21,71" concept="4" />
       <node id="52719422300177348" at="21,71,22,39" concept="1" />
-      <node id="7786684554254890314" at="23,4,24,51" concept="4" />
-      <node id="7786684554255033260" at="25,4,26,45" concept="4" />
-      <node id="7786684554255033260" at="26,45,27,33" concept="1" />
-      <node id="7786684554254890314" at="27,34,28,29" concept="1" />
+      <node id="7786684554254890314" at="22,39,23,51" concept="4" />
+      <node id="7786684554255033260" at="23,51,24,45" concept="4" />
+      <node id="7786684554255033260" at="24,45,25,33" concept="1" />
+      <node id="7786684554255033260" at="25,33,26,36" concept="1" />
+      <node id="7786684554255033260" at="26,36,27,38" concept="1" />
+      <node id="7786684554254890314" at="27,38,28,29" concept="1" />
       <node id="7786684554254890314" at="28,29,29,50" concept="4" />
-      <node id="7786684554254890315" at="30,4,31,51" concept="4" />
-      <node id="7786684554254890315" at="31,51,32,43" concept="1" />
-      <node id="7786684554254890315" at="32,43,33,36" concept="1" />
-      <node id="7786684554254890315" at="33,36,34,50" concept="1" />
-      <node id="7786684554254890315" at="34,50,35,56" concept="1" />
-      <node id="7786684554254890314" at="35,57,36,31" concept="1" />
-      <node id="7786684554254890314" at="36,32,37,34" concept="1" />
-      <node id="4732312587025484527" at="37,34,38,0" concept="6" />
-      <node id="4732312587025484527" at="42,56,43,72" concept="4" />
-      <node id="4732312587025484527" at="45,51,46,37" concept="5" />
-      <node id="4732312587025484527" at="50,70,51,82" concept="5" />
-      <node id="4732312587025484527" at="54,69,55,30" concept="5" />
-      <node id="4732312587025484527" at="58,81,59,32" concept="5" />
-      <node id="4732312587025484527" at="61,8,62,0" concept="6" />
-      <node id="4732312587025484527" at="67,42,68,30" concept="5" />
-      <node id="4732312587025484527" at="70,36,71,0" concept="6" />
-      <node id="4732312587025484527" at="73,52,74,53" concept="5" />
-      <node id="4732312587025484527" at="81,43,82,43" concept="5" />
-      <node id="4732312587025484527" at="85,42,86,79" concept="5" />
-      <node id="4732312587025484527" at="94,27,95,21" concept="5" />
-      <node id="4732312587025484527" at="97,36,98,21" concept="1" />
-      <node id="4732312587025484527" at="100,34,101,28" concept="5" />
-      <node id="4732312587025484527" at="103,50,104,35" concept="1" />
-      <node id="4732312587025484527" at="106,32,107,26" concept="5" />
-      <node id="4732312587025484527" at="109,46,110,31" concept="1" />
-      <node id="4732312587025484527" at="112,42,113,27" concept="5" />
-      <node id="4732312587025484527" at="115,57,116,33" concept="1" />
-      <node id="4732312587025484527" at="91,0,93,0" concept="3" trace="evaluateInternal#(Ljava/util/Map;)V" />
-      <node id="7786684554254890314" at="24,51,27,34" concept="4" />
-      <node id="4732312587025484527" at="45,0,48,0" concept="3" trace="apply#(Lhealthtech/sandbox/Measurement;)Lhealthtech/sandbox/MType;" />
-      <node id="4732312587025484527" at="50,0,53,0" concept="3" trace="test#(Ljava/util/Map/Entry;)Z" />
-      <node id="4732312587025484527" at="54,0,57,0" concept="3" trace="apply#(Ljava/util/Map/Entry;)Lhealthtech/sandbox/MType;" />
-      <node id="4732312587025484527" at="58,0,61,0" concept="3" trace="apply#(Ljava/util/Map/Entry;)Ljava/util/List;" />
-      <node id="4732312587025484527" at="67,0,70,0" concept="3" trace="apply#(Lhealthtech/sandbox/InputSpec;)Lhealthtech/sandbox/MType;" />
-      <node id="4732312587025484527" at="73,0,76,0" concept="3" trace="test#(Lhealthtech/sandbox/Measurement;)Z" />
-      <node id="4732312587025484527" at="81,0,84,0" concept="3" trace="test#(Lhealthtech/sandbox/InputSpec;)Z" />
-      <node id="4732312587025484527" at="85,0,88,0" concept="3" trace="get#()Ljava/lang/IllegalStateException;" />
-      <node id="4732312587025484527" at="94,0,97,0" concept="3" trace="getName#()Ljava/lang/String;" />
-      <node id="4732312587025484527" at="97,0,100,0" concept="3" trace="setName#(Ljava/lang/String;)V" />
-      <node id="4732312587025484527" at="100,0,103,0" concept="3" trace="getDescription#()Ljava/lang/String;" />
-      <node id="4732312587025484527" at="103,0,106,0" concept="3" trace="setDescription#(Ljava/lang/String;)V" />
-      <node id="4732312587025484527" at="106,0,109,0" concept="3" trace="getReference#()Ljava/lang/String;" />
-      <node id="4732312587025484527" at="109,0,112,0" concept="3" trace="setReference#(Ljava/lang/String;)V" />
-      <node id="4732312587025484527" at="112,0,115,0" concept="3" trace="getInputSpecs#()Ljava/util/List;" />
-      <node id="4732312587025484527" at="115,0,118,0" concept="3" trace="setInputSpecs#(Ljava/util/List;)V" />
-      <node id="4732312587025484527" at="43,72,48,8" concept="4" />
-      <node id="4732312587025484527" at="65,78,70,36" concept="4" />
-      <node id="4732312587025484527" at="71,0,76,36" concept="5" />
-      <node id="7786684554254890314" at="29,50,35,57" concept="4" />
-      <node id="4732312587025484527" at="79,53,88,7" concept="5" />
-      <node id="4732312587025484527" at="79,0,90,0" concept="3" trace="getSpecByType#(Lhealthtech/sandbox/MType;)Lhealthtech/sandbox/InputSpec;" />
-      <node id="4732312587025484527" at="48,8,61,8" concept="4" />
-      <node id="4732312587025484527" at="65,0,78,0" concept="3" trace="filterByType#(Ljava/util/List;)Ljava/util/List;" />
-      <node id="7786684554254890314" at="22,39,36,32" concept="4" />
-      <node id="4732312587025484527" at="20,0,40,0" concept="0" trace="hypertension#()V" />
-      <node id="4732312587025484527" at="41,0,64,0" concept="3" trace="evaluate#(Ljava/util/List;)V" />
-      <scope id="4732312587025484527" at="91,77,91,77" />
-      <scope id="4732312587025484527" at="45,51,46,37" />
-      <scope id="4732312587025484527" at="50,70,51,82" />
-      <scope id="4732312587025484527" at="54,69,55,30" />
-      <scope id="4732312587025484527" at="58,81,59,32" />
-      <scope id="4732312587025484527" at="67,42,68,30" />
-      <scope id="4732312587025484527" at="73,52,74,53" />
-      <scope id="4732312587025484527" at="81,43,82,43" />
-      <scope id="4732312587025484527" at="85,42,86,79" />
-      <scope id="4732312587025484527" at="94,27,95,21" />
-      <scope id="4732312587025484527" at="97,36,98,21" />
-      <scope id="4732312587025484527" at="100,34,101,28" />
-      <scope id="4732312587025484527" at="103,50,104,35" />
-      <scope id="4732312587025484527" at="106,32,107,26" />
-      <scope id="4732312587025484527" at="109,46,110,31" />
-      <scope id="4732312587025484527" at="112,42,113,27" />
-      <scope id="4732312587025484527" at="115,57,116,33" />
-      <scope id="7786684554255033260" at="25,4,27,33">
-        <var name="res_a0" id="7786684554255033260" />
-      </scope>
-      <scope id="4732312587025484527" at="91,0,93,0">
+      <node id="7786684554254890315" at="29,50,30,51" concept="4" />
+      <node id="7786684554254890315" at="30,51,31,43" concept="1" />
+      <node id="7786684554254890315" at="31,43,32,36" concept="1" />
+      <node id="7786684554254890315" at="32,36,33,50" concept="1" />
+      <node id="7786684554254890315" at="33,50,34,56" concept="1" />
+      <node id="7786684554254890315" at="34,56,35,33" concept="1" />
+      <node id="7786684554254890314" at="35,33,36,31" concept="1" />
+      <node id="4200930846358897310" at="36,31,37,51" concept="4" />
+      <node id="4200930846358897314" at="37,51,38,45" concept="4" />
+      <node id="4200930846358897314" at="38,45,39,42" concept="1" />
+      <node id="4200930846358897314" at="39,42,40,37" concept="1" />
+      <node id="4200930846358897314" at="40,37,41,48" concept="1" />
+      <node id="4200930846358897310" at="41,48,42,29" concept="1" />
+      <node id="4200930846358897310" at="42,29,43,50" concept="4" />
+      <node id="4200930846358897311" at="43,50,44,48" concept="4" />
+      <node id="4200930846358897311" at="44,48,45,36" concept="1" />
+      <node id="4200930846358897311" at="45,36,46,48" concept="1" />
+      <node id="4200930846358897311" at="46,48,47,42" concept="1" />
+      <node id="4200930846358897311" at="47,42,48,32" concept="1" />
+      <node id="4200930846358897310" at="48,32,49,31" concept="1" />
+      <node id="7786684554254890314" at="49,31,50,34" concept="1" />
+      <node id="4200930846358897310" at="50,34,51,34" concept="1" />
+      <node id="4732312587025484527" at="51,34,52,0" concept="6" />
+      <node id="4732312587025484527" at="56,56,57,72" concept="4" />
+      <node id="4732312587025484527" at="59,51,60,37" concept="5" />
+      <node id="4732312587025484527" at="64,70,65,82" concept="5" />
+      <node id="4732312587025484527" at="68,69,69,30" concept="5" />
+      <node id="4732312587025484527" at="72,81,73,32" concept="5" />
+      <node id="4732312587025484527" at="75,8,76,0" concept="6" />
+      <node id="4732312587025484527" at="81,42,82,30" concept="5" />
+      <node id="4732312587025484527" at="84,36,85,0" concept="6" />
+      <node id="4732312587025484527" at="87,52,88,53" concept="5" />
+      <node id="4732312587025484527" at="95,43,96,43" concept="5" />
+      <node id="4732312587025484527" at="99,42,100,79" concept="5" />
+      <node id="4732312587025484527" at="108,27,109,21" concept="5" />
+      <node id="4732312587025484527" at="111,36,112,21" concept="1" />
+      <node id="4732312587025484527" at="114,34,115,28" concept="5" />
+      <node id="4732312587025484527" at="117,50,118,35" concept="1" />
+      <node id="4732312587025484527" at="120,32,121,26" concept="5" />
+      <node id="4732312587025484527" at="123,46,124,31" concept="1" />
+      <node id="4732312587025484527" at="126,42,127,27" concept="5" />
+      <node id="4732312587025484527" at="129,57,130,33" concept="1" />
+      <node id="4732312587025484527" at="105,0,107,0" concept="3" trace="evaluateInternal#(Ljava/util/Map;)V" />
+      <node id="4732312587025484527" at="59,0,62,0" concept="3" trace="apply#(Lhealthtech/sandbox/Measurement;)Lhealthtech/sandbox/MType;" />
+      <node id="4732312587025484527" at="64,0,67,0" concept="3" trace="test#(Ljava/util/Map/Entry;)Z" />
+      <node id="4732312587025484527" at="68,0,71,0" concept="3" trace="apply#(Ljava/util/Map/Entry;)Lhealthtech/sandbox/MType;" />
+      <node id="4732312587025484527" at="72,0,75,0" concept="3" trace="apply#(Ljava/util/Map/Entry;)Ljava/util/List;" />
+      <node id="4732312587025484527" at="81,0,84,0" concept="3" trace="apply#(Lhealthtech/sandbox/InputSpec;)Lhealthtech/sandbox/MType;" />
+      <node id="4732312587025484527" at="87,0,90,0" concept="3" trace="test#(Lhealthtech/sandbox/Measurement;)Z" />
+      <node id="4732312587025484527" at="95,0,98,0" concept="3" trace="test#(Lhealthtech/sandbox/InputSpec;)Z" />
+      <node id="4732312587025484527" at="99,0,102,0" concept="3" trace="get#()Ljava/lang/IllegalStateException;" />
+      <node id="4732312587025484527" at="108,0,111,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="111,0,114,0" concept="3" trace="setName#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="114,0,117,0" concept="3" trace="getDescription#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="117,0,120,0" concept="3" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="120,0,123,0" concept="3" trace="getReference#()Ljava/lang/String;" />
+      <node id="4732312587025484527" at="123,0,126,0" concept="3" trace="setReference#(Ljava/lang/String;)V" />
+      <node id="4732312587025484527" at="126,0,129,0" concept="3" trace="getInputSpecs#()Ljava/util/List;" />
+      <node id="4732312587025484527" at="129,0,132,0" concept="3" trace="setInputSpecs#(Ljava/util/List;)V" />
+      <node id="4732312587025484527" at="57,72,62,8" concept="4" />
+      <node id="4732312587025484527" at="79,78,84,36" concept="4" />
+      <node id="4732312587025484527" at="85,0,90,36" concept="5" />
+      <node id="4732312587025484527" at="93,53,102,7" concept="5" />
+      <node id="4732312587025484527" at="93,0,104,0" concept="3" trace="getSpecByType#(Lhealthtech/sandbox/MType;)Lhealthtech/sandbox/InputSpec;" />
+      <node id="4732312587025484527" at="62,8,75,8" concept="4" />
+      <node id="4732312587025484527" at="79,0,92,0" concept="3" trace="filterByType#(Ljava/util/List;)Ljava/util/List;" />
+      <node id="4732312587025484527" at="55,0,78,0" concept="3" trace="evaluate#(Ljava/util/List;)V" />
+      <node id="4732312587025484527" at="20,0,54,0" concept="0" trace="hypertension#()V" />
+      <scope id="4732312587025484527" at="105,77,105,77" />
+      <scope id="4732312587025484527" at="59,51,60,37" />
+      <scope id="4732312587025484527" at="64,70,65,82" />
+      <scope id="4732312587025484527" at="68,69,69,30" />
+      <scope id="4732312587025484527" at="72,81,73,32" />
+      <scope id="4732312587025484527" at="81,42,82,30" />
+      <scope id="4732312587025484527" at="87,52,88,53" />
+      <scope id="4732312587025484527" at="95,43,96,43" />
+      <scope id="4732312587025484527" at="99,42,100,79" />
+      <scope id="4732312587025484527" at="108,27,109,21" />
+      <scope id="4732312587025484527" at="111,36,112,21" />
+      <scope id="4732312587025484527" at="114,34,115,28" />
+      <scope id="4732312587025484527" at="117,50,118,35" />
+      <scope id="4732312587025484527" at="120,32,121,26" />
+      <scope id="4732312587025484527" at="123,46,124,31" />
+      <scope id="4732312587025484527" at="126,42,127,27" />
+      <scope id="4732312587025484527" at="129,57,130,33" />
+      <scope id="4732312587025484527" at="105,0,107,0">
         <var name="measurements" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="45,0,48,0">
+      <scope id="4732312587025484527" at="59,0,62,0">
         <var name="measurement" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="50,0,53,0">
+      <scope id="4732312587025484527" at="64,0,67,0">
         <var name="entry" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="54,0,57,0">
+      <scope id="4732312587025484527" at="68,0,71,0">
         <var name="entry" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="58,0,61,0">
+      <scope id="4732312587025484527" at="72,0,75,0">
         <var name="entry" id="4732312587025484527" />
-      </scope>
-      <scope id="4732312587025484527" at="67,0,70,0">
-        <var name="spec" id="4732312587025484527" />
-      </scope>
-      <scope id="4732312587025484527" at="73,0,76,0">
-        <var name="measurement" id="4732312587025484527" />
       </scope>
       <scope id="4732312587025484527" at="81,0,84,0">
         <var name="spec" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="85,0,88,0" />
-      <scope id="4732312587025484527" at="94,0,97,0" />
-      <scope id="4732312587025484527" at="97,0,100,0">
+      <scope id="4732312587025484527" at="87,0,90,0">
+        <var name="measurement" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="95,0,98,0">
+        <var name="spec" id="4732312587025484527" />
+      </scope>
+      <scope id="4732312587025484527" at="99,0,102,0" />
+      <scope id="4732312587025484527" at="108,0,111,0" />
+      <scope id="4732312587025484527" at="111,0,114,0">
         <var name="name" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="100,0,103,0" />
-      <scope id="4732312587025484527" at="103,0,106,0">
+      <scope id="4732312587025484527" at="114,0,117,0" />
+      <scope id="4732312587025484527" at="117,0,120,0">
         <var name="description" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="106,0,109,0" />
-      <scope id="4732312587025484527" at="109,0,112,0">
+      <scope id="4732312587025484527" at="120,0,123,0" />
+      <scope id="4732312587025484527" at="123,0,126,0">
         <var name="reference" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="112,0,115,0" />
-      <scope id="4732312587025484527" at="115,0,118,0">
+      <scope id="4732312587025484527" at="126,0,129,0" />
+      <scope id="4732312587025484527" at="129,0,132,0">
         <var name="inputSpecs" id="4732312587025484527" />
       </scope>
-      <scope id="7786684554254890315" at="30,4,35,56">
+      <scope id="7786684554255033260" at="23,51,27,38">
+        <var name="res_a0" id="7786684554255033260" />
+      </scope>
+      <scope id="4200930846358897314" at="37,51,41,48">
+        <var name="res_a1" id="4200930846358897314" />
+      </scope>
+      <scope id="4200930846358897311" at="43,50,47,42">
+        <var name="unaryRange_a1" id="4200930846358897311" />
+      </scope>
+      <scope id="7786684554254890315" at="29,50,34,56">
         <var name="binaryRange_a0" id="7786684554254890315" />
       </scope>
-      <scope id="4732312587025484527" at="79,53,88,7" />
-      <scope id="4732312587025484527" at="65,78,76,36">
+      <scope id="4732312587025484527" at="93,53,102,7" />
+      <scope id="4732312587025484527" at="79,78,90,36">
         <var name="types" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="79,0,90,0">
+      <scope id="4732312587025484527" at="93,0,104,0">
         <var name="type" id="4732312587025484527" />
       </scope>
-      <scope id="7786684554254890314" at="23,4,36,31">
+      <scope id="4200930846358897310" at="36,31,49,31">
+        <var name="eval_b" id="4200930846358897310" />
+        <var name="ranges_b" id="4200930846358897310" />
+      </scope>
+      <scope id="4732312587025484527" at="79,0,92,0">
+        <var name="measurements" id="4732312587025484527" />
+      </scope>
+      <scope id="7786684554254890314" at="22,39,36,31">
         <var name="eval_a" id="7786684554254890314" />
         <var name="ranges_a" id="7786684554254890314" />
       </scope>
-      <scope id="4732312587025484527" at="65,0,78,0">
-        <var name="measurements" id="4732312587025484527" />
-      </scope>
-      <scope id="4732312587025484527" at="20,25,38,0">
-        <var name="inputSpec_sdvlmb_a" id="52719422300177348" />
-      </scope>
-      <scope id="4732312587025484527" at="20,0,40,0" />
-      <scope id="4732312587025484527" at="42,56,62,0">
+      <scope id="4732312587025484527" at="56,56,76,0">
         <var name="filterBySize" id="4732312587025484527" />
         <var name="filteredMeasurements" id="4732312587025484527" />
         <var name="groupedByType" id="4732312587025484527" />
       </scope>
-      <scope id="4732312587025484527" at="41,0,64,0">
+      <scope id="4732312587025484527" at="55,0,78,0">
         <var name="measurements" id="4732312587025484527" />
       </scope>
-      <unit id="4732312587025484527" at="44,114,48,5" name="healthtech.sandbox.hypertension$1" />
-      <unit id="4732312587025484527" at="49,94,53,5" name="healthtech.sandbox.hypertension$2" />
-      <unit id="4732312587025484527" at="53,36,57,5" name="healthtech.sandbox.hypertension$3" />
-      <unit id="4732312587025484527" at="57,11,61,5" name="healthtech.sandbox.hypertension$4" />
-      <unit id="4732312587025484527" at="66,58,70,5" name="healthtech.sandbox.hypertension$5" />
-      <unit id="4732312587025484527" at="72,44,76,5" name="healthtech.sandbox.hypertension$6" />
-      <unit id="4732312587025484527" at="80,42,84,5" name="healthtech.sandbox.hypertension$7" />
-      <unit id="4732312587025484527" at="84,35,88,5" name="healthtech.sandbox.hypertension$8" />
-      <unit id="4732312587025484527" at="13,0,119,0" name="healthtech.sandbox.hypertension" />
+      <scope id="4732312587025484527" at="20,25,52,0">
+        <var name="inputSpec_sdvlmb_a" id="52719422300177348" />
+      </scope>
+      <scope id="4732312587025484527" at="20,0,54,0" />
+      <unit id="4732312587025484527" at="58,114,62,5" name="healthtech.sandbox.hypertension$1" />
+      <unit id="4732312587025484527" at="63,94,67,5" name="healthtech.sandbox.hypertension$2" />
+      <unit id="4732312587025484527" at="67,36,71,5" name="healthtech.sandbox.hypertension$3" />
+      <unit id="4732312587025484527" at="71,11,75,5" name="healthtech.sandbox.hypertension$4" />
+      <unit id="4732312587025484527" at="80,58,84,5" name="healthtech.sandbox.hypertension$5" />
+      <unit id="4732312587025484527" at="86,44,90,5" name="healthtech.sandbox.hypertension$6" />
+      <unit id="4732312587025484527" at="94,42,98,5" name="healthtech.sandbox.hypertension$7" />
+      <unit id="4732312587025484527" at="98,35,102,5" name="healthtech.sandbox.hypertension$8" />
+      <unit id="4732312587025484527" at="13,0,133,0" name="healthtech.sandbox.hypertension" />
     </file>
   </root>
   <root nodeRef="r:8f073bb7-20a3-46da-a632-ccf2b66ec6e7(healthtech.sandbox)/4732312587025727792">
@@ -219,53 +246,65 @@
       <node id="4732312587025727792" at="18,0,19,0" concept="2" trace="evaluationEntries" />
       <node id="52719422300177355" at="20,21,21,71" concept="4" />
       <node id="52719422300177355" at="21,71,22,39" concept="1" />
-      <node id="7786684554256229549" at="23,4,24,53" concept="4" />
-      <node id="7786684554256229553" at="25,4,26,47" concept="4" />
-      <node id="7786684554256229553" at="26,47,27,35" concept="1" />
-      <node id="7786684554256229549" at="27,36,28,33" concept="1" />
+      <node id="7786684554256229549" at="22,39,23,53" concept="4" />
+      <node id="7786684554256229553" at="23,53,24,47" concept="4" />
+      <node id="7786684554256229553" at="24,47,25,35" concept="1" />
+      <node id="7786684554256229553" at="25,35,26,39" concept="1" />
+      <node id="7786684554256229553" at="26,39,27,44" concept="1" />
+      <node id="7786684554256229549" at="27,44,28,33" concept="1" />
       <node id="7786684554256229549" at="28,33,29,52" concept="4" />
-      <node id="7786684554256229550" at="30,4,31,53" concept="4" />
-      <node id="7786684554256229550" at="31,53,32,44" concept="1" />
-      <node id="7786684554256229550" at="32,44,33,38" concept="1" />
-      <node id="7786684554256229550" at="33,38,34,52" concept="1" />
-      <node id="7786684554256229550" at="34,52,35,58" concept="1" />
-      <node id="7786684554256229549" at="35,59,36,35" concept="1" />
-      <node id="7786684554258148319" at="37,4,38,51" concept="4" />
-      <node id="7786684554258148323" at="39,4,40,45" concept="4" />
-      <node id="7786684554258148323" at="40,45,41,40" concept="1" />
-      <node id="7786684554258148319" at="41,41,42,29" concept="1" />
-      <node id="7786684554258148319" at="42,29,43,50" concept="4" />
-      <node id="7786684554258148320" at="44,4,45,51" concept="4" />
-      <node id="7786684554258148320" at="45,51,46,42" concept="1" />
-      <node id="7786684554258148320" at="46,42,47,36" concept="1" />
-      <node id="7786684554258148320" at="47,36,48,48" concept="1" />
-      <node id="7786684554258148320" at="48,48,49,54" concept="1" />
-      <node id="7786684554258148319" at="49,55,50,31" concept="1" />
-      <node id="6413810560232426455" at="51,4,52,51" concept="4" />
-      <node id="6413810560232426459" at="53,4,54,45" concept="4" />
-      <node id="6413810560232426459" at="54,45,55,38" concept="1" />
-      <node id="6413810560232426455" at="55,39,56,29" concept="1" />
+      <node id="7786684554256229550" at="29,52,30,53" concept="4" />
+      <node id="7786684554256229550" at="30,53,31,44" concept="1" />
+      <node id="7786684554256229550" at="31,44,32,38" concept="1" />
+      <node id="7786684554256229550" at="32,38,33,52" concept="1" />
+      <node id="7786684554256229550" at="33,52,34,58" concept="1" />
+      <node id="7786684554256229550" at="34,58,35,37" concept="1" />
+      <node id="7786684554256229549" at="35,37,36,35" concept="1" />
+      <node id="7786684554258148319" at="36,35,37,53" concept="4" />
+      <node id="7786684554258148323" at="37,53,38,47" concept="4" />
+      <node id="7786684554258148323" at="38,47,39,42" concept="1" />
+      <node id="7786684554258148323" at="39,42,40,39" concept="1" />
+      <node id="7786684554258148323" at="40,39,41,50" concept="1" />
+      <node id="7786684554258148319" at="41,50,42,33" concept="1" />
+      <node id="7786684554258148319" at="42,33,43,52" concept="4" />
+      <node id="7786684554258148320" at="43,52,44,51" concept="4" />
+      <node id="7786684554258148320" at="44,51,45,42" concept="1" />
+      <node id="7786684554258148320" at="45,42,46,36" concept="1" />
+      <node id="7786684554258148320" at="46,36,47,48" concept="1" />
+      <node id="7786684554258148320" at="47,48,48,54" concept="1" />
+      <node id="7786684554258148320" at="48,54,49,35" concept="1" />
+      <node id="7786684554258148319" at="49,35,50,35" concept="1" />
+      <node id="6413810560232426455" at="50,35,51,51" concept="4" />
+      <node id="6413810560232426459" at="51,51,52,45" concept="4" />
+      <node id="6413810560232426459" at="52,45,53,38" concept="1" />
+      <node id="6413810560232426459" at="53,38,54,36" concept="1" />
+      <node id="6413810560232426459" at="54,36,55,47" concept="1" />
+      <node id="6413810560232426455" at="55,47,56,29" concept="1" />
       <node id="6413810560232426455" at="56,29,57,50" concept="4" />
-      <node id="6413810560232426456" at="58,4,59,51" concept="4" />
-      <node id="6413810560232426456" at="59,51,60,42" concept="1" />
-      <node id="6413810560232426456" at="60,42,61,36" concept="1" />
-      <node id="6413810560232426456" at="61,36,62,48" concept="1" />
-      <node id="6413810560232426456" at="62,48,63,54" concept="1" />
-      <node id="6413810560232426455" at="63,55,64,31" concept="1" />
-      <node id="6413810560232563391" at="65,4,66,51" concept="4" />
-      <node id="6413810560232563395" at="67,4,68,45" concept="4" />
-      <node id="6413810560232563395" at="68,45,69,35" concept="1" />
-      <node id="6413810560232563391" at="69,36,70,29" concept="1" />
+      <node id="6413810560232426456" at="57,50,58,51" concept="4" />
+      <node id="6413810560232426456" at="58,51,59,42" concept="1" />
+      <node id="6413810560232426456" at="59,42,60,36" concept="1" />
+      <node id="6413810560232426456" at="60,36,61,48" concept="1" />
+      <node id="6413810560232426456" at="61,48,62,54" concept="1" />
+      <node id="6413810560232426456" at="62,54,63,33" concept="1" />
+      <node id="6413810560232426455" at="63,33,64,31" concept="1" />
+      <node id="6413810560232563391" at="64,31,65,51" concept="4" />
+      <node id="6413810560232563395" at="65,51,66,45" concept="4" />
+      <node id="6413810560232563395" at="66,45,67,35" concept="1" />
+      <node id="6413810560232563395" at="67,35,68,37" concept="1" />
+      <node id="6413810560232563395" at="68,37,69,48" concept="1" />
+      <node id="6413810560232563391" at="69,48,70,29" concept="1" />
       <node id="6413810560232563391" at="70,29,71,50" concept="4" />
-      <node id="6413810560232563392" at="72,4,73,51" concept="4" />
-      <node id="6413810560232563392" at="73,51,74,42" concept="1" />
-      <node id="6413810560232563392" at="74,42,75,36" concept="1" />
-      <node id="6413810560232563392" at="75,36,76,48" concept="1" />
-      <node id="6413810560232563392" at="76,48,77,54" concept="1" />
-      <node id="6413810560232563391" at="77,55,78,31" concept="1" />
-      <node id="7786684554256229549" at="78,32,79,36" concept="1" />
-      <node id="7786684554258148319" at="79,36,80,34" concept="1" />
-      <node id="6413810560232426455" at="80,34,81,34" concept="1" />
+      <node id="6413810560232563392" at="71,50,72,51" concept="4" />
+      <node id="6413810560232563392" at="72,51,73,42" concept="1" />
+      <node id="6413810560232563392" at="73,42,74,36" concept="1" />
+      <node id="6413810560232563392" at="74,36,75,48" concept="1" />
+      <node id="6413810560232563392" at="75,48,76,54" concept="1" />
+      <node id="6413810560232563392" at="76,54,77,33" concept="1" />
+      <node id="6413810560232563391" at="77,33,78,31" concept="1" />
+      <node id="7786684554256229549" at="78,31,79,36" concept="1" />
+      <node id="7786684554258148319" at="79,36,80,36" concept="1" />
+      <node id="6413810560232426455" at="80,36,81,34" concept="1" />
       <node id="6413810560232563391" at="81,34,82,34" concept="1" />
       <node id="4732312587025727792" at="82,34,83,0" concept="6" />
       <node id="4732312587025727792" at="87,56,88,72" concept="4" />
@@ -288,10 +327,6 @@
       <node id="4732312587025727792" at="157,42,158,27" concept="5" />
       <node id="4732312587025727792" at="160,57,161,33" concept="1" />
       <node id="4732312587025727792" at="136,0,138,0" concept="3" trace="evaluateInternal#(Ljava/util/Map;)V" />
-      <node id="7786684554256229549" at="24,53,27,36" concept="4" />
-      <node id="7786684554258148319" at="38,51,41,41" concept="4" />
-      <node id="6413810560232426455" at="52,51,55,39" concept="4" />
-      <node id="6413810560232563391" at="66,51,69,36" concept="4" />
       <node id="4732312587025727792" at="90,0,93,0" concept="3" trace="apply#(Lhealthtech/sandbox/Measurement;)Lhealthtech/sandbox/MType;" />
       <node id="4732312587025727792" at="95,0,98,0" concept="3" trace="test#(Ljava/util/Map/Entry;)Z" />
       <node id="4732312587025727792" at="99,0,102,0" concept="3" trace="apply#(Ljava/util/Map/Entry;)Lhealthtech/sandbox/MType;" />
@@ -311,18 +346,10 @@
       <node id="4732312587025727792" at="88,72,93,8" concept="4" />
       <node id="4732312587025727792" at="110,78,115,36" concept="4" />
       <node id="4732312587025727792" at="116,0,121,36" concept="5" />
-      <node id="7786684554256229549" at="29,52,35,59" concept="4" />
-      <node id="7786684554258148319" at="43,50,49,55" concept="4" />
-      <node id="6413810560232426455" at="57,50,63,55" concept="4" />
-      <node id="6413810560232563391" at="71,50,77,55" concept="4" />
       <node id="4732312587025727792" at="124,53,133,7" concept="5" />
       <node id="4732312587025727792" at="124,0,135,0" concept="3" trace="getSpecByType#(Lhealthtech/sandbox/MType;)Lhealthtech/sandbox/InputSpec;" />
       <node id="4732312587025727792" at="93,8,106,8" concept="4" />
       <node id="4732312587025727792" at="110,0,123,0" concept="3" trace="filterByType#(Ljava/util/List;)Ljava/util/List;" />
-      <node id="7786684554256229549" at="22,39,36,36" concept="4" />
-      <node id="7786684554258148319" at="36,36,50,32" concept="4" />
-      <node id="6413810560232426455" at="50,32,64,32" concept="4" />
-      <node id="6413810560232563391" at="64,32,78,32" concept="4" />
       <node id="4732312587025727792" at="86,0,109,0" concept="3" trace="evaluate#(Ljava/util/List;)V" />
       <node id="4732312587025727792" at="20,0,85,0" concept="0" trace="diabetes#()V" />
       <scope id="4732312587025727792" at="136,77,136,77" />
@@ -342,18 +369,6 @@
       <scope id="4732312587025727792" at="154,46,155,31" />
       <scope id="4732312587025727792" at="157,42,158,27" />
       <scope id="4732312587025727792" at="160,57,161,33" />
-      <scope id="7786684554256229553" at="25,4,27,35">
-        <var name="res_a0_0" id="7786684554256229553" />
-      </scope>
-      <scope id="7786684554258148323" at="39,4,41,40">
-        <var name="res_a1" id="7786684554258148323" />
-      </scope>
-      <scope id="6413810560232426459" at="53,4,55,38">
-        <var name="res_a2" id="6413810560232426459" />
-      </scope>
-      <scope id="6413810560232563395" at="67,4,69,35">
-        <var name="res_a3" id="6413810560232563395" />
-      </scope>
       <scope id="4732312587025727792" at="136,0,138,0">
         <var name="measurements" id="4732312587025727792" />
       </scope>
@@ -395,16 +410,28 @@
       <scope id="4732312587025727792" at="160,0,163,0">
         <var name="inputSpecs" id="4732312587025727792" />
       </scope>
-      <scope id="7786684554256229550" at="30,4,35,58">
+      <scope id="7786684554256229553" at="23,53,27,44">
+        <var name="res_a0_0" id="7786684554256229553" />
+      </scope>
+      <scope id="7786684554258148323" at="37,53,41,50">
+        <var name="res_a1_0" id="7786684554258148323" />
+      </scope>
+      <scope id="6413810560232426459" at="51,51,55,47">
+        <var name="res_a2" id="6413810560232426459" />
+      </scope>
+      <scope id="6413810560232563395" at="65,51,69,48">
+        <var name="res_a3" id="6413810560232563395" />
+      </scope>
+      <scope id="7786684554256229550" at="29,52,34,58">
         <var name="binaryRange_a0_0" id="7786684554256229550" />
       </scope>
-      <scope id="7786684554258148320" at="44,4,49,54">
+      <scope id="7786684554258148320" at="43,52,48,54">
         <var name="binaryRange_a1" id="7786684554258148320" />
       </scope>
-      <scope id="6413810560232426456" at="58,4,63,54">
+      <scope id="6413810560232426456" at="57,50,62,54">
         <var name="binaryRange_a2" id="6413810560232426456" />
       </scope>
-      <scope id="6413810560232563392" at="72,4,77,54">
+      <scope id="6413810560232563392" at="71,50,76,54">
         <var name="binaryRange_a3" id="6413810560232563392" />
       </scope>
       <scope id="4732312587025727792" at="124,53,133,7" />
@@ -414,24 +441,24 @@
       <scope id="4732312587025727792" at="124,0,135,0">
         <var name="type" id="4732312587025727792" />
       </scope>
-      <scope id="7786684554256229549" at="23,4,36,35">
+      <scope id="4732312587025727792" at="110,0,123,0">
+        <var name="measurements" id="4732312587025727792" />
+      </scope>
+      <scope id="7786684554256229549" at="22,39,36,35">
         <var name="eval_a_0" id="7786684554256229549" />
         <var name="ranges_a_0" id="7786684554256229549" />
       </scope>
-      <scope id="7786684554258148319" at="37,4,50,31">
-        <var name="eval_b" id="7786684554258148319" />
-        <var name="ranges_b" id="7786684554258148319" />
+      <scope id="7786684554258148319" at="36,35,50,35">
+        <var name="eval_b_0" id="7786684554258148319" />
+        <var name="ranges_b_0" id="7786684554258148319" />
       </scope>
-      <scope id="6413810560232426455" at="51,4,64,31">
+      <scope id="6413810560232426455" at="50,35,64,31">
         <var name="eval_c" id="6413810560232426455" />
         <var name="ranges_c" id="6413810560232426455" />
       </scope>
-      <scope id="6413810560232563391" at="65,4,78,31">
+      <scope id="6413810560232563391" at="64,31,78,31">
         <var name="eval_d" id="6413810560232563391" />
         <var name="ranges_d" id="6413810560232563391" />
-      </scope>
-      <scope id="4732312587025727792" at="110,0,123,0">
-        <var name="measurements" id="4732312587025727792" />
       </scope>
       <scope id="4732312587025727792" at="87,56,107,0">
         <var name="filterBySize" id="4732312587025727792" />

@@ -20,21 +20,35 @@ public class hypertension implements IProtocol {
   public hypertension() {
     InputSpec inputSpec_sdvlmb_a = new InputSpec(2, 1, MType.PRESSURE);
     inputSpecs.add(inputSpec_sdvlmb_a);
-    
     EvaluationEntry eval_a = new EvaluationEntry();
-    
     OutputResult res_a0 = new OutputResult();
-    res_a0.setDescription("123");;
+    res_a0.setDescription("123");
+    res_a0.setReminder("every day");
+    res_a0.setStatus(OutputStatus.OK);
     eval_a.setResult(res_a0);
     List<Range> ranges_a = new ArrayList<Range>();
-    
     BinaryRange binaryRange_a0 = new BinaryRange();
     binaryRange_a0.setType(MType.PRESSURE);
     binaryRange_a0.setOperator("-");
     binaryRange_a0.setOperand(Float.valueOf(123));
-    binaryRange_a0.setSecondOperand(Float.valueOf(123));;
-    eval_a.setRanges(ranges_a);;
+    binaryRange_a0.setSecondOperand(Float.valueOf(123));
+    ranges_a.add(binaryRange_a0);
+    eval_a.setRanges(ranges_a);
+    EvaluationEntry eval_b = new EvaluationEntry();
+    OutputResult res_a1 = new OutputResult();
+    res_a1.setDescription("Ask for help");
+    res_a1.setReminder("every year");
+    res_a1.setStatus(OutputStatus.MEDICAL_HELP);
+    eval_b.setResult(res_a1);
+    List<Range> ranges_b = new ArrayList<Range>();
+    UnaryRange unaryRange_a1 = new UnaryRange();
+    unaryRange_a1.setOperator(">=");
+    unaryRange_a1.setOperand(Float.valueOf(23));
+    unaryRange_a1.setType(MType.PRESSURE);
+    ranges_b.add(unaryRange_a1);
+    eval_b.setRanges(ranges_b);
     evaluationEntries.add(eval_a);
+    evaluationEntries.add(eval_b);
 
   }
 
