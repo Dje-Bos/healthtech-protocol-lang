@@ -3347,41 +3347,48 @@
       <node id="52719422307906046" at="97,122,98,187" concept="6" />
       <node id="52719422308039336" at="98,187,99,91" concept="6" />
       <node id="52719422306064471" at="101,43,102,182" concept="7" />
-      <node id="52719422306468667" at="104,29,105,104" concept="2" />
-      <node id="52719422303850944" at="105,104,106,30" concept="7" />
-      <node id="52719422303848581" at="110,49,111,27" concept="7" />
-      <node id="52719422309045437" at="115,62,116,22" concept="7" />
-      <node id="52719422310547545" at="122,0,123,0" concept="9" trace="MeasurementOperandAdapter$GE" />
-      <node id="52719422310547545" at="123,0,124,0" concept="9" trace="Protocol$AP" />
-      <node id="52719422310547545" at="124,0,125,0" concept="9" trace="MeasurementUnitConfig$RG" />
-      <node id="52719422310547545" at="125,0,126,0" concept="9" trace="MeasurementRange$It" />
-      <node id="52719422310547545" at="129,0,130,0" concept="9" trace="measurement$LLkM" />
-      <node id="52719422310547545" at="130,0,131,0" concept="9" trace="mappings$JWDo" />
-      <node id="52719422310547545" at="131,0,132,0" concept="9" trace="type$f5j0" />
-      <node id="52719422310547545" at="135,0,136,0" concept="9" trace="name$tAp1" />
-      <node id="52719422310547545" at="136,0,137,0" concept="9" trace="unit$f5w5" />
-      <node id="52719422310547545" at="137,0,138,0" concept="9" trace="unit$Ojzw" />
+      <node id="7786684554254613761" at="108,47,109,138" concept="7" />
+      <node id="52719422306468667" at="113,9,114,104" concept="2" />
+      <node id="52719422303850944" at="114,104,115,30" concept="7" />
+      <node id="52719422303848581" at="119,49,120,27" concept="7" />
+      <node id="52719422309045437" at="124,62,125,22" concept="7" />
+      <node id="52719422310547545" at="131,0,132,0" concept="9" trace="MeasurementOperandAdapter$GE" />
+      <node id="52719422310547545" at="132,0,133,0" concept="9" trace="Protocol$AP" />
+      <node id="52719422310547545" at="133,0,134,0" concept="9" trace="MeasurementUnitConfig$RG" />
+      <node id="52719422310547545" at="134,0,135,0" concept="9" trace="MeasurementRange$It" />
+      <node id="52719422310547545" at="135,0,136,0" concept="9" trace="BloodPressureMeasurement$TS" />
+      <node id="52719422310547545" at="139,0,140,0" concept="9" trace="measurement$LLkM" />
+      <node id="52719422310547545" at="140,0,141,0" concept="9" trace="mappings$JWDo" />
+      <node id="52719422310547545" at="141,0,142,0" concept="9" trace="type$f5j0" />
+      <node id="52719422310547545" at="145,0,146,0" concept="9" trace="name$tAp1" />
+      <node id="52719422310547545" at="146,0,147,0" concept="9" trace="unit$f5w5" />
+      <node id="52719422310547545" at="147,0,148,0" concept="9" trace="unit$Ojzw" />
       <node id="52719422303848581" at="88,0,91,0" concept="5" trace="setTraceInfo#(Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;)V" />
       <node id="52719422306064469" at="101,0,104,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7786684554254613418" at="108,0,111,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="52719422303848581" at="83,0,87,0" concept="1" trace="Item#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)V" />
-      <node id="52719422303848581" at="109,0,113,0" concept="5" trace="getTraceInfo#()Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;" />
+      <node id="52719422303848581" at="118,0,122,0" concept="5" trace="getTraceInfo#()Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;" />
       <node id="52719422310547545" at="47,239,52,5" concept="13" />
       <node id="52719422306207976" at="99,91,104,29" concept="6" />
-      <node id="52719422304219727" at="113,0,118,0" concept="5" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="7786684554254611520" at="106,96,111,33" concept="2" />
+      <node id="52719422304219727" at="122,0,127,0" concept="5" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="52719422303848581" at="62,25,68,7" concept="12" />
       <node id="52719422303848581" at="70,52,76,7" concept="13" />
       <node id="52719422310547545" at="35,0,42,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <node id="7786684554254609676" at="105,31,112,11" concept="4" />
+      <node id="7786684554254608455" at="104,29,113,9" concept="4" />
       <node id="52719422310547545" at="43,0,54,0" concept="5" trace="createMenuItems#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
-      <node id="52719422303848581" at="92,0,108,0" concept="5" trace="createNode#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="52719422303848581" at="58,0,80,0" concept="5" trace="createItem#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuItem;" />
+      <node id="52719422303848581" at="92,0,117,0" concept="5" trace="createNode#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="52719422310547545" at="48,9,49,44" />
       <scope id="52719422310547545" at="50,15,51,50" />
       <scope id="52719422303848581" at="63,11,64,69" />
       <scope id="52719422303848581" at="74,17,75,53" />
       <scope id="52719422303848581" at="88,64,89,32" />
       <scope id="52719422306064470" at="101,43,102,182" />
-      <scope id="52719422303848581" at="110,49,111,27" />
-      <scope id="52719422304219727" at="115,62,116,22" />
+      <scope id="7786684554254613419" at="108,47,109,138" />
+      <scope id="52719422303848581" at="119,49,120,27" />
+      <scope id="52719422304219727" at="124,62,125,22" />
       <scope id="52719422303848581" at="65,0,67,20">
         <var name="t" id="52719422303848581" />
       </scope>
@@ -3397,21 +3404,30 @@
       <scope id="52719422306064469" at="101,0,104,0">
         <var name="it" id="52719422306064469" />
       </scope>
+      <scope id="7786684554254613418" at="108,0,111,0">
+        <var name="it" id="7786684554254613418" />
+      </scope>
       <scope id="52719422303848581" at="83,0,87,0">
         <var name="context" id="52719422303848581" />
       </scope>
-      <scope id="52719422303848581" at="109,0,113,0" />
-      <scope id="52719422304219727" at="113,0,118,0">
+      <scope id="52719422303848581" at="118,0,122,0" />
+      <scope id="7786684554254609678" at="106,96,111,33" />
+      <scope id="52719422304219727" at="122,0,127,0">
         <var name="pattern" id="52719422304219727" />
       </scope>
       <scope id="52719422310547545" at="35,0,42,0">
         <var name="_context" id="52719422310547545" />
       </scope>
       <scope id="52719422310547545" at="45,91,52,5" />
+      <scope id="7786684554254608457" at="105,31,112,11" />
       <scope id="52719422310547545" at="43,0,54,0">
         <var name="context" id="52719422310547545" />
       </scope>
-      <scope id="52719422303848581" at="94,56,106,30">
+      <scope id="52719422303848581" at="60,77,78,18">
+        <var name="description" id="52719422303848581" />
+        <var name="item" id="52719422303848581" />
+      </scope>
+      <scope id="52719422303848581" at="94,56,115,30">
         <var name="ancestor" id="52719422307346237" />
         <var name="mappings" id="52719422308039339" />
         <var name="measurement" id="52719422307906049" />
@@ -3419,23 +3435,20 @@
         <var name="roots" id="52719422307625662" />
         <var name="someNode" id="52719422306207979" />
       </scope>
-      <scope id="52719422303848581" at="92,0,108,0">
-        <var name="pattern" id="52719422303848581" />
-      </scope>
-      <scope id="52719422303848581" at="60,77,78,18">
-        <var name="description" id="52719422303848581" />
-        <var name="item" id="52719422303848581" />
-      </scope>
       <scope id="52719422303848581" at="58,0,80,0">
         <var name="_context" id="52719422303848581" />
       </scope>
+      <scope id="52719422303848581" at="92,0,117,0">
+        <var name="pattern" id="52719422303848581" />
+      </scope>
       <unit id="52719422306064469" at="100,113,104,9" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a$Item$1" />
-      <unit id="52719422310547545" at="128,0,133,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$LINKS" />
-      <unit id="52719422310547545" at="134,0,139,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$PROPS" />
-      <unit id="52719422310547545" at="121,0,127,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$CONCEPTS" />
-      <unit id="52719422303848581" at="80,0,119,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a$Item" />
-      <unit id="52719422303848581" at="56,0,120,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a" />
-      <unit id="52719422310547545" at="34,0,140,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu" />
+      <unit id="7786684554254613418" at="107,97,111,13" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a$Item$2" />
+      <unit id="52719422310547545" at="138,0,143,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$LINKS" />
+      <unit id="52719422310547545" at="144,0,149,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$PROPS" />
+      <unit id="52719422310547545" at="130,0,137,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$CONCEPTS" />
+      <unit id="52719422303848581" at="80,0,128,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a$Item" />
+      <unit id="52719422303848581" at="56,0,129,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu$SMP_Action_v8y5mz_a" />
+      <unit id="52719422310547545" at="34,0,150,0" name="healthtech.editor.MeasurementOperandAdapter_SubstituteMenu" />
     </file>
   </root>
 </debug-info>

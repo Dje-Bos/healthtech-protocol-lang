@@ -38,6 +38,7 @@
       <concept id="4414035954634025324" name="healthtech.structure.IntegerConstant" flags="ng" index="1gwEsW">
         <property id="4414035954634151004" name="value" index="1gx9Cc" />
       </concept>
+      <concept id="4414035954635544469" name="healthtech.structure.SystolicPressureMeasurement" flags="ng" index="1gAPB5" />
       <concept id="4414035954635544457" name="healthtech.structure.WeightMeasurement" flags="ng" index="1gAPBp" />
       <concept id="4414035954635544461" name="healthtech.structure.BloodPressureMeasurement" flags="ng" index="1gAPBt" />
       <concept id="4732312587025522455" name="healthtech.structure.EvaluationEntry" flags="ng" index="3qq98I">
@@ -66,6 +67,30 @@
     <property role="TrG5h" value="hypertension" />
     <property role="3qrERL" value="Hypertension is a desease with blood pressure more than 140/90" />
     <property role="3qrERN" value="https://guidelines.moz.gov.ua/documents/2988" />
+    <node concept="3qq98I" id="6KfR5yMozla" role="3qq98H">
+      <node concept="zNcxK" id="6KfR5yMozlb" role="zNcA_">
+        <node concept="1gwEsf" id="6KfR5yMozlp" role="1gwEsO">
+          <node concept="7$aXd" id="6KfR5yMp6ez" role="AGUp3">
+            <property role="7cVD1" value="2Vj0$6RsWC/MERCURY_MM" />
+            <node concept="1gwEsW" id="6KfR5yMp6eB" role="7$aXi">
+              <property role="1gx9Cc" value="123" />
+            </node>
+          </node>
+          <node concept="7$aXd" id="6KfR5yMp6eq" role="1gwEsT">
+            <property role="7cVD1" value="2Vj0$6RsWC/MERCURY_MM" />
+            <node concept="1gwEsW" id="6KfR5yMp6eu" role="7$aXi">
+              <property role="1gx9Cc" value="123" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gAPB5" id="6KfR5yMozlm" role="Ayubk">
+          <property role="TrG5h" value="systolic pressure" />
+        </node>
+      </node>
+      <node concept="A_7WG" id="6KfR5yMp6eG" role="A_7z5">
+        <property role="A_7WF" value="123" />
+      </node>
+    </node>
     <node concept="3qrERO" id="2Vj0$6XOf4" role="3qrER8">
       <property role="3qrERf" value="1" />
       <property role="3qrERa" value="2" />

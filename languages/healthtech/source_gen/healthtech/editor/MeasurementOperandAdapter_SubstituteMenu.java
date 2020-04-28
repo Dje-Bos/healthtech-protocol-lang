@@ -102,6 +102,15 @@ public class MeasurementOperandAdapter_SubstituteMenu extends SubstituteMenuBase
             return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.type$f5j0), PROPS.name$tAp1).equals(SPropertyOperations.getString(measurement, PROPS.name$tAp1));
           }
         }), PROPS.unit$f5w5);
+        if (someNode == null) {
+          if (SNodeOperations.isInstanceOf(measurement, CONCEPTS.BloodPressureMeasurement$TS)) {
+            someNode = SPropertyOperations.getEnum(Sequence.fromIterable(mappings).findFirst(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, LINKS.type$f5j0), CONCEPTS.BloodPressureMeasurement$TS);
+              }
+            }), PROPS.unit$f5w5);
+          }
+        }
         SPropertyOperations.assignEnum(operandAdapter, PROPS.unit$Ojzw, (SEnumerationLiteral) someNode);
         return operandAdapter;
       }
@@ -123,6 +132,7 @@ public class MeasurementOperandAdapter_SubstituteMenu extends SubstituteMenuBase
     /*package*/ static final SConcept Protocol$AP = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, "healthtech.structure.Protocol");
     /*package*/ static final SConcept MeasurementUnitConfig$RG = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906ddd1c3L, "healthtech.structure.MeasurementUnitConfig");
     /*package*/ static final SConcept MeasurementRange$It = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x2f8212ac0c4edadcL, "healthtech.structure.MeasurementRange");
+    /*package*/ static final SConcept BloodPressureMeasurement$TS = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda978dL, "healthtech.structure.BloodPressureMeasurement");
   }
 
   private static final class LINKS {
