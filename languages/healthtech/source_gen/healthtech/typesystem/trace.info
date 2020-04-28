@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="9,0,25,0" name="healthtech.typesystem.TypesystemDescriptor" />
+      <unit at="9,0,29,0" name="healthtech.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:5213bd4f-a990-46c9-8602-95b15eab02a1(healthtech.typesystem)/2249746781629357520">
@@ -199,6 +199,76 @@
       </scope>
       <unit id="4414035954634443326" at="43,0,46,0" name="healthtech.typesystem.typeof_IntegerConstant_InferenceRule$CONCEPTS" />
       <unit id="4414035954634443326" at="17,0,47,0" name="healthtech.typesystem.typeof_IntegerConstant_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5213bd4f-a990-46c9-8602-95b15eab02a1(healthtech.typesystem)/7786684554255183831">
+    <file name="TypesystemDescriptor.java">
+      <node id="7786684554255183831" at="23,5,24,108" concept="5" />
+      <node id="7786684554255183831" at="24,108,25,55" concept="2" />
+      <node id="7786684554255183831" at="22,5,26,5" concept="0" />
+      <scope id="7786684554255183831" at="23,5,25,55">
+        <var name="nonTypesystemRule" id="7786684554255183831" />
+      </scope>
+    </file>
+    <file name="check_MeasurementOperandAdapter_NonTypesystemRule.java">
+      <node id="7786684554255190534" at="30,138,31,141" concept="5" />
+      <node id="7786684554255251283" at="33,39,34,288" concept="6" />
+      <node id="7786684554255278451" at="38,7,39,66" concept="5" />
+      <node id="7786684554255278451" at="39,66,40,546" concept="5" />
+      <node id="7786684554255183831" at="44,50,45,49" concept="6" />
+      <node id="7786684554255183831" at="47,68,48,102" concept="6" />
+      <node id="7786684554255183831" at="50,30,51,17" concept="6" />
+      <node id="7786684554255183831" at="55,0,56,0" concept="8" trace="MeasurementUnitConfig$RG" />
+      <node id="7786684554255183831" at="56,0,57,0" concept="8" trace="MeasurementRange$It" />
+      <node id="7786684554255183831" at="57,0,58,0" concept="8" trace="MeasurementOperandAdapter$GE" />
+      <node id="7786684554255183831" at="61,0,62,0" concept="8" trace="mappings$JWDo" />
+      <node id="7786684554255183831" at="62,0,63,0" concept="8" trace="measurement$LLkM" />
+      <node id="7786684554255183831" at="63,0,64,0" concept="8" trace="type$f5j0" />
+      <node id="7786684554255183831" at="67,0,68,0" concept="8" trace="unit$f5w5" />
+      <node id="7786684554255183831" at="68,0,69,0" concept="8" trace="unit$Ojzw" />
+      <node id="7786684554255183831" at="69,0,70,0" concept="8" trace="name$tAp1" />
+      <node id="7786684554255183831" at="28,0,30,0" concept="1" trace="check_MeasurementOperandAdapter_NonTypesystemRule#()V" />
+      <node id="7786684554255250983" at="33,0,36,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7786684554255183831" at="44,0,47,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7786684554255183831" at="47,0,50,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7786684554255183831" at="50,0,53,0" concept="4" trace="overrides#()Z" />
+      <node id="7786684554255278451" at="37,98,41,7" concept="0" />
+      <node id="7786684554255232008" at="31,141,36,25" concept="5" />
+      <node id="7786684554255277539" at="36,25,42,5" concept="3" />
+      <node id="7786684554255183831" at="30,0,44,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7786684554255183831" at="28,62,28,62" />
+      <scope id="7786684554255250984" at="33,39,34,288" />
+      <scope id="7786684554255183831" at="44,50,45,49" />
+      <scope id="7786684554255183831" at="47,68,48,102" />
+      <scope id="7786684554255183831" at="50,30,51,17" />
+      <scope id="7786684554255183831" at="28,0,30,0" />
+      <scope id="7786684554255278451" at="38,7,40,546">
+        <var name="_reporter_2309309498" id="7786684554255278451" />
+        <var name="errorTarget" id="7786684554255278451" />
+      </scope>
+      <scope id="7786684554255250983" at="33,0,36,0">
+        <var name="it" id="7786684554255250983" />
+      </scope>
+      <scope id="7786684554255183831" at="44,0,47,0" />
+      <scope id="7786684554255183831" at="47,0,50,0">
+        <var name="argument" id="7786684554255183831" />
+      </scope>
+      <scope id="7786684554255183831" at="50,0,53,0" />
+      <scope id="7786684554255277541" at="37,98,41,7" />
+      <scope id="7786684554255183832" at="30,138,42,5">
+        <var name="unit" id="7786684554255232011" />
+        <var name="unitConfigs" id="7786684554255190537" />
+      </scope>
+      <scope id="7786684554255183831" at="30,0,44,0">
+        <var name="measurementOperandAdapter" id="7786684554255183831" />
+        <var name="status" id="7786684554255183831" />
+        <var name="typeCheckingContext" id="7786684554255183831" />
+      </scope>
+      <unit id="7786684554255250983" at="32,158,36,5" name="healthtech.typesystem.check_MeasurementOperandAdapter_NonTypesystemRule$1" />
+      <unit id="7786684554255183831" at="54,0,59,0" name="healthtech.typesystem.check_MeasurementOperandAdapter_NonTypesystemRule$CONCEPTS" />
+      <unit id="7786684554255183831" at="60,0,65,0" name="healthtech.typesystem.check_MeasurementOperandAdapter_NonTypesystemRule$LINKS" />
+      <unit id="7786684554255183831" at="66,0,71,0" name="healthtech.typesystem.check_MeasurementOperandAdapter_NonTypesystemRule$PROPS" />
+      <unit id="7786684554255183831" at="27,0,72,0" name="healthtech.typesystem.check_MeasurementOperandAdapter_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

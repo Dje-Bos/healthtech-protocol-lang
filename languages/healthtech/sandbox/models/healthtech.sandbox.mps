@@ -103,52 +103,28 @@
     <property role="TrG5h" value="diabetes" />
     <property role="3qrERL" value="Diabetes clinic protocol adaptation" />
     <property role="3qrERN" value="https://guidelines.moz.gov.ua/documents/3322" />
-    <node concept="3qq98I" id="2Vj0$7AN63" role="3qq98H">
-      <node concept="zNcxK" id="2Vj0$7AN64" role="zNcA_">
-        <node concept="AHUyw" id="2Vj0$7AN6h" role="Ayubk">
-          <property role="TrG5h" value="glucose" />
-        </node>
-        <node concept="1gwEsf" id="2Vj0$7AN6F" role="1gwEsO">
-          <node concept="7$aXd" id="2Vj0$7ANg_" role="1gwEsT">
+    <node concept="3qq98I" id="6KfR5yMtEiH" role="3qq98H">
+      <node concept="zNcxK" id="6KfR5yMtEiI" role="zNcA_">
+        <node concept="1gwEsf" id="6KfR5yMtEiU" role="1gwEsO">
+          <node concept="7$aXd" id="6KfR5yMtEj3" role="1gwEsT">
             <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
-            <node concept="1gwEsW" id="2Vj0$7ANgD" role="7$aXi">
+            <node concept="1gwEsW" id="6KfR5yMtEj7" role="7$aXi">
               <property role="1gx9Cc" value="123" />
             </node>
           </node>
-          <node concept="7$aXd" id="2Vj0$7ANgK" role="AGUp3">
+          <node concept="7$aXd" id="6KfR5yMtEjc" role="AGUp3">
             <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
-            <node concept="1gwEsW" id="2Vj0$7ANh1" role="7$aXi">
-              <property role="1gx9Cc" value="124" />
+            <node concept="1gwEsW" id="6KfR5yMtEjg" role="7$aXi">
+              <property role="1gx9Cc" value="432" />
             </node>
           </node>
         </node>
-      </node>
-      <node concept="A_7WG" id="2Vj0$7AN69" role="A_7z5">
-        <property role="A_7WF" value="dsa" />
-      </node>
-    </node>
-    <node concept="3qq98I" id="4KU2bhgDtyk" role="3qq98H">
-      <node concept="zNcxK" id="4KU2bhgDtyl" role="zNcA_">
-        <node concept="1gwEsf" id="4KU2bhgDtyE" role="1gwEsO">
-          <node concept="7$aXd" id="4KU2bhgDtyN" role="1gwEsT">
-            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
-            <node concept="1gwEsW" id="4KU2bhgDtyR" role="7$aXi">
-              <property role="1gx9Cc" value="123" />
-            </node>
-          </node>
-          <node concept="7$aXd" id="4pgcSLYDOf8" role="AGUp3">
-            <property role="7cVD1" value="2Vj0$6Rt6X/MOL_PER_LITRE" />
-            <node concept="1gwEsW" id="4pgcSLYDOfc" role="7$aXi">
-              <property role="1gx9Cc" value="321" />
-            </node>
-          </node>
-        </node>
-        <node concept="AHUyw" id="4KU2bhgDtyB" role="Ayubk">
+        <node concept="AHUyw" id="6KfR5yMtEiR" role="Ayubk">
           <property role="TrG5h" value="glucose" />
         </node>
       </node>
-      <node concept="A_7WG" id="4KU2bhgDtyo" role="A_7z5">
-        <property role="A_7WF" value="fda" />
+      <node concept="A_7WG" id="6KfR5yMtEiL" role="A_7z5">
+        <property role="A_7WF" value="123" />
       </node>
     </node>
     <node concept="3qrERO" id="2Vj0$6XOfb" role="3qrER8">

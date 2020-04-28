@@ -25,7 +25,7 @@ import jetbrains.mps.smodel.language.LanguageRegistry;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class evalMeasuremntMenu extends TransformationMenuBase {
+public class evalMeasurement_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.SUBSTITUTE);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
@@ -36,7 +36,7 @@ public class evalMeasuremntMenu extends TransformationMenuBase {
   @Override
   public List<TransformationMenuItem> createMenuItems(@NotNull TransformationMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("named transformation menu " + "evalMeasuremntMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638368321")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("named transformation menu " + "evalMeasurement_TransformationMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638368321")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -49,12 +49,12 @@ public class evalMeasuremntMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.SUBSTITUTE).contains(_context.getMenuLocation())) {
-      result.add(new TMP_IncludeSM_vj4frc_a0());
+      result.add(new TMP_IncludeSM_vnnd0j_a0());
     }
     return result;
   }
 
-  public class TMP_IncludeSM_vj4frc_a0 extends IncludeSubstituteMenuTransformationMenuPart {
+  public class TMP_IncludeSM_vnnd0j_a0 extends IncludeSubstituteMenuTransformationMenuPart {
     @NotNull
     @Override
     public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
@@ -62,7 +62,7 @@ public class evalMeasuremntMenu extends TransformationMenuBase {
       try {
         SAbstractConcept targetConcept = getTargetConcept(context);
         String name = (targetConcept == null ? "" : targetConcept.getName());
-        context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include substitute menu " + "named substitute menu " + "evalMeasurementMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638368329")));
+        context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include substitute menu " + "named substitute menu " + "evalMeasurement_SubstituteMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638368329")));
         return super.createItems(context);
       } finally {
         context.getEditorMenuTrace().popTraceInfo();
@@ -73,7 +73,7 @@ public class evalMeasuremntMenu extends TransformationMenuBase {
     protected SubstituteMenuLookup getSubstituteMenuLookup(TransformationMenuContext context) {
       final EditorContext editorContext = context.getEditorContext();
       SAbstractConcept conceptToFindMenuFor = getConceptToFindMenuFor(context);
-      return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), conceptToFindMenuFor, "healthtech.editor.evalMeasurementMenu");
+      return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), conceptToFindMenuFor, "healthtech.editor.evalMeasurement_SubstituteMenu");
     }
     private SAbstractConcept getConceptToFindMenuFor(TransformationMenuContext _context) {
       return CONCEPTS.Measurement$Hi;

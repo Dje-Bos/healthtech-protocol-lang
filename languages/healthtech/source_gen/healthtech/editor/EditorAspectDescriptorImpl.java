@@ -77,7 +77,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         if (true) {
           switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0a1a4, menuId.getFqName())) {
             case 0:
-              return Arrays.asList(new TransformationMenu[]{new evalMeasuremntMenu()});
+              return Arrays.asList(new TransformationMenu[]{new evalMeasurement_TransformationMenu()});
             default:
           }
         }
@@ -111,7 +111,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         if (true) {
           switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0a1a6, menuId.getFqName())) {
             case 0:
-              return Arrays.asList(new SubstituteMenu[]{new evalMeasurementMenu()});
+              return Arrays.asList(new SubstituteMenu[]{new evalMeasurement_SubstituteMenu()});
             default:
           }
         }
@@ -127,6 +127,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L)).seal();
   private static final ConceptSwitchIndex conceptIndex3 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696dL)).seal();
   private static final ConceptSwitchIndex conceptIndex4 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L)).seal();
-  private static final String[] stringSwitchCases_xbvbvu_a0a0a0a1a4 = new String[]{"healthtech.editor.evalMeasuremntMenu"};
-  private static final String[] stringSwitchCases_xbvbvu_a0a0a0a1a6 = new String[]{"healthtech.editor.evalMeasurementMenu"};
+  private static final String[] stringSwitchCases_xbvbvu_a0a0a0a1a4 = new String[]{"healthtech.editor.evalMeasurement_TransformationMenu"};
+  private static final String[] stringSwitchCases_xbvbvu_a0a0a0a1a6 = new String[]{"healthtech.editor.evalMeasurement_SubstituteMenu"};
 }

@@ -28,12 +28,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.substitute.SimpleConceptSubstituteMenuPart;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public class evalMeasurementMenu extends SubstituteMenuBase {
+public class evalMeasurement_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Concepts_mehz0f_a(), CONCEPTS.Measurement$Hi));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Concepts_oklo18_a(), CONCEPTS.Measurement$Hi));
     return result;
   }
 
@@ -41,7 +41,7 @@ public class evalMeasurementMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("named substitute menu " + "evalMeasurementMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638367746")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("named substitute menu " + "evalMeasurement_SubstituteMenu", new SNodePointer("r:921d0538-35a9-424b-be47-a0aa36cee6a0(healthtech.editor)", "4414035954638367746")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -50,7 +50,7 @@ public class evalMeasurementMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_Concepts_mehz0f_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Concepts_oklo18_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(SubstituteMenuContext _context) {
 
       Iterable<SNode> inputMeasurements = SLinkOperations.collect(SLinkOperations.collectMany(SNodeOperations.getNodeAncestors(_context.getParentNode(), CONCEPTS.Protocol$AP, false), LINKS.inputSpecs$6ijH), LINKS.measure$duPR);

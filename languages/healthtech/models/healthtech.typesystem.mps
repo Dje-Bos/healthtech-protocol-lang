@@ -8,10 +8,13 @@
   <imports>
     <import index="6854" ref="r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -127,9 +130,18 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
+      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -162,6 +174,7 @@
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
   <node concept="1YbPZF" id="3P1N_1HMsCY">
@@ -540,6 +553,168 @@
     <node concept="1YaCAy" id="1WSHcsTBMwQ" role="1YuTPh">
       <property role="TrG5h" value="measurementBinaryOperator" />
       <ref role="1YaFvo" to="6854:2Y24EKcm64C" resolve="MeasurementBinaryOperator" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6KfR5yMpEZn">
+    <property role="TrG5h" value="check_MeasurementOperandAdapter" />
+    <property role="3GE5qa" value="evaluation" />
+    <node concept="3clFbS" id="6KfR5yMpEZo" role="18ibNy">
+      <node concept="3cpWs8" id="6KfR5yMpGC6" role="3cqZAp">
+        <node concept="3cpWsn" id="6KfR5yMpGC9" role="3cpWs9">
+          <property role="TrG5h" value="unitConfigs" />
+          <node concept="2I9FWS" id="6KfR5yMpGC4" role="1tU5fm">
+            <ref role="2I9WkF" to="6854:2Vj0$6Rt73" resolve="MeasurementUnitConfig" />
+          </node>
+          <node concept="2OqwBi" id="6KfR5yMpFzg" role="33vP2m">
+            <node concept="2OqwBi" id="6KfR5yMpFph" role="2Oq$k0">
+              <node concept="1YBJjd" id="6KfR5yMpFn2" role="2Oq$k0">
+                <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+              </node>
+              <node concept="I4A8Y" id="6KfR5yMpFqn" role="2OqNvi" />
+            </node>
+            <node concept="2RRcyG" id="6KfR5yMpFCB" role="2OqNvi">
+              <ref role="2RRcyH" to="6854:2Vj0$6Rt73" resolve="MeasurementUnitConfig" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="6KfR5yMpQK8" role="3cqZAp">
+        <node concept="3cpWsn" id="6KfR5yMpQKb" role="3cpWs9">
+          <property role="TrG5h" value="unit" />
+          <node concept="2ZThk1" id="6KfR5yMpQKB" role="1tU5fm" />
+          <node concept="2OqwBi" id="6KfR5yMq1yp" role="33vP2m">
+            <node concept="2OqwBi" id="6KfR5yMpV7C" role="2Oq$k0">
+              <node concept="2OqwBi" id="6KfR5yMpSTO" role="2Oq$k0">
+                <node concept="37vLTw" id="6KfR5yMpQKR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6KfR5yMpGC9" resolve="unitConfigs" />
+                </node>
+                <node concept="13MTOL" id="6KfR5yMpUxA" role="2OqNvi">
+                  <ref role="13MTZf" to="6854:2Vj0$6SxtV" resolve="mappings" />
+                </node>
+              </node>
+              <node concept="1z4cxt" id="6KfR5yMpVo_" role="2OqNvi">
+                <node concept="1bVj0M" id="6KfR5yMpVoB" role="23t8la">
+                  <node concept="3clFbS" id="6KfR5yMpVoC" role="1bW5cS">
+                    <node concept="3clFbF" id="6KfR5yMpVtj" role="3cqZAp">
+                      <node concept="2OqwBi" id="6KfR5yMuei9" role="3clFbG">
+                        <node concept="2OqwBi" id="6KfR5yMsvHz" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6KfR5yMsva6" role="2Oq$k0">
+                            <node concept="2OqwBi" id="6KfR5yMsujS" role="2Oq$k0">
+                              <node concept="1YBJjd" id="6KfR5yMstKI" role="2Oq$k0">
+                                <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+                              </node>
+                              <node concept="2Xjw5R" id="6KfR5yMsuDH" role="2OqNvi">
+                                <node concept="1xMEDy" id="6KfR5yMsuDJ" role="1xVPHs">
+                                  <node concept="chp4Y" id="6KfR5yMsuOy" role="ri$Ld">
+                                    <ref role="cht4Q" to="6854:2Y24EKcjHFs" resolve="MeasurementRange" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="6KfR5yMsvq$" role="2OqNvi">
+                              <ref role="3Tt5mk" to="6854:1WSHcsTGloj" resolve="measurement" />
+                            </node>
+                          </node>
+                          <node concept="2yIwOk" id="6KfR5yMswgb" role="2OqNvi" />
+                        </node>
+                        <node concept="liA8E" id="6KfR5yMujRw" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
+                          <node concept="2OqwBi" id="6KfR5yMuinD" role="37wK5m">
+                            <node concept="2OqwBi" id="6KfR5yMuhXa" role="2Oq$k0">
+                              <node concept="37vLTw" id="6KfR5yMuhHZ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6KfR5yMpVoD" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="6KfR5yMui7O" role="2OqNvi">
+                                <ref role="3Tt5mk" to="6854:2Vj0$6S99_" resolve="type" />
+                              </node>
+                            </node>
+                            <node concept="2yIwOk" id="6KfR5yMuiQ7" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="6KfR5yMpVoD" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="6KfR5yMpVoE" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6KfR5yMq1Ls" role="2OqNvi">
+              <ref role="3TsBF5" to="6854:2Vj0$6S99F" resolve="unit" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6KfR5yMq1Rz" role="3cqZAp">
+        <node concept="3clFbS" id="6KfR5yMq1R_" role="3clFbx">
+          <node concept="2MkqsV" id="6KfR5yMq25N" role="3cqZAp">
+            <node concept="1YBJjd" id="6KfR5yMq26D" role="1urrMF">
+              <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+            </node>
+            <node concept="2YIFZM" id="6KfR5yMr2bO" role="2MkJ7o">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+              <node concept="Xl_RD" id="6KfR5yMr2fS" role="37wK5m">
+                <property role="Xl_RC" value="unit '%s' for type '%s' not allowed" />
+              </node>
+              <node concept="2OqwBi" id="6KfR5yMr2FU" role="37wK5m">
+                <node concept="1YBJjd" id="6KfR5yMr2ve" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+                </node>
+                <node concept="3TrcHB" id="6KfR5yMr31$" role="2OqNvi">
+                  <ref role="3TsBF5" to="6854:2Vj0$7yfp8" resolve="unit" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6KfR5yMr4D0" role="37wK5m">
+                <node concept="2OqwBi" id="6KfR5yMr4hv" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6KfR5yMr3ND" role="2Oq$k0">
+                    <node concept="1YBJjd" id="6KfR5yMr3pH" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+                    </node>
+                    <node concept="2Xjw5R" id="6KfR5yMr41j" role="2OqNvi">
+                      <node concept="1xMEDy" id="6KfR5yMr41l" role="1xVPHs">
+                        <node concept="chp4Y" id="6KfR5yMr46d" role="ri$Ld">
+                          <ref role="cht4Q" to="6854:2Y24EKcjHFs" resolve="MeasurementRange" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6KfR5yMr4sO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="6854:1WSHcsTGloj" resolve="measurement" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="6KfR5yMr55a" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="6KfR5yMtFyd" role="3clFbw">
+          <node concept="2OqwBi" id="6KfR5yMtFyf" role="3fr31v">
+            <node concept="37vLTw" id="6KfR5yMtFyg" role="2Oq$k0">
+              <ref role="3cqZAo" node="6KfR5yMpQKb" resolve="unit" />
+            </node>
+            <node concept="liA8E" id="6KfR5yMtFyh" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+              <node concept="2OqwBi" id="6KfR5yMtFyi" role="37wK5m">
+                <node concept="1YBJjd" id="6KfR5yMtFyj" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6KfR5yMpEZq" resolve="measurementOperandAdapter" />
+                </node>
+                <node concept="3TrcHB" id="6KfR5yMtFyk" role="2OqNvi">
+                  <ref role="3TsBF5" to="6854:2Vj0$7yfp8" resolve="unit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6KfR5yMpEZq" role="1YuTPh">
+      <property role="TrG5h" value="measurementOperandAdapter" />
+      <ref role="1YaFvo" to="6854:2Vj0$7aYd4" resolve="MeasurementOperandAdapter" />
     </node>
   </node>
 </model>

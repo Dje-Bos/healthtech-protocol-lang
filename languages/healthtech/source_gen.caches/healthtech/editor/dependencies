@@ -20,8 +20,8 @@
     <classNode dependClassName="healthtech.editor.Operand_SubstituteMenu" />
     <classNode dependClassName="healthtech.editor.OutputResult_Editor" />
     <classNode dependClassName="healthtech.editor.Protocol_Editor" />
-    <classNode dependClassName="healthtech.editor.evalMeasurementMenu" />
-    <classNode dependClassName="healthtech.editor.evalMeasuremntMenu" />
+    <classNode dependClassName="healthtech.editor.evalMeasurement_SubstituteMenu" />
+    <classNode dependClassName="healthtech.editor.evalMeasurement_TransformationMenu" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
@@ -698,7 +698,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="healthtech.editor.evalMeasurementMenu">
+  <dependency className="healthtech.editor.evalMeasurement_SubstituteMenu">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -727,7 +727,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="healthtech.editor.evalMeasuremntMenu">
+  <dependency className="healthtech.editor.evalMeasurement_TransformationMenu">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
