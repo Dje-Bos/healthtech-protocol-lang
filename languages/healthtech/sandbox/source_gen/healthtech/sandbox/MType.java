@@ -8,5 +8,7 @@ public enum MType {
   GLUCOSE(),
   PRESSURE(),
   TEMP(),
-  WEIGHT()
+  WEIGHT(),
+  DIASTOLIC(),
+  SYSTOLIC()
 }

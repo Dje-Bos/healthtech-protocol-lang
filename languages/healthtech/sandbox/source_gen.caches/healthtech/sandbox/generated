@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <product version="3" modelHash="bfsko12st03q7573qusclvbsm0teyjd">
-  <files names="BinaryRange.java:EvaluationEntry.java:IProtocol.java:InputSpec.java:MType.java:MUnit.java:Measurement.java:OutputResult.java:OutputStatus.java:Range.java:UnaryRange.java:diabetes.java:hypertension.java" />
+  <files names="EvaluationEntry.java:IProtocol.java:InputSpec.java:LimitedRange.java:MType.java:MUnit.java:Measurement.java:MeasurementUtils.java:NonLimitedRange.java:OutputResult.java:OutputStatus.java:Range.java:diabetes.java:hypertension.java" />
 </product>
 

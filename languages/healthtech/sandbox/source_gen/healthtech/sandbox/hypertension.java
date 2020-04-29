@@ -9,6 +9,10 @@ import java.util.stream.Collectors;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.Comparator;
+import java.time.temporal.ChronoUnit;
+import java.util.stream.Stream;
+import java.util.function.Consumer;
 
 public class hypertension implements IProtocol {
   private String name = "hypertension";
@@ -19,41 +23,54 @@ public class hypertension implements IProtocol {
 
   public hypertension() {
     InputSpec inputSpec_sdvlmb_a = new InputSpec(2, 1, MType.PRESSURE);
+
     inputSpecs.add(inputSpec_sdvlmb_a);
+
     EvaluationEntry eval_a = new EvaluationEntry();
     OutputResult res_a0 = new OutputResult();
     res_a0.setDescription("123");
     res_a0.setReminder("every day");
     res_a0.setStatus(OutputStatus.OK);
+
     eval_a.setResult(res_a0);
     List<Range> ranges_a = new ArrayList<Range>();
-    BinaryRange binaryRange_a0 = new BinaryRange();
-    binaryRange_a0.setType(MType.PRESSURE);
+    LimitedRange binaryRange_a0 = new LimitedRange();
+    binaryRange_a0.setType(MType.SYSTOLIC);
     binaryRange_a0.setOperator("-");
     binaryRange_a0.setOperand(Float.valueOf(123));
     binaryRange_a0.setSecondOperand(Float.valueOf(123));
+
     ranges_a.add(binaryRange_a0);
     eval_a.setRanges(ranges_a);
+
     EvaluationEntry eval_b = new EvaluationEntry();
     OutputResult res_a1 = new OutputResult();
     res_a1.setDescription("Ask for help");
     res_a1.setReminder("every year");
     res_a1.setStatus(OutputStatus.MEDICAL_HELP);
+
     eval_b.setResult(res_a1);
     List<Range> ranges_b = new ArrayList<Range>();
-    UnaryRange unaryRange_a1 = new UnaryRange();
+    NonLimitedRange unaryRange_a1 = new NonLimitedRange();
     unaryRange_a1.setOperator(">=");
     unaryRange_a1.setOperand(Float.valueOf(23));
-    unaryRange_a1.setType(MType.PRESSURE);
+    unaryRange_a1.setType(MType.DIASTOLIC);
+
     ranges_b.add(unaryRange_a1);
     eval_b.setRanges(ranges_b);
+
     evaluationEntries.add(eval_a);
     evaluationEntries.add(eval_b);
-
   }
 
   @Override
-  public void evaluate(List<Measurement> measurements) {
+  public List<OutputResult> evaluate(List<Measurement> measurements) {
+    Map<MType, List<Measurement>> measurementsForEval = filterMeasurements(measurements);
+
+    return evaluateInternal(measurementsForEval);
+  }
+
+  private Map<MType, List<Measurement>> filterMeasurements(List<Measurement> measurements) {
     List<Measurement> filteredMeasurements = filterByType(measurements);
     Map<MType, List<Measurement>> groupedByType = filteredMeasurements.stream().collect(Collectors.groupingBy(new Function<Measurement, MType>() {
       public MType apply(Measurement measurement) {
@@ -73,7 +90,19 @@ public class hypertension implements IProtocol {
         return entry.getValue();
       }
     }));
-
+    return filterBySize.entrySet().stream().filter(new Predicate<Map.Entry<MType, List<Measurement>>>() {
+      public boolean test(Map.Entry<MType, List<Measurement>> entry) {
+        return checkTimeRange(entry);
+      }
+    }).collect(Collectors.toMap(new Function<Map.Entry<MType, List<Measurement>>, MType>() {
+      public MType apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getKey();
+      }
+    }, new Function<Map.Entry<MType, List<Measurement>>, List<Measurement>>() {
+      public List<Measurement> apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue();
+      }
+    }));
   }
 
   /*package*/ List<Measurement> filterByType(List<Measurement> measurements) {
@@ -102,7 +131,29 @@ public class hypertension implements IProtocol {
     });
   }
 
-  private void evaluateInternal(Map<MType, List<Measurement>> measurements) {
+  private boolean checkTimeRange(Map.Entry<MType, List<Measurement>> entry) {
+    entry.getValue().sort(new Comparator<Measurement>() {
+      public int compare(Measurement m1, Measurement m2) {
+        return m1.getCreated().compareTo(m2.getCreated());
+      }
+    });
+    boolean res = false;
+    if (!((entry.getValue().size() < 2))) {
+      return ChronoUnit.DAYS.between(entry.getValue().get(0).getCreated(), entry.getValue().get(entry.getValue().size() - 1).getCreated()) >= getSpecByType(entry.getKey()).getTimeRange();
+    }
+    return res;
+  }
+
+  private List<OutputResult> evaluateInternal(final Map<MType, List<Measurement>> measurements) {
+    return evaluationEntries.stream().flatMap(new Function<EvaluationEntry, Stream<OutputResult>>() {
+      public Stream<OutputResult> apply(EvaluationEntry entry) {
+        return entry.evaluate(measurements).stream();
+      }
+    }).peek(new Consumer<OutputResult>() {
+      public void accept(OutputResult res) {
+        res.setProtocol(name);
+      }
+    }).collect(Collectors.toList());
   }
 
   public String getName() {

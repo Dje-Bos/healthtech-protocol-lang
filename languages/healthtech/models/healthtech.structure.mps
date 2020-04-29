@@ -343,14 +343,14 @@
     <property role="EcuMT" value="2249746781630977683" />
     <property role="3GE5qa" value="evaluation" />
     <property role="TrG5h" value="MoreOrEqualUnaryOperator" />
-    <property role="34LRSv" value="&lt;=" />
+    <property role="34LRSv" value="&gt;=" />
     <ref role="1TJDcQ" node="1WSHcsTGkLc" resolve="MeasurementUnaryOperator" />
   </node>
   <node concept="1TIwiD" id="1WSHcsTGlqB">
     <property role="EcuMT" value="2249746781630977703" />
     <property role="3GE5qa" value="evaluation" />
     <property role="TrG5h" value="LessOrEqualUnaryOperator" />
-    <property role="34LRSv" value="&gt;=" />
+    <property role="34LRSv" value="&lt;=" />
     <ref role="1TJDcQ" node="1WSHcsTGkLc" resolve="MeasurementUnaryOperator" />
   </node>
   <node concept="25R3W" id="2Vj0$6RruZ">

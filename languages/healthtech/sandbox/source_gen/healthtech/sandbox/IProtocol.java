@@ -5,5 +5,5 @@ package healthtech.sandbox;
 import java.util.List;
 
 public interface IProtocol {
-  void evaluate(List<Measurement> measurments);
+  List<OutputResult> evaluate(List<Measurement> measurments);
 }

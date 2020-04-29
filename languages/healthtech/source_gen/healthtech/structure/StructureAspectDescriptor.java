@@ -219,7 +219,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("healthtech.structure.MeasurementUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b14c4cL);
     b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977703");
     b.version(2);
-    b.alias(">=");
+    b.alias("<=");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMeasurement() {
@@ -311,7 +311,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("healthtech.structure.MeasurementUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b14c4cL);
     b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977683");
     b.version(2);
-    b.alias("<=");
+    b.alias(">=");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOperand() {

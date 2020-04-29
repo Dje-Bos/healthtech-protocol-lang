@@ -5,11 +5,12 @@ package main;
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
 import jetbrains.mps.generator.template.DropRootRuleContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -42,7 +43,7 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static boolean dropRootRule_Condition_0_0(final DropRootRuleContext _context) {
-    return true;
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).equals("DefaultUnitConfig");
   }
   public static boolean rule_Condition_7_0(final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.PulseMeasurement$oa);
@@ -51,13 +52,19 @@ public class QueriesGenerated extends QueryProviderBase {
     return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GlucoseMeasurement$k3);
   }
   public static boolean rule_Condition_7_2(final BaseMappingRuleContext _context) {
-    return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.BloodPressureMeasurement$TS);
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(_context.getNode())), CONCEPTS.BloodPressureMeasurement$TS);
   }
   public static boolean rule_Condition_7_3(final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.WeightMeasurement$HL);
   }
   public static boolean rule_Condition_7_4(final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.TemperatureMeasurement$Hy);
+  }
+  public static boolean rule_Condition_7_5(final BaseMappingRuleContext _context) {
+    return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DiastolicPressueMeasurement$Xh);
+  }
+  public static boolean rule_Condition_7_6(final BaseMappingRuleContext _context) {
+    return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.SystolicPressureMeasurement$XK);
   }
   public static boolean rule_Condition_15_0(final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.rangeOperator$2bmM), CONCEPTS.MeasurementUnaryOperator$dk);
@@ -190,6 +197,8 @@ public class QueriesGenerated extends QueryProviderBase {
     rrcMethods.put("6413810560235101536", new RRC(i++));
     rrcMethods.put("6413810560235104498", new RRC(i++));
     rrcMethods.put("6413810560235107933", new RRC(i++));
+    rrcMethods.put("1482455935293920676", new RRC(i++));
+    rrcMethods.put("1482455935293924199", new RRC(i++));
     rrcMethods.put("6413810560236730159", new RRC(i++));
     rrcMethods.put("6413810560236742789", new RRC(i++));
     rrcMethods.put("4200930846356979719", new RRC(i++));
@@ -225,16 +234,20 @@ public class QueriesGenerated extends QueryProviderBase {
         case 4:
           return QueriesGenerated.rule_Condition_7_4(ctx);
         case 5:
-          return QueriesGenerated.rule_Condition_15_0(ctx);
+          return QueriesGenerated.rule_Condition_7_5(ctx);
         case 6:
-          return QueriesGenerated.rule_Condition_15_1(ctx);
+          return QueriesGenerated.rule_Condition_7_6(ctx);
         case 7:
-          return QueriesGenerated.rule_Condition_22_0(ctx);
+          return QueriesGenerated.rule_Condition_15_0(ctx);
         case 8:
-          return QueriesGenerated.rule_Condition_22_1(ctx);
+          return QueriesGenerated.rule_Condition_15_1(ctx);
         case 9:
-          return QueriesGenerated.rule_Condition_22_2(ctx);
+          return QueriesGenerated.rule_Condition_22_0(ctx);
         case 10:
+          return QueriesGenerated.rule_Condition_22_1(ctx);
+        case 11:
+          return QueriesGenerated.rule_Condition_22_2(ctx);
+        case 12:
           return QueriesGenerated.rule_Condition_22_3(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -481,12 +494,27 @@ public class QueriesGenerated extends QueryProviderBase {
     }
   }
 
+  private static final class PROPS {
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty status$fHvE = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL, 0x6c0fdc58b27e8d37L, "status");
+    /*package*/ static final SProperty description$6hna = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc220c8L, "description");
+    /*package*/ static final SProperty reference$6ho8 = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc220caL, "reference");
+    /*package*/ static final SProperty timeRange$gcYs = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL, 0x41ac8d399bc220f3L, "timeRange");
+    /*package*/ static final SProperty size$gda4 = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL, 0x41ac8d399bc220f6L, "size");
+    /*package*/ static final SProperty result$CjFw = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL, 0x1f38b4c739accbecL, "result");
+    /*package*/ static final SProperty type$l6Ut = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L, 0x6c0fdc58b27e8d35L, "type");
+    /*package*/ static final SProperty value$7rXu = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dd44f32L, 0x3d41ce506dd44f82L, "value");
+    /*package*/ static final SProperty value$VaKW = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696cL, 0x3d41ce506dc5545cL, "value");
+  }
+
   private static final class CONCEPTS {
     /*package*/ static final SConcept PulseMeasurement$oa = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906e476e7L, "healthtech.structure.PulseMeasurement");
     /*package*/ static final SConcept GlucoseMeasurement$k3 = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c7398f1c67L, "healthtech.structure.GlucoseMeasurement");
     /*package*/ static final SConcept BloodPressureMeasurement$TS = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda978dL, "healthtech.structure.BloodPressureMeasurement");
     /*package*/ static final SConcept WeightMeasurement$HL = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9789L, "healthtech.structure.WeightMeasurement");
     /*package*/ static final SConcept TemperatureMeasurement$Hy = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906e39f51L, "healthtech.structure.TemperatureMeasurement");
+    /*package*/ static final SConcept DiastolicPressueMeasurement$Xh = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9794L, "healthtech.structure.DiastolicPressueMeasurement");
+    /*package*/ static final SConcept SystolicPressureMeasurement$XK = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9795L, "healthtech.structure.SystolicPressureMeasurement");
     /*package*/ static final SConcept MeasurementUnaryOperator$dk = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b14c4cL, "healthtech.structure.MeasurementUnaryOperator");
     /*package*/ static final SConcept MeasurementBinaryOperator$kO = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x2f8212ac0c586128L, "healthtech.structure.MeasurementBinaryOperator");
     /*package*/ static final SConcept MeasurementOperandAdapter$GE = MetaAdapterFactory.getConcept(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L, "healthtech.structure.MeasurementOperandAdapter");
@@ -505,18 +533,5 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink inputSpecs$6ijH = MetaAdapterFactory.getContainmentLink(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc220f1L, "inputSpecs");
     /*package*/ static final SContainmentLink eval$ZZi0 = MetaAdapterFactory.getContainmentLink(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc41f14L, "eval");
     /*package*/ static final SContainmentLink range$1la1 = MetaAdapterFactory.getContainmentLink(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc41f17L, 0x2f8212ac0c4edb09L, "range");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty status$fHvE = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL, 0x6c0fdc58b27e8d37L, "status");
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty description$6hna = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc220c8L, "description");
-    /*package*/ static final SProperty reference$6ho8 = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L, 0x41ac8d399bc220caL, "reference");
-    /*package*/ static final SProperty timeRange$gcYs = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL, 0x41ac8d399bc220f3L, "timeRange");
-    /*package*/ static final SProperty size$gda4 = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL, 0x41ac8d399bc220f6L, "size");
-    /*package*/ static final SProperty result$CjFw = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL, 0x1f38b4c739accbecL, "result");
-    /*package*/ static final SProperty type$l6Ut = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L, 0x6c0fdc58b27e8d35L, "type");
-    /*package*/ static final SProperty value$7rXu = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dd44f32L, 0x3d41ce506dd44f82L, "value");
-    /*package*/ static final SProperty value$VaKW = MetaAdapterFactory.getProperty(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696cL, 0x3d41ce506dc5545cL, "value");
   }
 }

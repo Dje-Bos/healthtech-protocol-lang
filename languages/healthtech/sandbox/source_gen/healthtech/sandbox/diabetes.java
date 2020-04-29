@@ -9,6 +9,10 @@ import java.util.stream.Collectors;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.Comparator;
+import java.time.temporal.ChronoUnit;
+import java.util.stream.Stream;
+import java.util.function.Consumer;
 
 public class diabetes implements IProtocol {
   private String name = "diabetes";
@@ -19,72 +23,91 @@ public class diabetes implements IProtocol {
 
   public diabetes() {
     InputSpec inputSpec_xi3ytd_a = new InputSpec(10, 2, MType.GLUCOSE);
+
     inputSpecs.add(inputSpec_xi3ytd_a);
+
     EvaluationEntry eval_a_0 = new EvaluationEntry();
     OutputResult res_a0_0 = new OutputResult();
     res_a0_0.setDescription("123");
     res_a0_0.setReminder("every year");
     res_a0_0.setStatus(OutputStatus.NORMAL);
+
     eval_a_0.setResult(res_a0_0);
     List<Range> ranges_a_0 = new ArrayList<Range>();
-    BinaryRange binaryRange_a0_0 = new BinaryRange();
+    LimitedRange binaryRange_a0_0 = new LimitedRange();
     binaryRange_a0_0.setType(MType.GLUCOSE);
     binaryRange_a0_0.setOperator("-");
     binaryRange_a0_0.setOperand(Float.valueOf(123));
     binaryRange_a0_0.setSecondOperand(Float.valueOf(432));
+
     ranges_a_0.add(binaryRange_a0_0);
     eval_a_0.setRanges(ranges_a_0);
+
     EvaluationEntry eval_b_0 = new EvaluationEntry();
     OutputResult res_a1_0 = new OutputResult();
     res_a1_0.setDescription("You are OK");
     res_a1_0.setReminder("every week");
     res_a1_0.setStatus(OutputStatus.MEDICAL_HELP);
+
     eval_b_0.setResult(res_a1_0);
     List<Range> ranges_b_0 = new ArrayList<Range>();
-    BinaryRange binaryRange_a1 = new BinaryRange();
+    LimitedRange binaryRange_a1 = new LimitedRange();
     binaryRange_a1.setType(MType.GLUCOSE);
     binaryRange_a1.setOperator("-");
     binaryRange_a1.setOperand(Float.valueOf(1));
     binaryRange_a1.setSecondOperand(Float.valueOf(2));
+
     ranges_b_0.add(binaryRange_a1);
     eval_b_0.setRanges(ranges_b_0);
+
     EvaluationEntry eval_c = new EvaluationEntry();
     OutputResult res_a2 = new OutputResult();
     res_a2.setDescription("Some say");
     res_a2.setReminder("every day");
     res_a2.setStatus(OutputStatus.CHECK_RISKS);
+
     eval_c.setResult(res_a2);
     List<Range> ranges_c = new ArrayList<Range>();
-    BinaryRange binaryRange_a2 = new BinaryRange();
+    LimitedRange binaryRange_a2 = new LimitedRange();
     binaryRange_a2.setType(MType.GLUCOSE);
     binaryRange_a2.setOperator("-");
     binaryRange_a2.setOperand(Float.valueOf(2));
     binaryRange_a2.setSecondOperand(Float.valueOf(3));
+
     ranges_c.add(binaryRange_a2);
     eval_c.setRanges(ranges_c);
+
     EvaluationEntry eval_d = new EvaluationEntry();
     OutputResult res_a3 = new OutputResult();
     res_a3.setDescription("Yeah!");
     res_a3.setReminder("every week");
     res_a3.setStatus(OutputStatus.MEDICAL_HELP);
+
     eval_d.setResult(res_a3);
     List<Range> ranges_d = new ArrayList<Range>();
-    BinaryRange binaryRange_a3 = new BinaryRange();
+    LimitedRange binaryRange_a3 = new LimitedRange();
     binaryRange_a3.setType(MType.GLUCOSE);
     binaryRange_a3.setOperator("-");
     binaryRange_a3.setOperand(Float.valueOf(1));
     binaryRange_a3.setSecondOperand(Float.valueOf(2));
+
     ranges_d.add(binaryRange_a3);
     eval_d.setRanges(ranges_d);
+
     evaluationEntries.add(eval_a_0);
     evaluationEntries.add(eval_b_0);
     evaluationEntries.add(eval_c);
     evaluationEntries.add(eval_d);
-
   }
 
   @Override
-  public void evaluate(List<Measurement> measurements) {
+  public List<OutputResult> evaluate(List<Measurement> measurements) {
+    Map<MType, List<Measurement>> measurementsForEval = filterMeasurements(measurements);
+
+    return evaluateInternal(measurementsForEval);
+  }
+
+  private Map<MType, List<Measurement>> filterMeasurements(List<Measurement> measurements) {
     List<Measurement> filteredMeasurements = filterByType(measurements);
     Map<MType, List<Measurement>> groupedByType = filteredMeasurements.stream().collect(Collectors.groupingBy(new Function<Measurement, MType>() {
       public MType apply(Measurement measurement) {
@@ -104,7 +127,19 @@ public class diabetes implements IProtocol {
         return entry.getValue();
       }
     }));
-
+    return filterBySize.entrySet().stream().filter(new Predicate<Map.Entry<MType, List<Measurement>>>() {
+      public boolean test(Map.Entry<MType, List<Measurement>> entry) {
+        return checkTimeRange(entry);
+      }
+    }).collect(Collectors.toMap(new Function<Map.Entry<MType, List<Measurement>>, MType>() {
+      public MType apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getKey();
+      }
+    }, new Function<Map.Entry<MType, List<Measurement>>, List<Measurement>>() {
+      public List<Measurement> apply(Map.Entry<MType, List<Measurement>> entry) {
+        return entry.getValue();
+      }
+    }));
   }
 
   /*package*/ List<Measurement> filterByType(List<Measurement> measurements) {
@@ -133,7 +168,29 @@ public class diabetes implements IProtocol {
     });
   }
 
-  private void evaluateInternal(Map<MType, List<Measurement>> measurements) {
+  private boolean checkTimeRange(Map.Entry<MType, List<Measurement>> entry) {
+    entry.getValue().sort(new Comparator<Measurement>() {
+      public int compare(Measurement m1, Measurement m2) {
+        return m1.getCreated().compareTo(m2.getCreated());
+      }
+    });
+    boolean res = false;
+    if (!((entry.getValue().size() < 2))) {
+      return ChronoUnit.DAYS.between(entry.getValue().get(0).getCreated(), entry.getValue().get(entry.getValue().size() - 1).getCreated()) >= getSpecByType(entry.getKey()).getTimeRange();
+    }
+    return res;
+  }
+
+  private List<OutputResult> evaluateInternal(final Map<MType, List<Measurement>> measurements) {
+    return evaluationEntries.stream().flatMap(new Function<EvaluationEntry, Stream<OutputResult>>() {
+      public Stream<OutputResult> apply(EvaluationEntry entry) {
+        return entry.evaluate(measurements).stream();
+      }
+    }).peek(new Consumer<OutputResult>() {
+      public void accept(OutputResult res) {
+        res.setProtocol(name);
+      }
+    }).collect(Collectors.toList());
   }
 
   public String getName() {

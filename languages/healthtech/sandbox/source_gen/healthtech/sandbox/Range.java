@@ -19,4 +19,6 @@ public abstract class Range {
   public void setOperator(String operator) {
     this.operator = operator;
   }
+
+  public abstract boolean checkRange(Measurement m);
 }

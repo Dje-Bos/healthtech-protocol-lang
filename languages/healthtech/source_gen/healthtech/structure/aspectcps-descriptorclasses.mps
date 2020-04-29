@@ -1135,7 +1135,7 @@
                       <node concept="liA8E" id="5P" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="5Q" role="37wK5m">
-                          <property role="Xl_RC" value="&gt;=" />
+                          <property role="Xl_RC" value="&lt;=" />
                           <node concept="cd27G" id="5S" role="lGtFl">
                             <node concept="3u3nmq" id="5T" role="cd27D">
                               <property role="3u3nmv" value="2249746781630977703" />
@@ -1775,7 +1775,7 @@
                       <node concept="liA8E" id="9K" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="9L" role="37wK5m">
-                          <property role="Xl_RC" value="&lt;=" />
+                          <property role="Xl_RC" value="&gt;=" />
                           <node concept="cd27G" id="9N" role="lGtFl">
                             <node concept="3u3nmq" id="9O" role="cd27D">
                               <property role="3u3nmv" value="2249746781630977683" />
@@ -11338,7 +11338,7 @@
             <node concept="liA8E" id="12E" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="12F" role="37wK5m">
-                <property role="Xl_RC" value="&gt;=" />
+                <property role="Xl_RC" value="&lt;=" />
               </node>
             </node>
           </node>
@@ -13100,7 +13100,7 @@
             <node concept="liA8E" id="1da" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="1db" role="37wK5m">
-                <property role="Xl_RC" value="&lt;=" />
+                <property role="Xl_RC" value="&gt;=" />
               </node>
             </node>
           </node>

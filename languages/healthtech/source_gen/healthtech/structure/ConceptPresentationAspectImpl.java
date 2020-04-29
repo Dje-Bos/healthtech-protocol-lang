@@ -101,7 +101,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.LessOrEqualUnaryOperator:
         if (props_LessOrEqualUnaryOperator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation(">=");
+          cpb.rawPresentation("<=");
           props_LessOrEqualUnaryOperator = cpb.create();
         }
         return props_LessOrEqualUnaryOperator;
@@ -167,7 +167,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.MoreOrEqualUnaryOperator:
         if (props_MoreOrEqualUnaryOperator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("<=");
+          cpb.rawPresentation(">=");
           props_MoreOrEqualUnaryOperator = cpb.create();
         }
         return props_MoreOrEqualUnaryOperator;

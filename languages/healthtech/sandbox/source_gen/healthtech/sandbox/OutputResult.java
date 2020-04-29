@@ -7,6 +7,7 @@ public class OutputResult {
   private String description;
   private OutputStatus status;
   private String reminder;
+  private String protocol;
 
   public String getDescription() {
     return this.description;
@@ -28,5 +29,13 @@ public class OutputResult {
   }
   public void setReminder(String reminder) {
     this.reminder = reminder;
+  }
+
+
+  public String getProtocol() {
+    return this.protocol;
+  }
+  public void setProtocol(String protocol) {
+    this.protocol = protocol;
   }
 }
