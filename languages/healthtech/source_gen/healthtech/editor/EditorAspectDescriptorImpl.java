@@ -34,22 +34,26 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 5:
         return Collections.<ConceptEditor>singletonList(new LessOrEqualUnaryOperator_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new Measurement_Editor());
+        return Collections.<ConceptEditor>singletonList(new LessUnaryOperator_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new MeasurementOperandAdapter_Editor());
+        return Collections.<ConceptEditor>singletonList(new Measurement_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new MeasurementRange_Editor());
+        return Collections.<ConceptEditor>singletonList(new MeasurementOperandAdapter_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new MeasurementRangeOperator_Editor());
+        return Collections.<ConceptEditor>singletonList(new MeasurementRange_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new MeasurementType2UnitMapping_Editor());
+        return Collections.<ConceptEditor>singletonList(new MeasurementRangeOperator_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new MeasurementUnitConfig_Editor());
+        return Collections.<ConceptEditor>singletonList(new MeasurementType2UnitMapping_Editor());
       case 12:
-        return Collections.<ConceptEditor>singletonList(new MoreOrEqualUnaryOperator_Editor());
+        return Collections.<ConceptEditor>singletonList(new MeasurementUnitConfig_Editor());
       case 13:
-        return Collections.<ConceptEditor>singletonList(new OutputResult_Editor());
+        return Collections.<ConceptEditor>singletonList(new MoreOrEqualUnaryOperator_Editor());
       case 14:
+        return Collections.<ConceptEditor>singletonList(new MoreUnaryOperator_Editor());
+      case 15:
+        return Collections.<ConceptEditor>singletonList(new OutputResult_Editor());
+      case 16:
         return Collections.<ConceptEditor>singletonList(new Protocol_Editor());
       default:
     }
@@ -124,7 +128,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     return Collections.<SubstituteMenu>emptyList();
   }
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc41f17L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dd44f32L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696cL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b156a7L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x2f8212ac0c4edadcL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3695fL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906e09264L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906ddd1c3L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b15693L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x6c0fdc58b27e8d26L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc41f17L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dd44f32L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc220cdL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696cL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b156a7L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x790faac9e11ad79bL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x2f8212ac0c4edadcL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3695fL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906e09264L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c0906ddd1c3L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b15693L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x790faac9e11ad79cL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739accbebL), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x41ac8d399bc1bfe2L)).seal();
   private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L)).seal();
   private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L)).seal();
   private static final ConceptSwitchIndex conceptIndex3 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0xbb4c09072be344L), MetaIdFactory.conceptId(0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dc3696dL)).seal();

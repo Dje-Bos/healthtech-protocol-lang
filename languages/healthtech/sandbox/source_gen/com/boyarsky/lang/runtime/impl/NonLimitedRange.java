@@ -18,6 +18,12 @@ public class NonLimitedRange extends Range {
     if (getOperator().equals(">=")) {
       return value >= operand;
     }
+    if (getOperator().equals(">")) {
+      return value > operand;
+    }
+    if (getOperator().equals("<")) {
+      return value < operand;
+    }
     return res;
   }
 

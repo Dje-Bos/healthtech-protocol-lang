@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="bfsko12st03q7573qusclvbsm0teyjd">
-  <files dir="com/boyarsky/lang/generated" names="diabetes.java:hypertension.java" />
+<product version="3" modelHash="-9pqs31c4kjmc3t9tqi83juknu5vbrnv">
+  <files dir="com/boyarsky/lang/generated" names="diabetes.java:hypertension.java:sinusTachycardia.java:ventricularTachycardia.java" />
   <files dir="com/boyarsky/lang/runtime" names="IProtocol.java:Range.java" />
   <files dir="com/boyarsky/lang/runtime/impl" names="EvaluationEntry.java:InputSpec.java:LimitedRange.java:MType.java:MUnit.java:Measurement.java:NonLimitedRange.java:OutputResult.java:OutputStatus.java" />
   <files dir="com/boyarsky/lang/runtime/utils" names="MeasurementUtils.java" />

@@ -27,6 +27,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptInputSpec = createDescriptorForInputSpec();
   /*package*/ final ConceptDescriptor myConceptIntegerConstant = createDescriptorForIntegerConstant();
   /*package*/ final ConceptDescriptor myConceptLessOrEqualUnaryOperator = createDescriptorForLessOrEqualUnaryOperator();
+  /*package*/ final ConceptDescriptor myConceptLessUnaryOperator = createDescriptorForLessUnaryOperator();
   /*package*/ final ConceptDescriptor myConceptMeasurement = createDescriptorForMeasurement();
   /*package*/ final ConceptDescriptor myConceptMeasurementBinaryOperator = createDescriptorForMeasurementBinaryOperator();
   /*package*/ final ConceptDescriptor myConceptMeasurementOperand = createDescriptorForMeasurementOperand();
@@ -37,6 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMeasurementUnaryOperator = createDescriptorForMeasurementUnaryOperator();
   /*package*/ final ConceptDescriptor myConceptMeasurementUnitConfig = createDescriptorForMeasurementUnitConfig();
   /*package*/ final ConceptDescriptor myConceptMoreOrEqualUnaryOperator = createDescriptorForMoreOrEqualUnaryOperator();
+  /*package*/ final ConceptDescriptor myConceptMoreUnaryOperator = createDescriptorForMoreUnaryOperator();
   /*package*/ final ConceptDescriptor myConceptOperand = createDescriptorForOperand();
   /*package*/ final ConceptDescriptor myConceptOperator = createDescriptorForOperator();
   /*package*/ final ConceptDescriptor myConceptOutputResult = createDescriptorForOutputResult();
@@ -64,7 +66,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddReminderAction, myConceptBloodPressureMeasurement, myConceptDiastolicPressueMeasurement, myConceptEvaluationEntry, myConceptFloatConstant, myConceptGlucoseMeasurement, myConceptInputSpec, myConceptIntegerConstant, myConceptLessOrEqualUnaryOperator, myConceptMeasurement, myConceptMeasurementBinaryOperator, myConceptMeasurementOperand, myConceptMeasurementOperandAdapter, myConceptMeasurementRange, myConceptMeasurementRangeOperator, myConceptMeasurementType2UnitMapping, myConceptMeasurementUnaryOperator, myConceptMeasurementUnitConfig, myConceptMoreOrEqualUnaryOperator, myConceptOperand, myConceptOperator, myConceptOutputResult, myConceptProtocol, myConceptPulseMeasurement, myConceptSystolicPressureMeasurement, myConceptTemperatureMeasurement, myConceptWeightMeasurement);
+    return Arrays.asList(myConceptAddReminderAction, myConceptBloodPressureMeasurement, myConceptDiastolicPressueMeasurement, myConceptEvaluationEntry, myConceptFloatConstant, myConceptGlucoseMeasurement, myConceptInputSpec, myConceptIntegerConstant, myConceptLessOrEqualUnaryOperator, myConceptLessUnaryOperator, myConceptMeasurement, myConceptMeasurementBinaryOperator, myConceptMeasurementOperand, myConceptMeasurementOperandAdapter, myConceptMeasurementRange, myConceptMeasurementRangeOperator, myConceptMeasurementType2UnitMapping, myConceptMeasurementUnaryOperator, myConceptMeasurementUnitConfig, myConceptMoreOrEqualUnaryOperator, myConceptMoreUnaryOperator, myConceptOperand, myConceptOperator, myConceptOutputResult, myConceptProtocol, myConceptPulseMeasurement, myConceptSystolicPressureMeasurement, myConceptTemperatureMeasurement, myConceptWeightMeasurement);
   }
 
   @Override
@@ -89,6 +91,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIntegerConstant;
       case LanguageConceptSwitch.LessOrEqualUnaryOperator:
         return myConceptLessOrEqualUnaryOperator;
+      case LanguageConceptSwitch.LessUnaryOperator:
+        return myConceptLessUnaryOperator;
       case LanguageConceptSwitch.Measurement:
         return myConceptMeasurement;
       case LanguageConceptSwitch.MeasurementBinaryOperator:
@@ -109,6 +113,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMeasurementUnitConfig;
       case LanguageConceptSwitch.MoreOrEqualUnaryOperator:
         return myConceptMoreOrEqualUnaryOperator;
+      case LanguageConceptSwitch.MoreUnaryOperator:
+        return myConceptMoreUnaryOperator;
       case LanguageConceptSwitch.Operand:
         return myConceptOperand;
       case LanguageConceptSwitch.Operator:
@@ -222,6 +228,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("<=");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForLessUnaryOperator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("healthtech", "LessUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x790faac9e11ad79bL);
+    b.class_(false, false, false);
+    b.super_("healthtech.structure.MeasurementUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b14c4cL);
+    b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/8723378787281721243");
+    b.version(2);
+    b.alias("<");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForMeasurement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("healthtech", "Measurement", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x3d41ce506dda9788L);
     b.class_(false, true, false);
@@ -312,6 +327,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/2249746781630977683");
     b.version(2);
     b.alias(">=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMoreUnaryOperator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("healthtech", "MoreUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x790faac9e11ad79cL);
+    b.class_(false, false, false);
+    b.super_("healthtech.structure.MeasurementUnaryOperator", 0x302f6a2f71494d75L, 0x8daf01fecbeaf5d3L, 0x1f38b4c739b14c4cL);
+    b.origin("r:f9a5d9b0-e4d1-425f-bdda-6234399d7263(healthtech.structure)/8723378787281721244");
+    b.version(2);
+    b.alias(">");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOperand() {

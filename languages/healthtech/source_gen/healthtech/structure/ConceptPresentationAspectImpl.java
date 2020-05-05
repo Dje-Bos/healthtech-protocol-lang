@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_InputSpec;
   private ConceptPresentation props_IntegerConstant;
   private ConceptPresentation props_LessOrEqualUnaryOperator;
+  private ConceptPresentation props_LessUnaryOperator;
   private ConceptPresentation props_Measurement;
   private ConceptPresentation props_MeasurementBinaryOperator;
   private ConceptPresentation props_MeasurementOperand;
@@ -28,6 +29,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MeasurementUnaryOperator;
   private ConceptPresentation props_MeasurementUnitConfig;
   private ConceptPresentation props_MoreOrEqualUnaryOperator;
+  private ConceptPresentation props_MoreUnaryOperator;
   private ConceptPresentation props_Operand;
   private ConceptPresentation props_Operator;
   private ConceptPresentation props_OutputResult;
@@ -105,6 +107,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LessOrEqualUnaryOperator = cpb.create();
         }
         return props_LessOrEqualUnaryOperator;
+      case LanguageConceptSwitch.LessUnaryOperator:
+        if (props_LessUnaryOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<");
+          props_LessUnaryOperator = cpb.create();
+        }
+        return props_LessUnaryOperator;
       case LanguageConceptSwitch.Measurement:
         if (props_Measurement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -171,6 +180,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MoreOrEqualUnaryOperator = cpb.create();
         }
         return props_MoreOrEqualUnaryOperator;
+      case LanguageConceptSwitch.MoreUnaryOperator:
+        if (props_MoreUnaryOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation(">");
+          props_MoreUnaryOperator = cpb.create();
+        }
+        return props_MoreUnaryOperator;
       case LanguageConceptSwitch.Operand:
         if (props_Operand == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

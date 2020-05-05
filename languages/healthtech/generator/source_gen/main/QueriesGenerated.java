@@ -118,7 +118,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.result$CjFw);
   }
   public static Object propertyMacro_GetValue_12_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.action$fHIc), PROPS.type$l6Ut).toString();
+    if (SLinkOperations.getTarget(_context.getNode(), LINKS.action$fHIc) != null) {
+      return SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.action$fHIc), PROPS.type$l6Ut).toString();
+    }
+    return "";
   }
   public static Object propertyMacro_GetValue_16_0(final PropertyMacroContext _context) {
     return _context.createUniqueName("unaryRange", null);
@@ -397,7 +400,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("4200930846356961914", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), ""));
     pvqMethods.put("6413810560237844773", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "range"));
     pvqMethods.put("6413810560237841793", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "range"));
-    pvqMethods.put("6413810560236791046", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x494547eeedc219b9L, 0x494547eeedc219bbL, "value"), "0.0f"));
+    pvqMethods.put("8723378787282163049", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), ""));
     pvqMethods.put("6413810560236802693", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x494547eeedc219b9L, 0x494547eeedc219bbL, "value"), "0.0f"));
   }
   @NotNull

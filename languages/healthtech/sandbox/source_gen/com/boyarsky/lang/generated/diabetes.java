@@ -11,6 +11,7 @@ import com.boyarsky.lang.runtime.impl.MType;
 import com.boyarsky.lang.runtime.impl.OutputResult;
 import com.boyarsky.lang.runtime.impl.OutputStatus;
 import com.boyarsky.lang.runtime.Range;
+import com.boyarsky.lang.runtime.impl.NonLimitedRange;
 import com.boyarsky.lang.runtime.impl.LimitedRange;
 import com.boyarsky.lang.runtime.impl.Measurement;
 import java.util.Map;
@@ -25,88 +26,86 @@ import java.util.function.Consumer;
 
 public class diabetes implements IProtocol {
   private String name = "diabetes";
-  private String description = "Diabetes clinic protocol adaptation";
-  private String reference = "https://guidelines.moz.gov.ua/documents/3322";
+  private String description = "Diabetes clinic protocol: classification and treatment";
+  private String reference = "https://guidelines.moz.gov.ua/documents/3323";
   private List<InputSpec> inputSpecs = new ArrayList<InputSpec>();
   private List<EvaluationEntry> evaluationEntries = new ArrayList<EvaluationEntry>();
 
   public diabetes() {
-    InputSpec inputSpec_xi3ytd_a = new InputSpec(10, 2, MType.GLUCOSE);
+    InputSpec inputSpec_xi3ytd_a = new InputSpec(10, 10, MType.GLUCOSE);
 
     inputSpecs.add(inputSpec_xi3ytd_a);
 
     EvaluationEntry eval_a_0 = new EvaluationEntry();
     OutputResult res_a0_0 = new OutputResult();
-    res_a0_0.setDescription("123");
-    res_a0_0.setReminder("every year");
-    res_a0_0.setStatus(OutputStatus.NORMAL);
+    res_a0_0.setDescription("No action needed");
+    res_a0_0.setReminder("");
+    res_a0_0.setStatus(OutputStatus.OK);
 
     eval_a_0.setResult(res_a0_0);
     List<Range> ranges_a_0 = new ArrayList<Range>();
-    LimitedRange binaryRange_a0_0 = new LimitedRange();
-    binaryRange_a0_0.setType(MType.GLUCOSE);
-    binaryRange_a0_0.setOperator("-");
-    binaryRange_a0_0.setOperand(Float.valueOf(123));
-    binaryRange_a0_0.setSecondOperand(Float.valueOf(432));
+    NonLimitedRange unaryRange_a0_0 = new NonLimitedRange();
+    unaryRange_a0_0.setOperator("<");
+    unaryRange_a0_0.setOperand(Float.valueOf("6.1"));
+    unaryRange_a0_0.setType(MType.GLUCOSE);
 
-    ranges_a_0.add(binaryRange_a0_0);
+    ranges_a_0.add(unaryRange_a0_0);
     eval_a_0.setRanges(ranges_a_0);
 
     EvaluationEntry eval_b_0 = new EvaluationEntry();
     OutputResult res_a1_0 = new OutputResult();
-    res_a1_0.setDescription("You are OK");
+    res_a1_0.setDescription("Fasting blood glucose disorders");
     res_a1_0.setReminder("every week");
-    res_a1_0.setStatus(OutputStatus.MEDICAL_HELP);
+    res_a1_0.setStatus(OutputStatus.NORMAL);
 
     eval_b_0.setResult(res_a1_0);
     List<Range> ranges_b_0 = new ArrayList<Range>();
-    LimitedRange binaryRange_a1 = new LimitedRange();
-    binaryRange_a1.setType(MType.GLUCOSE);
-    binaryRange_a1.setOperator("-");
-    binaryRange_a1.setOperand(Float.valueOf(1));
-    binaryRange_a1.setSecondOperand(Float.valueOf(2));
+    LimitedRange binaryRange_a1_0 = new LimitedRange();
+    binaryRange_a1_0.setType(MType.GLUCOSE);
+    binaryRange_a1_0.setOperator("-");
+    binaryRange_a1_0.setOperand(Float.valueOf("6.1"));
+    binaryRange_a1_0.setSecondOperand(Float.valueOf("6.9"));
 
-    ranges_b_0.add(binaryRange_a1);
+    ranges_b_0.add(binaryRange_a1_0);
     eval_b_0.setRanges(ranges_b_0);
 
-    EvaluationEntry eval_c = new EvaluationEntry();
-    OutputResult res_a2 = new OutputResult();
-    res_a2.setDescription("Some say");
-    res_a2.setReminder("every day");
-    res_a2.setStatus(OutputStatus.CHECK_RISKS);
+    EvaluationEntry eval_c_0 = new EvaluationEntry();
+    OutputResult res_a2_0 = new OutputResult();
+    res_a2_0.setDescription("Impaired glucose tolerance");
+    res_a2_0.setReminder("every day");
+    res_a2_0.setStatus(OutputStatus.NORMAL);
 
-    eval_c.setResult(res_a2);
-    List<Range> ranges_c = new ArrayList<Range>();
-    LimitedRange binaryRange_a2 = new LimitedRange();
-    binaryRange_a2.setType(MType.GLUCOSE);
-    binaryRange_a2.setOperator("-");
-    binaryRange_a2.setOperand(Float.valueOf(2));
-    binaryRange_a2.setSecondOperand(Float.valueOf(3));
+    eval_c_0.setResult(res_a2_0);
+    List<Range> ranges_c_0 = new ArrayList<Range>();
+    LimitedRange binaryRange_a2_0 = new LimitedRange();
+    binaryRange_a2_0.setType(MType.GLUCOSE);
+    binaryRange_a2_0.setOperator("-");
+    binaryRange_a2_0.setOperand(Float.valueOf("6.91"));
+    binaryRange_a2_0.setSecondOperand(Float.valueOf("7.0"));
 
-    ranges_c.add(binaryRange_a2);
-    eval_c.setRanges(ranges_c);
+    ranges_c_0.add(binaryRange_a2_0);
+    eval_c_0.setRanges(ranges_c_0);
 
-    EvaluationEntry eval_d = new EvaluationEntry();
-    OutputResult res_a3 = new OutputResult();
-    res_a3.setDescription("Yeah!");
-    res_a3.setReminder("every week");
-    res_a3.setStatus(OutputStatus.MEDICAL_HELP);
+    EvaluationEntry eval_d_0 = new EvaluationEntry();
+    OutputResult res_a3_0 = new OutputResult();
+    res_a3_0.setDescription("Diabetes");
+    res_a3_0.setReminder("every day");
+    res_a3_0.setStatus(OutputStatus.MEDICAL_HELP);
 
-    eval_d.setResult(res_a3);
-    List<Range> ranges_d = new ArrayList<Range>();
-    LimitedRange binaryRange_a3 = new LimitedRange();
-    binaryRange_a3.setType(MType.GLUCOSE);
-    binaryRange_a3.setOperator("-");
-    binaryRange_a3.setOperand(Float.valueOf(1));
-    binaryRange_a3.setSecondOperand(Float.valueOf(2));
+    eval_d_0.setResult(res_a3_0);
+    List<Range> ranges_d_0 = new ArrayList<Range>();
+    NonLimitedRange unaryRange_a3 = new NonLimitedRange();
+    unaryRange_a3.setOperator(">");
+    unaryRange_a3.setOperand(Float.valueOf(7));
+    unaryRange_a3.setType(MType.GLUCOSE);
 
-    ranges_d.add(binaryRange_a3);
-    eval_d.setRanges(ranges_d);
+    ranges_d_0.add(unaryRange_a3);
+    eval_d_0.setRanges(ranges_d_0);
 
     evaluationEntries.add(eval_a_0);
     evaluationEntries.add(eval_b_0);
-    evaluationEntries.add(eval_c);
-    evaluationEntries.add(eval_d);
+    evaluationEntries.add(eval_c_0);
+    evaluationEntries.add(eval_d_0);
   }
 
   @Override
